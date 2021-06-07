@@ -7,6 +7,13 @@
   font-weight: 400;
 }
 
+/*reduces the size of html font, so the rem goes from 16 to 10 pixels*/
+/* adjusts how scrolling works */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 .footer {
   position: fixed;
   left: 0;
