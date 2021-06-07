@@ -47,7 +47,7 @@
   background-size: cover;
 }
 
-
+/* section 2 */
 .section-2 {
   /*height and width make it take over the entire viewport*/
   width: 100%;    
@@ -60,6 +60,58 @@
   justify-content: space-evenly;
 }
 
+.form-container{
+  width: 80%;
+  height: 40%;
+  background-color: #e5e9ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: .3rem .3rem .4rem #ccc, -.1rem -.1rem -.4 rem #ccc;
+  border-radius: .5rem;
+  perspective: 100rem;  
+  
+}
+
+/* styles the envelope image */
+/* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
+.form-img{
+  width: 55rem;
+  background-color: rgba(50,231, 255, .8);
+  padding: 5rem;
+  opacity: .8;
+  box-shadow: -3rem 3rem 4rem #aaa;
+  border-radius: 2.5rem;
+  transform: rotateY(20deg) ;    
+  transition: all .5s;
+}
+
+/* this hover effect moves the image up a bit, and keeps it angled awaye from the viewer, and moves the box shadow */
+.form-img:hover{
+  transform: translateY(-2rem) rotateY(20deg);
+  box-shadow: 5rem 5rem 7rem #aaa;
+}
+
+/* styles the contact form  */
+/* transform rotate with a negative value tilts the envelope as if the left edge is closer to the viewer */
+.calculation-form{
+  width: 45rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding:  3rem;
+  border-radius: 2.5rem;
+  box-shadow: 3rem 3rem 4 rem #aaa;
+  transform: rotateY(-20deg); 
+  transition: all .5s;
+}
+
+.calculation-form:hover{
+  transform: translateY(-2rem) rotateY(-20deg);
+  box-shadow: 5rem 5rem 7rem #aaa;
+}
+
+/* section 3 */
 .section-3 {
   /*height and width make it take over the entire viewport*/
   width: 100%;    
