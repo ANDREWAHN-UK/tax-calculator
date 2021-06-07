@@ -62,7 +62,7 @@
 
 .form-container{
   width: 80%;
-  height: 50%;
+  height: 70%;
   background-color: #e5e9ff;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@
 /* styles the envelope image */
 /* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
 .form-img{
-  width: 55rem;
+  width: 40vw;
   background-color: rgba(50,231, 255, .8);
   padding: 5rem;
   opacity: .8;
@@ -116,6 +116,25 @@
 .calculation-form:hover{
   transform: translateY(-2rem) rotateY(-20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
+}
+
+.calculation-form input[type="submit"]{
+  background-color: rgba(50,231, 255, .8);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.calculation-form input{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 2.5rem;
+    box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
 }
 
 /* section 3 */
