@@ -134,7 +134,8 @@ html {
   transition: background-color 0.5s;
 }
 
-.calculation-form input{
+.calculation-form input,
+#student-loan{
     margin: 1rem;
     padding: 1rem;
     font-size: 1.3rem;
@@ -143,6 +144,7 @@ html {
     border-radius: 2.5rem;
     box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
 }
+
 
 /* section 3 */
 .section-3 {
