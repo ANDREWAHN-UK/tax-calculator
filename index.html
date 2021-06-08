@@ -40,10 +40,10 @@
                 <form action="" class="calculation-form">
 
                     <label for="gross-income">Type in your £ gross income:</label>
-                    <input type="number" placeholder=" type in your Gross Annual Income" id="gross-income">
+                    <input type="number" placeholder=" type in your Gross Annual Income" id="grossIncome">
 
                    
-                    <label for="student loan">Choose your loan type:</label>
+                    <!-- <label for="student loan">Choose your loan type:</label>
 
                     <select name="student-loan" id="student-loan">
                         <option value="plan-0">No student loan</option>
@@ -51,9 +51,19 @@
                         <option value="plan-2">Plan 2</option>
                         <option value="plan-4">Plan 4</option>
                         <option value="post-graduate">Postgraduate loan</option>
-                    </select>
+                    </select> -->
 
-                    <input type="submit" value="Calculate">
+                    <label for "tax">Income Tax owed:</label>
+
+                    <input type="text" id="tax">
+
+                    <button onclick="calcNet()">Calculate net income</button>
+
+                    <label for "tax">Net Wages:</label>
+
+                    <input type="text" id="net">
+
+                   
                 </form>
             </div>
 
