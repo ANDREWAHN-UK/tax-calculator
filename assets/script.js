@@ -20,9 +20,9 @@ function calcNet(grossIncome) {
         net = grossIncome;
     }
 
-    console.log(net);
 }
 
 function myfunction() {
-    alert("how are you?");
+   var grossIncome= (document.getElementById('grossIncome').value);
+    console.log(grossIncome);
 }
