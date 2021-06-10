@@ -1,28 +1,45 @@
-var taxBreak = 12570;
-var natIns = 9500;
-var basicRate = 12571;
-var higherRate = 50270;
-var additionalRate = 150001;
+function myFunction(num) {
+    var gross = document.getElementById("grossIncome").value;
+    var taxBreak = 12570;
+    var natIns = 9500;
+    var natInsHigher = 50270;
+    var basicRate = 12571;
+    var higherRate = 50270;
+    var additionalRate = 150001;
+    var maxNormalTax = 7539.8; //because tax works in bands, this is the highest level at 20% tax possible.
+    var maxNormalInsurance = 4892.4; //same as previous, this is the max normal rate national insurance
+    var net;
+    var taxPaid;
+    var natInsPaid;
 
-var net;
-
-function calcNet(grossIncome) {
-    (document.getElementById('grossIncome').value);
-    if (grossIncome > additionalRate) {
-        net = grossIncome - (((grossIncome - additionalRate) * .45) + ((grossIncome - higherRate) * .40) + ((grossIncome - basicRate) * .20) + ((grossIncome - natIns) * .12));
-    } else if (grossIncome < additionalRate && grossIncome >= higherRate) {
-        net = grossIncome - (((grossIncome - higherRate) * .40) + ((grossIncome - basicRate) * .20) + ((grossIncome - natIns) * .12));
-    } else if (grossIncome < higherRate && grossIncome >= basicRate) {
-        net = grossIncome - (((grossIncome - basicRate) * .20) + ((grossIncome - natIns) * .12));
-    } else if (grossIncome < basicRate && grossIncome >= natIns) {
-        net = grossIncome - (((grossIncome - natIns) * .12));
-    } else if (grossIncome < natIns) {
-        net = grossIncome;
+    if (gross >= additionalRate){
+        natInsPaid =((gross - natInsHigher) * .02) + maxNormalInsurance;
+        taxPaid = ((gross -additionalRate) *.45) + ((gross - higherRate) * .40) + maxNormalTax;
+        net = (gross -taxPaid -natInsPaid);
+        console.log (natInsPaid, taxPaid, net, gross);
     }
+    else if(gross >= higherRate && gross < additionalRate) {        
+        natInsPaid = ((gross - natInsHigher) * .02) + maxNormalInsurance;
+        taxPaid = ((gross - higherRate) * .40) + maxNormalTax;
+        net = (gross -taxPaid -natInsPaid);
+        console.log (natInsPaid, taxPaid, net, gross);
+        
+    } else if (gross >= basicRate && gross < higherRate) {
+        natInsPaid = ((gross - natIns) * .12);
+        taxPaid = ((gross - taxBreak) * .2);
+        net = (gross - taxPaid - natInsPaid);
+        console.log (natInsPaid, taxPaid, net, gross);
 
-}
+    } else if (gross >= natIns) {
+        natInsPaid = ((gross - natIns) * .12);
+        taxPaid=0;
+        net = (gross - natInsPaid);
+        console.log (natInsPaid, taxPaid, net, gross);
 
-function myfunction() {
-   var grossIncome= (document.getElementById('grossIncome').value);
-    console.log(grossIncome);
+    } else if (gross < natIns) {
+        net = gross;
+        natInsPaid = 0;
+        taxPaid= 0;
+        console.log (natInsPaid, taxPaid, net, gross);
+    }
 }
