@@ -1,5 +1,3 @@
-
-
 var taxBreak = 12570;
 var natIns = 9500;
 var basicRate = 12571;
@@ -8,18 +6,23 @@ var additionalRate = 150001;
 
 var net;
 
-function calcNet(amount){
+function calcNet(grossIncome) {
     (document.getElementById('grossIncome').value);
-    if (amount > additionalRate){
-        net = grossIncome -(((amount-additionalRate)*.45) + ((amount-higherRate)*.40) + ((amount-basicRate)*.20) + ((amount-natIns)*.12));
-    } else if (amount < additionalRate &&  amount >= higherRate){
-        net = grossIncome -(((amount-higherRate)*.40) + ((amount-basicRate)*.20) + ((amount-natIns)*.12));
-    } else if (amount < higherRate && amount >= basicRate){
-        net = grossIncome -( ((amount-basicRate)*.20) + ((amount-natIns)*.12));
-    } else if (amount < basicRate && amount >= natIns){
-        net = grossIncome -(((amount-natIns)*.12));
-    } else if (amount < natIns){
+    if (grossIncome > additionalRate) {
+        net = grossIncome - (((grossIncome - additionalRate) * .45) + ((grossIncome - higherRate) * .40) + ((grossIncome - basicRate) * .20) + ((grossIncome - natIns) * .12));
+    } else if (grossIncome < additionalRate && grossIncome >= higherRate) {
+        net = grossIncome - (((grossIncome - higherRate) * .40) + ((grossIncome - basicRate) * .20) + ((grossIncome - natIns) * .12));
+    } else if (grossIncome < higherRate && grossIncome >= basicRate) {
+        net = grossIncome - (((grossIncome - basicRate) * .20) + ((grossIncome - natIns) * .12));
+    } else if (grossIncome < basicRate && grossIncome >= natIns) {
+        net = grossIncome - (((grossIncome - natIns) * .12));
+    } else if (grossIncome < natIns) {
         net = grossIncome;
     }
 
+    console.log(net);
+}
+
+function myfunction() {
+    alert("how are you?");
 }
