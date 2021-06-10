@@ -9,7 +9,7 @@ var additionalRate = 150001;
 var net;
 
 function calcNet(amount){
-    (document.getElementById('grossIncome'));
+    (document.getElementById('grossIncome').value);
     if (amount > additionalRate){
         net = grossIncome -(((amount-additionalRate)*.45) + ((amount-higherRate)*.40) + ((amount-basicRate)*.20) + ((amount-natIns)*.12));
     } else if (amount < additionalRate &&  amount >= higherRate){
