@@ -159,3 +159,151 @@ html {
   justify-content: space-evenly;
 }
 
+
+
+.section-3{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+/* this team wrapper code makes the cards go horizontal, very important */
+.team-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+}
+
+/* this is for each team member */
+.info-card{
+  width: 35rem;
+  background-color: #fffeee;
+  padding: 1rem 1rem 2rem 1rem;
+  box-shadow: 1rem 1 rem 2 rem #ddd, -1rem -1rem -2 rem #eee;
+  position: relative;
+  opacity: .7;
+  transform: opacity 0.5s;
+}
+
+/* upon mouse hover, adjusts the opacity, nice visual effect */
+.info-card:hover{
+  opacity: 1;
+}
+
+/* change this to flex and/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
+.info-card:first-child {
+  align-self: flex-end;
+}
+
+/* change this to flex and/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
+.info-card:last-child {
+  align-self: flex-start;
+}
+
+/* adjusts the size of the photo used */
+.info-img{
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.info-name{
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #796717;
+  margin-top: 2rem;
+}
+
+.info-name span{
+  font-size: 1.7rem;                                                                                                                                                                        
+}
+
+.info-summary{
+  display:flex;
+  justify-content: space-between;
+  margin: 1rem 0 2rem 0;
+}
+
+.info-summary li{
+  font-size: 1.5rem;
+  color: #505050;
+}
+
+.projects-btn{
+  background-color: #fab34a;
+  color: #fff;
+  padding: .5rem 1.5rem;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+}
+
+/* this styles the button, placing it top right of the team member card */
+.story-btn{
+  width: 4rem;
+  height: 4rem;
+  background-color: #222;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  cursor: pointer;
+  z-index: 50;
+  transition: transform 0.5s;
+}
+
+/* upon clicking, button spins */
+.change.story-btn{
+  transform: rotate(450deg);
+}
+
+/* this is a little line that highlights the button positioning */
+.story-btn-line{
+  width: 100%;
+  height: .1rem;
+  background-color: #fff;
+}
+
+.story-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253,69,69,.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: all .5s;
+  border-radius: 50rem 0 50rem 50rem;
+}
+
+.change.story-wrapper{
+  transform: scale(1);
+  border-radius: 0;
+}
+
+.story-heading{
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.story-paragraph{
+  font-size: 1.8rem;
+  color: #eee;
+  text-align: justify;
+  letter-spacing: .1rem;
+  text-indent: 2rem;
+}
