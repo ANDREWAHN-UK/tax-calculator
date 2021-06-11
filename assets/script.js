@@ -42,4 +42,8 @@ function myFunction(num) {
         taxPaid= 0;
         console.log (natInsPaid, taxPaid, net, gross);
     }
+    document.getElementById('grossIncomeEntered').innerHTML = gross;
+    document.getElementById('taxOwed').innerHTML = taxPaid;
+    document.getElementById('natInsOwed').innerHTML = natInsPaid;
+    document.getElementById('netWage').innerHTML = net;
 }
