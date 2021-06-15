@@ -46,14 +46,14 @@
                     <label for="student loan">Choose your loan type:</label>
 
                     <select name="student-loan" id="student-loan">
-                        <option value="plan-0" id="plan-0">No student loan</option>
-                        <option value="plan-1">Plan 1</option>
-                        <option value="plan-2">Plan 2</option>
-                        <option value="plan-4">Plan 4</option>
-                        <option value="post-graduate">Postgraduate loan</option>
+                        <option value="0">No student loan</option>
+                        <option value="1">Plan 1 (non Scots from 1998 to 2011)</option>
+                        <option value="2">Plan 2 (non Scots from 2012)</option>
+                        <option value="4">Plan 4 (Scottish students only)</option>
+                        
                     </select>
 
-                    <button onclick="myFunction()" type="button" id="calcButton">Calculate my Income</button>
+                    <button onclick="calcNet()" type="button" id="calcButton">Calculate my Income</button>
                     <label for "taxOwed">Gross entered:</label>
 
                     <div id="grossIncomeEntered"></div>
@@ -65,6 +65,10 @@
                     <label for "natInsOwed">national Insurance owed:</label>
 
                     <div id="natInsOwed"></div>
+
+                    <label for "studentLoanOwed">Student Loan owed:</label>
+
+                    <div id="studentLoanOwed"></div>
 
                     <label for "netWage">Net Wages:</label>
 
