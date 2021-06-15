@@ -1,4 +1,6 @@
-function myFunction(num) {
+
+    
+    function myFunction(num) {
     var gross = document.getElementById("grossIncome").value;
     var taxBreak = 12570;
     var natIns = 9500;
@@ -42,10 +44,10 @@ function myFunction(num) {
         taxPaid= 0;
         console.log (natInsPaid, taxPaid, net, gross);
     }
-    document.getElementById('grossIncomeEntered').innerHTML = gross;
-    document.getElementById('taxOwed').innerHTML = taxPaid;
-    document.getElementById('natInsOwed').innerHTML = natInsPaid;
-    document.getElementById('netWage').innerHTML = net;
+    document.getElementById('grossIncomeEntered').innerHTML = '£ ' + gross;
+    document.getElementById('taxOwed').innerHTML = '£ ' + taxPaid;
+    document.getElementById('natInsOwed').innerHTML = '£ ' + natInsPaid;
+    document.getElementById('netWage').innerHTML = '£ ' + net;
 }
 
 // click functionality for section 3
