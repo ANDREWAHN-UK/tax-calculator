@@ -55,7 +55,7 @@ html {
 }
 
 /* section 2 */
-
+/* this section is hidden by default */
 #section-two{
 display: none;
 }
@@ -151,6 +151,10 @@ display: none;
 
 
 /* section 3 */
+/* this section is hidden by default */
+#section-three{
+  display: none;
+  }
 .section-3 {
   /*height and width make it take over the entire viewport*/
   width: 100%;    
