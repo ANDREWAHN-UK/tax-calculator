@@ -1,10 +1,10 @@
 const startPageTwo = () =>{
-    document.getElementById("section-two").style.display = "block";
+    document.getElementById("section-two").style.display = "flex";
     document.getElementById("section-one").style.display = "none";
 }
 
 const startPageThree = () =>{
-    document.getElementById("section-three").style.display = "block";
+    document.getElementById("section-three").style.display = "flex";
 }
 
 const calculateIncome = () => {
