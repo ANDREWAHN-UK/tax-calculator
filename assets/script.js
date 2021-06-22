@@ -1,7 +1,8 @@
 const startPageTwo = () =>{
-    var displaySetting = section-two.style.display;
+    var pageTwo = document.getElementById('section-two');
+    var displaySetting = pageTwo.style.display;
     if (displaySetting === 'hidden'){
-        section-two.style.display ==='flex';
+        section-two.style.display ==='block';
     }
 }
 
