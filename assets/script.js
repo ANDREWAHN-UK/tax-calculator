@@ -1,9 +1,6 @@
 const startPageTwo = () =>{
-    var pageTwo = document.getElementById('section-two');
-    var displaySetting = pageTwo.style.display;
-    if (displaySetting === 'none'){
-        section-two.style.display ==='block';
-    }
+    document.getElementById("section-two").style.display = "block";
+    document.getElementById("section-one").style.display = "none";
 }
 
 const calculateIncome = () => {
