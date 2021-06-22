@@ -55,6 +55,10 @@ html {
 }
 
 /* section 2 */
+
+#section-two{
+display: hidden;
+}
 .section-2 {
   /*height and width make it take over the entire viewport*/
   width: 100%;    
