@@ -3,6 +3,10 @@ const startPageTwo = () =>{
     document.getElementById("section-one").style.display = "none";
 }
 
+const startPageThree = () =>{
+    document.getElementById("section-three").style.display = "block";
+}
+
 const calculateIncome = () => {
 
     let gross = document.getElementById("grossIncome").value;
