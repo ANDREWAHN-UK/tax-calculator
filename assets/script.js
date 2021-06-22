@@ -1,3 +1,10 @@
+const startPageTwo = () =>{
+    var displaySetting = section-two.style.display;
+    if (displaySetting === 'hidden'){
+        section-two.style.display ==='flex';
+    }
+}
+
 const calculateIncome = () => {
 
     let gross = document.getElementById("grossIncome").value;
