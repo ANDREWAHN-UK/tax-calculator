@@ -68,12 +68,12 @@ display: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly;  
 }
 
 .form-container{
   width: 80%;
-  height: 70%;
+  height: 70vh;
   background-color: #e5e9ff;
   display: flex;
   align-items: center;
@@ -83,6 +83,7 @@ display: none;
   perspective: 100rem;  
   opacity: .8;
   transition: all .5s;
+  top: 15%;
 }
   
   .form-container:hover{
@@ -93,7 +94,7 @@ display: none;
 /* styles the envelope image */
 /* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
 .form-img{
-  width: 40vw;
+  width: 30vw;
   background-color: rgba(50,231, 255, .8);
   padding: 5rem;
   opacity: .8;
@@ -109,7 +110,7 @@ display: none;
   box-shadow: 5rem 5rem 7rem #aaa;
 }
 
-/* styles the contact form  */
+/* styles the calculation form  */
 /* transform rotate with a negative value tilts the envelope as if the right edge is closer to the viewer */
 .calculation-form{
   width: 45rem;
