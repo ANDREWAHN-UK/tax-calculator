@@ -93,6 +93,8 @@ document.querySelectorAll('.story-btn').forEach(btn => {
     })
 })
 
+
+
 // Get the modals
 let modal = document.getElementById("ModalOne");
 let modal2 = document.getElementById("ModalTwo");
@@ -103,7 +105,10 @@ let modal1button = document.getElementById("modalOneButton");
 let modal2button = document.getElementById("modalTwoButton");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
-
+// this makes so that when the website loads the modal displays, but it won't be visible until page 2 is activated by the button on page1
+window.addEventListener('load', (event) => {
+    modal.style.display = "block";;
+});
 // When the user clicks on the button, open the modals in sequence
 btn.onclick = function() {
   modal.style.display = "block";
