@@ -12,7 +12,7 @@ const calculateIncome = () => {
     // displays the button to open page 3
     document.getElementById("pageThreeButton").style.display = "block";
     // hides the modals
-    modal.style.display = "none";
+    modal1.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
     // variables for wages
@@ -96,7 +96,7 @@ document.querySelectorAll('.story-btn').forEach(btn => {
 
 
 // Get the modals
-let modal = document.getElementById("ModalOne");
+let modal1 = document.getElementById("ModalOne");
 let modal2 = document.getElementById("ModalTwo");
 let modal3 = document.getElementById("ModalThree");
 // Get the buttons that open the modals sequentially
@@ -107,27 +107,26 @@ let modal2button = document.getElementById("modalTwoButton");
 let span = document.getElementsByClassName("close")[0];
 // this makes so that when the website loads the modal displays, but it won't be visible until page 2 is activated by the button on page1
 window.addEventListener('load', (event) => {
-    modal.style.display = "block";;
+    modal1.style.display = "block";
 });
-// When the user clicks on the button, open the modals in sequence
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-modal1button.onclick = function() {
-    modal2.style.display = "block";
-  }
-modal2button.onclick = function() {
-    modal3.style.display = "block";
-  }
+// When the user clicks on the buttons, open the modals in sequence
+
+const startModalTwo = () =>{
+     modal2.style.display = "block";
+    }
+
+const startModalThree = () =>{
+        modal3.style.display = "block";
+    }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal1.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
+  if (event.target == modal1) {
     modal.style.display = "none";
   }
 }
