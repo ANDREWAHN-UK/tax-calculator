@@ -153,6 +153,10 @@ display: none;
 
 /* section 3 */
 /* this section is hidden by default */
+#pageThreeButton{
+  display: none;
+  }
+
 #section-three{
   display: none;
   }
