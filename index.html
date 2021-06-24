@@ -35,6 +35,31 @@
 
         <!-- section 2 is the main page, with user input and results displayed -->
         <section class="section-2" id="section-two">
+            <!-- this section to practice modals -->
+        
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="ModalOne" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <label for="country">Where are you resident?</label>
+
+                    <select name="country" id="country">
+                        <option value="0">Scotland</option>
+                        <option value="1">Wales </option>
+                        <option value="1">England </option>
+                        <option value="4">Northern Ireland</option>
+
+                    </select>
+
+                    <button onclick="startModalTwo()" type="button" id="modalOneButton">Next</button>
+                </div>
+
+            </div>
 
             <div class="form-container">
                 <img src="assets/images/calculator-house.jpg" alt="picture of a toy house on a calculator"
@@ -85,7 +110,7 @@
         <!-- section 3 is to display important information about tax codes etc -->
 
         <section class="section-3" id="section-three">
-            <h1 class="section-2-heading">Important information</h1>
+            <h1 class="section-2-heading">Important information</h1>            
             <div class="info-wrapper">
                 <div class="info-card">
                     <img src="assets/images/NICard-info.jpg" class="info-img" alt="">
@@ -228,22 +253,8 @@
             </div>
 
         </section>
-        <!-- this section to practice modals -->
-        <section>
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Open Modal</button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
-                </div>
-
-            </div>
-        </section>
+        
+       
 
         <section class="footer">
             <p class="copyright">
