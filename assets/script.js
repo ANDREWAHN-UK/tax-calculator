@@ -75,6 +75,7 @@ const calculateIncome = () => {
     getTax();
     getStudentLoan();
     getNetPay();
+    document.getElementById('countryOfResidence').innerHTML = document.getElementById('country').value;
     document.getElementById('grossIncomeEntered').innerHTML = '£ ' + gross;
     document.getElementById('taxOwed').innerHTML = '£ ' + taxPaid;
     document.getElementById('natInsOwed').innerHTML = '£ ' + natIns;
@@ -92,11 +93,11 @@ document.querySelectorAll('.story-btn').forEach(btn => {
     })
 })
 
-// Get the modal
+// Get the modals
 let modal = document.getElementById("ModalOne");
 let modal2 = document.getElementById("ModalTwo");
 let modal3 = document.getElementById("ModalThree");
-// Get the button that opens the modal
+// Get the buttons that open the modals sequentially
 let btn = document.getElementById("myBtn");
 let modal1button = document.getElementById("modalOneButton");
 let modal2button = document.getElementById("modalTwoButton");
