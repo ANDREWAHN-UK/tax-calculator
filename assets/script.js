@@ -9,8 +9,13 @@ const startPageThree = () =>{
 }
 
 const calculateIncome = () => {
+    // displays the button to open page 3
     document.getElementById("pageThreeButton").style.display = "block";
-
+    // hides the modals
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+    // variables for wages
     let gross = document.getElementById("grossIncome").value;
     let natIns;
     let natInsBase = 9500;
@@ -88,18 +93,26 @@ document.querySelectorAll('.story-btn').forEach(btn => {
 })
 
 // Get the modal
-var modal = document.getElementById("myModal");
-
+let modal = document.getElementById("ModalOne");
+let modal2 = document.getElementById("ModalTwo");
+let modal3 = document.getElementById("ModalThree");
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
+let btn = document.getElementById("myBtn");
+let modal1button = document.getElementById("modalOneButton");
+let modal2button = document.getElementById("modalTwoButton");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// When the user clicks on the button, open the modals in sequence
 btn.onclick = function() {
   modal.style.display = "block";
 }
+modal1button.onclick = function() {
+    modal2.style.display = "block";
+  }
+modal2button.onclick = function() {
+    modal3.style.display = "block";
+  }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
