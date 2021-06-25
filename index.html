@@ -28,9 +28,7 @@
     <div class="container-fluid">
         <!-- section 1 is the landing page -->
         <section class="section-1" id="section-one">
-
-            <button onclick="startPageTwo()" type="button" id="beginButton">Begin</button>
-
+            <button onclick="startPageTwo()" type="button" id="beginButton">Begin</button><!-- this loads page 2 -->
         </section>
 
         <!-- section 2 is the main page, with user input and results displayed -->
@@ -64,7 +62,7 @@
                     <span class="close">&times;</span>
                     <label for="gross-income">Type in your £ gross income:</label>
                     <input type="number" placeholder=" type in your Gross Annual Income" id="grossIncome">
-
+                    <button onclick="startModalOne()" type="button" id="modalTwoPrevButton">Previous</button>
                     <button onclick="startModalThree()" type="button" id="modalTwoButton">Next</button>
                 </div>
 
@@ -83,7 +81,7 @@
                         <option value="4">Plan 4 (Scottish students only)</option>
 
                     </select>
-
+                    <button onclick="startModalThree()" type="button" id="modalTwoButton">Previous</button>
                     <button onclick="calculateIncome()" type="button" id="calcButton">Calculate my Income</button>
                 </div>
 
