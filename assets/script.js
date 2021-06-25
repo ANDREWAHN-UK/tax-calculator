@@ -100,7 +100,7 @@ let modal1 = document.getElementById("ModalOne");
 let modal2 = document.getElementById("ModalTwo");
 let modal3 = document.getElementById("ModalThree");
 // Get the buttons that open the modals sequentially
-let btn = document.getElementById("myBtn");
+let modalTwoPrevButton = document.getElementById("modalTwoPrevButton");
 let modal1button = document.getElementById("modalOneButton");
 let modal2button = document.getElementById("modalTwoButton");
 // Get the <span> element that closes the modal
@@ -110,6 +110,10 @@ window.addEventListener('load', (event) => {
     modal1.style.display = "block";
 });
 // When the user clicks on the buttons, open the modals in sequence
+
+const startModalOne = () =>{
+    modal1.style.display = "block";
+   }
 
 const startModalTwo = () =>{
      modal2.style.display = "block";
