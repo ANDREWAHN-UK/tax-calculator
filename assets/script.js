@@ -1,10 +1,10 @@
-const startPageTwo = () =>{
+const startPageTwo = () => {
     document.getElementById("section-two").style.display = "flex";
     document.getElementById("section-one").style.display = "none";
-    
+
 }
 
-const startPageThree = () =>{
+const startPageThree = () => {
     document.getElementById("section-three").style.display = "flex";
 }
 
@@ -56,15 +56,17 @@ const calculateIncome = () => {
 
     getStudentLoan = () => {
         let studentLoanChoice = document.getElementById("student-loan").value;
-        if (studentLoanChoice=== '0'){
+        if (studentLoanChoice === '0') {
             studentLoanPaid = 0;
-        } else if (studentLoanChoice ==='1' && gross > studentLoanOne){
-            studentLoanPaid =((gross - studentLoanOne)*0.09);
-        } else if (studentLoanChoice ==='2' && gross > studentLoanTwo){
-            studentLoanPaid =((gross - studentLoanTwo)*0.09);
-        } else if (studentLoanChoice ==='4' && gross > studentLoanFour){
-            studentLoanPaid =((gross - studentLoanFour)*0.09);
-        } else {studentLoanPaid = 0;}
+        } else if (studentLoanChoice === '1' && gross > studentLoanOne) {
+            studentLoanPaid = ((gross - studentLoanOne) * 0.09);
+        } else if (studentLoanChoice === '2' && gross > studentLoanTwo) {
+            studentLoanPaid = ((gross - studentLoanTwo) * 0.09);
+        } else if (studentLoanChoice === '4' && gross > studentLoanFour) {
+            studentLoanPaid = ((gross - studentLoanFour) * 0.09);
+        } else {
+            studentLoanPaid = 0;
+        }
     }
 
     getNetPay = () => {
@@ -99,38 +101,49 @@ document.querySelectorAll('.story-btn').forEach(btn => {
 let modal1 = document.getElementById("ModalOne");
 let modal2 = document.getElementById("ModalTwo");
 let modal3 = document.getElementById("ModalThree");
+
 // Get the buttons that open the modals sequentially
 let modalTwoPrevButton = document.getElementById("modalTwoPrevButton");
 let modal1button = document.getElementById("modalOneButton");
 let modal2button = document.getElementById("modalTwoButton");
+
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
+
 // this makes so that when the website loads the modal displays, but it won't be visible until page 2 is activated by the button on page1
 window.addEventListener('load', (event) => {
     modal1.style.display = "block";
 });
 // When the user clicks on the buttons, open the modals in sequence
 
-const startModalOne = () =>{
+const startModalOne = () => {
     modal1.style.display = "block";
-   }
+}
 
-const startModalTwo = () =>{
-     modal2.style.display = "block";
-    }
+const startModalTwo = () => {
+    modal2.style.display = "block";
+}
 
-const startModalThree = () =>{
-        modal3.style.display = "block";
-    }
+const closeModalTwo = () => {
+    modal2.style.display = "none";
+}
+
+const startModalThree = () => {
+    modal3.style.display = "block";
+}
+
+const closeModalThree = () => {
+    modal3.style.display = "none";
+}
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal1.style.display = "none";
+span.onclick = function () {
+    modal1.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal1) {
-    modal.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == modal1) {
+        modal.style.display = "none";
+    }
 }
