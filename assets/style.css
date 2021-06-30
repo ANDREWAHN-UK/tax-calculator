@@ -14,21 +14,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* this sets a directory of predefined colours that can be referred to throughout the project */
+:root {
+  --primary-colour: #e0d312;
+  --secondary-colour: rgb(143, 6, 6);
+  --white-colour: #fff;
+  --grey-colour: #555;
+  --light-grey-colour: #777;
+  --black-colour: rgb(2, 2, 2);
+}
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(178, 197, 10);
+  height: 4vh;
+  background-color: var(--primary-colour);
   color: white;
   text-align: center;
 }
 
 .navbar {
   width: 100%;
-  height: 10%;
-  background-color: rgb(178, 197, 10);
-  position: fixed; 
+  height: 7vh;
+  background-color: var(--primary-colour);
+  position: fixed;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -40,99 +51,235 @@ html {
   padding: 0;
 }
 
+/* pre-define settings to centre things */
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* section 1 */
 .section-1 {
   /*height and width make it take over the entire viewport*/
-  width: 100%;    
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   top: 1rem;
-  background-image: url('./images/coin-background.jpg');
-  background-size: cover;
+
 }
 
+.header {
+  width: 100%;
+  /* this puts a 3.5 rem margin around the whole header */
+  height: calc(100vh - 7rem);
+  /* this puts a filter on the image, heihtening visibility of text */
+  background: linear-gradient(rgba(218, 226, 238, 0.5), rgba(180, 183, 189, 0.3)),
+    url(images/money-tree.jpg) center no-repeat;
+  background-size: cover;
+  /* this affects the child elements */
+  position: relative;
+  /* this creates a 3d environment for the balloon */
+  perspective: 100rem;
+}
+
+.header-text {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.3rem 0.5rem var(--grey-colour);
+  width: 40vw;
+}
+
+.heading-paragraph {
+  font-size: 3rem;
+  color: var(--white-colour);
+}
+
+.header-quote {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--black-colour);
+  max-width: 70rem;
+  margin: auto;
+}
+
+/* adjusting how "wage calculator is displayed" */
+.logo {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+/* adjusting how "wage calculator is displayed" */
+.logo h1 span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--secondary-colour);
+  text-transform: uppercase;
+  background-color: var(--primary-colour);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.logo h1 span:nth-child(1){
+  animation: logo-letter5s infinite;
+}
+@keyframes logo-letters {
+  0% {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-100%);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-image{
+  width:35%;
+  animation:balloon-float 150s infinite ; ;
+  position: relative;
+  left: 20%;
+}
+
+
+
+/*animation for the balloon */
+@keyframes balloon-float{
+ /* starts the balloon nearer the viewer  */
+ 0%{ 
+      transform: translateZ(40rem);
+      opacity: 1;
+  }
+  /* moves the balloon further from the viewer, and to the right */
+  40% {
+      transform: translateZ(-500rem) translateX(150rem);
+      opacity: .8;
+  }
+  /* moves the balloon further from the viewer, and to the right */
+  70% {
+      transform: translateZ(-800rem) translateX(-200rem);
+      opacity: .6;
+  }
+  /* moves the balloon closer from the viewer, and to the left */
+  80% {
+      transform: translateZ(-50rem) translateX(100rem);
+      opacity: .8;
+  }
+  /* moves the balloon to the start position */
+  100% {
+      transform: translateZ(40rem) ;
+      opacity: 1;
+  }
+}
+
+
+.beginButton input {
+  border-radius: 5rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  height: 5rem;
+  font-size: 3rem;
+  background-color: var(--primary-colour);
+}
 
 /* section 2 */
 /* this section is hidden by default */
-#section-two{
-display: none;
+#section-two {
+  display: none;
 }
+
 .section-2 {
   /*height and width make it take over the entire viewport*/
-  width: 100%;    
+  width: 100%;
   height: 100vh;
-  background-image:url('./images/coins-in-jar.jpg');
+  background-image: url('./images/coins-in-jar.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 }
 
-.form-container{
+.form-container {
   width: 80%;
   height: 70vh;
-  background-color: #e5e9ff;
+  background-color: var(--light-grey-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   box-shadow: .3rem .3rem .4rem #ccc, -.1rem -.1rem -.4 rem #ccc;
   border-radius: .5rem;
-  perspective: 100rem;  
+  perspective: 100rem;
   opacity: .8;
   transition: all .5s;
   top: 15%;
 }
-  
-  .form-container:hover{
-    opacity: 1.5;
-  }
+
+.form-container:hover {
+  opacity: 1.5;
+}
 
 
 /* styles the envelope image */
 /* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
-.form-img{
+.form-img {
   width: 30vw;
-  background-color: rgba(50,231, 255, .8);
+  background-color: rgba(50, 231, 255, .8);
   padding: 5rem;
   opacity: .8;
   box-shadow: -3rem 3rem 4rem #aaa;
   border-radius: 2.5rem;
-  transform: rotateY(20deg) ;    
+  transform: rotateY(20deg);
   transition: all .5s;
 }
 
 /* this hover effect moves the image up a bit, and keeps it angled away from the viewer, and moves the box shadow */
-.form-img:hover{
+.form-img:hover {
   transform: translateY(-2rem) rotateY(20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
 }
 
 /* styles the calculation form  */
 /* transform rotate with a negative value tilts the envelope as if the right edge is closer to the viewer */
-.calculation-form{
+.calculation-form {
   width: 45rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding:  3rem;
+  padding: 3rem;
   border-radius: 2.5rem;
   box-shadow: 3rem 3rem 4 rem #aaa;
-  transform: rotateY(-20deg); 
+  transform: rotateY(-20deg);
   transition: all .5s;
 }
 
 /* this hover effect moves the image up a bit, and keeps it angled awaye from the viewer, and moves the box shadow */
-.calculation-form:hover{
+.calculation-form:hover {
   transform: translateY(-2rem) rotateY(-20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
 }
 
-.calculation-form input[type="submit"]{
-  background-color: rgba(50,231, 255, .8);
+.calculation-form input[type="submit"] {
+  background-color: rgba(50, 231, 255, .8);
   color: #fff;
   font-weight: 600;
   letter-spacing: .5rem;
@@ -141,29 +288,30 @@ display: none;
 }
 
 .calculation-form input,
-#student-loan{
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.3rem;
-    letter-spacing: .1rem;
-    border: none;
-    border-radius: 2.5rem;
-    box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
+#student-loan {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  border: none;
+  border-radius: 2.5rem;
+  box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
 }
 
 
 /* section 3 */
 /* this section is hidden by default */
-#pageThreeButton{
+#pageThreeButton {
   display: none;
-  }
+}
 
-#section-three{
+#section-three {
   display: none;
-  }
+}
+
 .section-3 {
   /*height and width make it take over the entire viewport*/
-  width: 100%;    
+  width: 100%;
   height: 100vh;
   background-image: url('./images/cash.jpg');
   background-size: cover;
@@ -175,8 +323,8 @@ display: none;
 
 
 
-.section-3{
-  width:100%;
+.section-3 {
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -185,7 +333,7 @@ display: none;
 }
 
 /* this makes the cards go horizontal, very important */
-.info-wrapper{
+.info-wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -193,7 +341,7 @@ display: none;
 }
 
 /* this is for each team member */
-.info-card{
+.info-card {
   width: 35rem;
   background-color: #fffeee;
   padding: 1rem 1rem 2rem 1rem;
@@ -204,7 +352,7 @@ display: none;
 }
 
 /* upon mouse hover, adjusts the opacity, nice visual effect */
-.info-card:hover{
+.info-card:hover {
   opacity: 1;
 }
 
@@ -219,36 +367,36 @@ display: none;
 }
 
 /* adjusts the size of the photo used */
-.info-img{
+.info-img {
   width: 100%;
   border-radius: .5rem;
 }
 
-.info-name{
+.info-name {
   font-size: 2.3rem;
   font-weight: 700;
   color: #796717;
   margin-top: 2rem;
 }
 
-.info-name span{
-  font-size: 1.7rem;                                                                                                                                                                        
+.info-name span {
+  font-size: 1.7rem;
 }
 
-.info-summary{
-  display:flex;
+.info-summary {
+  display: flex;
   justify-content: space-between;
   margin: 2rem 0 2rem 0;
   flex-direction: column;
 }
 
-.info-summary li{
+.info-summary li {
   font-size: 1.5rem;
   color: #505050;
   margin-left: 2rem;
 }
 
-.projects-btn{
+.projects-btn {
   background-color: #fab34a;
   color: #fff;
   padding: .5rem 1.5rem;
@@ -258,7 +406,7 @@ display: none;
 }
 
 /* this styles the button, placing it top right of the team member card */
-.story-btn{
+.story-btn {
   width: 4rem;
   height: 4rem;
   background-color: #222;
@@ -275,21 +423,21 @@ display: none;
 }
 
 /* upon clicking, button spins */
-.change.story-btn{
+.change.story-btn {
   transform: rotate(450deg);
 }
 
 /* this is a little line that highlights the button positioning */
-.story-btn-line{
+.story-btn-line {
   width: 100%;
   height: .1rem;
   background-color: #fff;
 }
 
-.story-wrapper{
+.story-wrapper {
   width: 100%;
   height: 100%;
-  background-color: rgba(253,69,69,.9);
+  background-color: rgba(253, 69, 69, .9);
   position: absolute;
   top: 0;
   left: 0;
@@ -304,19 +452,20 @@ display: none;
   border-radius: 50rem 0 50rem 50rem;
 }
 
-.change.story-wrapper{
+.change.story-wrapper {
   transform: scale(1);
   border-radius: 0;
 }
 
-.story-heading{
+.story-heading {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 2rem;
 }
 
-.story-paragraph, .story-paragraph li {
+.story-paragraph,
+.story-paragraph li {
   font-size: 1.2rem;
   color: #eee;
   text-align: justify;
@@ -327,25 +476,35 @@ display: none;
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
