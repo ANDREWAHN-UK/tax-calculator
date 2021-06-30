@@ -40,7 +40,7 @@ html {
   padding: 0;
 }
 
-
+/* section 1 */
 .section-1 {
   /*height and width make it take over the entire viewport*/
   width: 100%;    
@@ -54,6 +54,10 @@ html {
   background-size: cover;
 }
 
+.header-image {
+  height: 100vh;
+  width:100vw;
+}
 /* section 2 */
 /* this section is hidden by default */
 #section-two{
