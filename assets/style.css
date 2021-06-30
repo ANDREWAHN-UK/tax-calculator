@@ -50,14 +50,11 @@ html {
   align-items: center;
   justify-content: space-evenly;
   top: 1rem;
-  background-image: url('./images/tax1.jpg');
+  background-image: url('./images/coin-background.jpg');
   background-size: cover;
 }
 
-.header-image {
-  height: 100vh;
-  width:100vw;
-}
+
 /* section 2 */
 /* this section is hidden by default */
 #section-two{
