@@ -16,9 +16,8 @@ html {
 
 /* this sets a directory of predefined colours that can be referred to throughout the project */
 :root {
-  --primary-colour: #e0d312;
+  --primary-colour: #fff;
   --secondary-colour: rgb(143, 6, 6);
-  --white-colour: #fff;
   --grey-colour: #555;
   --light-grey-colour: #777;
   --black-colour: rgb(2, 2, 2);
@@ -30,21 +29,26 @@ html {
   bottom: 0;
   width: 100%;
   height: 4vh;
-  background-color: var(--primary-colour);
-  color: white;
+  background-color: var(--black-colour);
+  color: var(--primary-colour);
   text-align: center;
 }
 
 .navbar {
   width: 100%;
-  height: 7vh;
-  background-color: var(--primary-colour);
+  height: 6vh;
+  background-color: var(--black-colour);
   position: fixed;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: top .4s .2s;
+  transition: top .4s .2s; 
+}
+
+
+.navbar a {
+  color: var(--primary-colour);
 }
 
 .container-fluid {
@@ -82,7 +86,7 @@ html {
   background-size: cover;
   /* this affects the child elements */
   position: relative;
-  /* this creates a 3d environment for the balloon */
+  /* this creates a 3d environment for the coin animation */
   perspective: 100rem;
 }
 
@@ -91,16 +95,18 @@ html {
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   text-shadow: 0 0.3rem 0.5rem var(--grey-colour);
-  width: 40vw;
+  width: 30vw;
+  position: relative;
+  left:30vw;
 }
 
 .heading-paragraph {
   font-size: 3rem;
-  color: var(--white-colour);
+  color: var(--primary-colour);
 }
 
 .header-quote {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--black-colour);
   max-width: 70rem;
@@ -111,7 +117,7 @@ html {
 .logo {
   position: absolute;
   top: 4rem;
-  right: 4rem;
+  right: 10vw;
 }
 
 /* adjusting how "wage calculator is displayed" */
@@ -120,85 +126,71 @@ html {
   font-weight: 900;
   color: var(--secondary-colour);
   text-transform: uppercase;
-  background-color: var(--primary-colour);
-  width: 3.5rem;
-  height: 3.5rem;
+  background-color: var(--primary-colour);  
+  width: 4rem;
+  height: 4rem;
   margin: 0.5rem;
   border-radius: 50%;
 }
 
-.logo h1 span:nth-child(1){
-  animation: logo-letter5s infinite;
-}
-@keyframes logo-letters {
-  0% {
-    transform: translateY(0);
-  }
-
-  10% {
-    transform: translateY(0);
-  }
-
-  15% {
-    transform: translateY(-100%);
-  }
-
-  20% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 .header-image{
-  width:35%;
-  animation:balloon-float 150s infinite ; ;
-  position: relative;
-  left: 20%;
+  width:10rem;
+  animation: coin-fall 4s infinite; 
+  position: fixed;
+  left: 25%;
+  top:5%;
+}
+/* 
+.header-image-1{
+  width:10rem;
+  animation: coin-fall 5s infinite; 
+  position: fixed;
+  left: 30%;
+  top:5%;
+}
+.header-image-2{
+  width:10rem;
+  animation: coin-fall 6s infinite; 
+  position: fixed;
+  left: 35%;
+  top:5%;
 }
 
-
-
-/*animation for the balloon */
-@keyframes balloon-float{
- /* starts the balloon nearer the viewer  */
- 0%{ 
-      transform: translateZ(40rem);
-      opacity: 1;
-  }
-  /* moves the balloon further from the viewer, and to the right */
-  40% {
-      transform: translateZ(-500rem) translateX(150rem);
-      opacity: .8;
-  }
-  /* moves the balloon further from the viewer, and to the right */
-  70% {
-      transform: translateZ(-800rem) translateX(-200rem);
-      opacity: .6;
-  }
-  /* moves the balloon closer from the viewer, and to the left */
-  80% {
-      transform: translateZ(-50rem) translateX(100rem);
-      opacity: .8;
-  }
-  /* moves the balloon to the start position */
-  100% {
-      transform: translateZ(40rem) ;
-      opacity: 1;
-  }
+.header-image-3{
+  width:10rem;
+  animation: coin-fall 7s infinite; 
+  position: fixed;
+  left: 40%;
+  top:5%;
 }
 
+.header-image-4{
+  width:10rem;
+  animation: coin-fall 8s infinite; 
+  position: fixed;
+  left: 45%;
+  top:5%;
+} */
+
+@keyframes coin-fall {
+  0%   {top: 0rem;}
+  25%  {opacity: 1;}
+  50%  {opacity: .7;}
+  75%  {opacity: .5;}
+  100% {top: 35rem; opacity: 0;}
+}
 
 .beginButton input {
   border-radius: 5rem;
   position: absolute;
   bottom: 4rem;
-  right: 4rem;
-  height: 5rem;
+  right: 8vw;
+  width: 20vw;
+  height: 6vh;
   font-size: 3rem;
   background-color: var(--primary-colour);
+  color: var(--secondary-colour);
 }
 
 /* section 2 */
