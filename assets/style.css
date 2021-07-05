@@ -296,7 +296,7 @@ html {
   height: 70%;
 }
 
-/* this is for each team member */
+/* this is for each item of information */
 .info-card {
   width: 35rem;
   background-color: #fffeee;
@@ -312,17 +312,17 @@ html {
   opacity: 1;
 }
 
-/* change this to flex and/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
+/* change this to flex end/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
 .info-card:first-child {
   align-self: flex-end;
 }
 
-/* change this to flex and/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
+/* change this to flex end/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
 .info-card:last-child {
   align-self: flex-start;
 }
 
-/* adjusts the size of the photo used */
+/* adjusts the size of the image used */
 .info-img {
   width: 100%;
   border-radius: .5rem;
@@ -433,36 +433,80 @@ html {
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
+  position: fixed;  
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  width: 100%;  
+  height: 100%;  
+  overflow: auto;  
+  background-color: rgb(0, 0, 0);  
+  background-color: rgba(0, 0, 0, 0.4);  
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
+  background-color: var(--secondary-colour);
+  margin: 15% auto; 
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
+  border: 1px solid var(--light-grey-colour);
+  width: 42vw;
+  height: 40vh;
+  background-image: url(images/coin-background.jpg);
+  background-size: cover;
+  border-radius: 5rem;
 }
 
+.modal-content label{
+  margin: 15% auto; 
+  color: var(--primary-colour);
+  margin-left: 20%;
+  font-size: 2rem;
+}
+
+#modalOneButton{
+  height:4rem;
+  width: 6rem;
+  position: absolute;
+  left: 50%;
+  border-radius: 30%;
+  background-color: rgba(218, 226, 238, 0.2);
+  color: var(--primary-colour);
+  font-size: 2rem;
+}
+
+#modalTwoPrevButton, #modalThreePrevButton{
+  height:4rem;
+  width: 10rem;
+  position: absolute;
+  left:  20%;
+  border-radius: 30%;
+  background-color: rgba(218, 226, 238, 0.2);
+  color: var(--primary-colour);
+  font-size: 2rem;
+}
+
+#modalTwoButton{
+  height:4rem;
+  width: 6rem;
+  position: absolute;
+  left: 70%;
+  border-radius: 30%;
+  background-color: rgba(218, 226, 238, 0.2);
+  color: var(--primary-colour);
+  font-size: 2rem;
+}
+
+#calcButton{
+  height: 6rem;
+  width: 10rem;
+  position: absolute;
+  left: 70%;
+  border-radius: 30%;
+  background-color: rgba(218, 226, 238, 0.2);
+  color: var(--primary-colour);
+  font-size: 2rem;
+}
 /* The Close Button */
 .close {
   color: #aaa;
