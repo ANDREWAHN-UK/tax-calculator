@@ -133,46 +133,6 @@ html {
   border-radius: 50%;
 }
 
-
-.header-image{
-  width:10rem;
-  animation: coin-fall 4s infinite; 
-  position: fixed;
-  left: 25%;
-  top:5%;
-}
-/* 
-.header-image-1{
-  width:10rem;
-  animation: coin-fall 5s infinite; 
-  position: fixed;
-  left: 30%;
-  top:5%;
-}
-.header-image-2{
-  width:10rem;
-  animation: coin-fall 6s infinite; 
-  position: fixed;
-  left: 35%;
-  top:5%;
-}
-
-.header-image-3{
-  width:10rem;
-  animation: coin-fall 7s infinite; 
-  position: fixed;
-  left: 40%;
-  top:5%;
-}
-
-.header-image-4{
-  width:10rem;
-  animation: coin-fall 8s infinite; 
-  position: fixed;
-  left: 45%;
-  top:5%;
-} */
-
 @keyframes coin-fall {
   0%   {top: 0rem;}
   25%  {opacity: 1;}
