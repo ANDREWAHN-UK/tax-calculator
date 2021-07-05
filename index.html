@@ -35,7 +35,7 @@
                     <p class="header-quote"> The Cobbler of Preston, by Christopher Bullock
                     </p>
                 </div>
-                
+
                 <!-- &nbsp; creates a space -->
                 <div class="logo">
                     <h1>
@@ -44,18 +44,19 @@
                         <span class="center">n</span>
                         <span class="center">e</span>
                         <span class="center">y</span>
-                        &nbsp;<span class="center">t</span>                        
+                        &nbsp;<span class="center">t</span>
                         <span class="center">r</span>
                         <span class="center">e</span>
                         <span class="center">e</span>
-                        
-                      </h1>
-                      <p> (a website to work out your taxes and net wage)</p>
+
+                    </h1>
+                    <p> (a website to work out your taxes and net wage)</p>
                 </div>
-               <div class="beginButton"onclick="startPageTwo()"><INPUT type="submit" name="beginButton" value="Water my money tree!"></div>
+                <div class="beginButton" onclick="startPageTwo()"><INPUT type="submit" name="beginButton"
+                        value="Water my money tree!"></div>
                 <!-- this loads page 2 -->
             </header>
-            
+
         </section>
 
         <!-- section 2 is the main page, with user input and results displayed -->
@@ -74,7 +75,7 @@
                         <option value="Wales">Wales </option>
                         <option value="Northern Ireland">Northern Ireland</option>
                     </select>
-
+                    <br>
                     <button onclick="startModalTwo()" type="button" id="modalOneButton">Next</button>
                 </div>
 
@@ -84,10 +85,15 @@
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <label for="gross-income">Type in your £ gross income:</label>
-                    <input type="number" placeholder=" type in your Gross Annual Income" id="grossIncome">
-                    <button onclick="startModalOne(), closeModalTwo()" type="button"
-                        id="modalTwoPrevButton">Previous</button>
-                    <button onclick="startModalThree()" type="button" id="modalTwoButton">Next</button>
+                    <input type="number" placeholder=" type in your Income" id="grossIncome">
+                    <br>
+                    <button onclick="startModalOne(), closeModalTwo()" type="button" id="modalTwoPrevButton"
+                        class="modalButton">
+                        Previous
+                    </button>
+                    <button onclick="startModalThree()" type="button" id="modalTwoButton" class="modalButton">
+                        Next
+                    </button>
                 </div>
 
             </div>
@@ -102,11 +108,12 @@
                         <option value="1">Plan 1 (non Scots from 1998 to 2011)</option>
                         <option value="2">Plan 2 (non Scots from 2012)</option>
                         <option value="4">Plan 4 (Scottish students only)</option>
-
                     </select>
-                    <button onclick="startModalTwo(), closeModalThree()" type="button"
-                        id="modalThreeBackButton">Previous </button>
-                    <button onclick="calculateIncome()" type="button" id="calcButton">Calculate my Income</button>
+                    <br>
+                    <button onclick="startModalTwo(), closeModalThree()" type="button" id="modalThreePrevButton"
+                        class="modalButton">Previous </button>
+                    <button onclick="calculateIncome()" type="button" id="calcButton" class="modalButton">Calculate
+                        Income</button>
 
                 </div>
 
