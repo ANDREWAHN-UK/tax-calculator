@@ -73,14 +73,13 @@ html {
   align-items: center;
   justify-content: space-evenly;
   top: 1rem;
-
 }
 
 .header {
   width: 100%;
   /* this puts a 3.5 rem margin around the whole header */
   height: calc(100vh - 7rem);
-  /* this puts a filter on the image, heihtening visibility of text */
+  /* this puts a filter on the image, heightening visibility of text */
   background: linear-gradient(rgba(218, 226, 238, 0.5), rgba(180, 183, 189, 0.3)),
     url(images/money-tree.jpg) center no-repeat;
   background-size: cover;
@@ -93,8 +92,7 @@ html {
 .header-text {
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.1rem;
-  text-shadow: 0 0.3rem 0.5rem var(--grey-colour);
+  letter-spacing: 0.1rem;  
   width: 30vw;
   position: relative;
   left:30vw;
@@ -103,6 +101,7 @@ html {
 .heading-paragraph {
   font-size: 3rem;
   color: var(--primary-colour);
+  text-shadow: 0 0.3rem 0.5rem var(--grey-colour);
 }
 
 .header-quote {
@@ -120,9 +119,14 @@ html {
   right: 10vw;
 }
 
+.logo p {
+  font-size: 2rem;
+  color: var(--black-colour);
+}
+
 /* adjusting how "wage calculator is displayed" */
 .logo h1 span {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 900;
   color: var(--secondary-colour);
   text-transform: uppercase;
@@ -145,7 +149,7 @@ html {
   border-radius: 5rem;
   position: absolute;
   bottom: 4rem;
-  right: 8vw;
+  right: 10vw;
   width: 20vw;
   height: 6vh;
   font-size: 3rem;
