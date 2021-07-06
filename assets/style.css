@@ -226,16 +226,17 @@ html {
   transform: rotateY(-20deg);
   transition: all .5s;
   border-style: solid;
-  border: var(--black-colour)
-  
+  border: var(--black-colour)  
 }
 
+/* affects the look of the .calculation-form child elements */
 .calculation-form label{
   color: var(--black-colour);
   font-size: 2rem;
   font-weight: 300;
 }
 
+/* affects the look of the .calculation-form child elements */
 .calculation-form div{
   color: var(--secondary-colour);
   font-size: 2rem;
@@ -245,16 +246,6 @@ html {
   transform: translateY(-2rem) rotateY(-20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
 }
-
-.calculation-form input[type="submit"] {
-  background-color: rgba(50, 231, 255, .8);
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: .5rem;
-  cursor: pointer;
-  transition: background-color 0.5s;
-}
-
 
 #restartButton, #goToHomeButton, #goToPageThreeButton{
   margin: 1rem;
@@ -352,7 +343,7 @@ html {
   color: var(--primary-colour);
   font-size: 2rem;
 }
-/* The Close Button */
+/* The x Button for the modals */
 .close {
   color: #aaa;
   float: right;
