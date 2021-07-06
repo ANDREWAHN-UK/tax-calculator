@@ -108,7 +108,9 @@ let modal1button = document.getElementById("modalOneButton");
 let modal2button = document.getElementById("modalTwoButton");
 
 // Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
+let span1 = document.getElementsByClassName("close")[0];
+let span2 = document.getElementsByClassName("close")[1];
+let span3 = document.getElementsByClassName("close")[2];
 
 // this makes so that when the website loads the modal displays, but it won't be visible until page 2 is activated by the button on page1
 window.addEventListener('load', (event) => {
@@ -137,13 +139,29 @@ const closeModalThree = () => {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+span1.onclick = function() {
     modal1.style.display = "none";
-}
+ }
+ span2.onclick = function() {
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+ }
+span3.onclick = function() {
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+     modal3.style.display = "none";
+  }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal1) {
-        modal.style.display = "none";
+        modal1.style.display = "none";
+    } else if (event.target == modal2) {
+        modal1.style.display = "none";
+        modal2.style.display = "none";
+    } else if (event.target == modal3 ){
+        modal1.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
     }
 }
