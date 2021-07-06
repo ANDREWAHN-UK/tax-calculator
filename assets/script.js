@@ -10,7 +10,7 @@ const startPageThree = () => {
 
 const calculateIncome = () => {
     // displays the button to open page 3
-    document.getElementById("pageThreeButton").style.display = "block";
+    document.getElementById("goToPageThreeButton").style.display = "block";
     // hides the modals
     modal1.style.display = "none";
     modal2.style.display = "none";
