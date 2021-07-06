@@ -472,7 +472,7 @@ html {
 
 /* links to relevant tax page */
 .link-btn {
-  background-color: #fab34a;
+  background-color: var(--secondary-colour);
   color: #fff;
   padding: .5rem 1.5rem;
   border-radius: 5rem;
