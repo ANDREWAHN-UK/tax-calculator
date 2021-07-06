@@ -139,18 +139,18 @@ const closeModalThree = () => {
 }
 
 // When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
+span1.onclick = function () {
     modal1.style.display = "none";
- }
- span2.onclick = function() {
-    modal1.style.display = "none";
-    modal2.style.display = "none";
- }
-span3.onclick = function() {
+}
+span2.onclick = function () {
     modal1.style.display = "none";
     modal2.style.display = "none";
-     modal3.style.display = "none";
-  }
+}
+span3.onclick = function () {
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -159,7 +159,7 @@ window.onclick = function (event) {
     } else if (event.target == modal2) {
         modal1.style.display = "none";
         modal2.style.display = "none";
-    } else if (event.target == modal3 ){
+    } else if (event.target == modal3) {
         modal1.style.display = "none";
         modal2.style.display = "none";
         modal3.style.display = "none";
