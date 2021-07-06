@@ -400,14 +400,14 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 5rem 0;
 }
 
 /* this makes the cards go horizontal, very important */
 .info-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 70%;
 }
@@ -422,6 +422,7 @@ html {
   opacity: .7;
   transform: opacity 0.5s;
   border-radius: 2.5rem;
+   margin: 5rem;  /*this puts space between the info cards */
 }
 
 /* upon mouse hover, adjusts the opacity, nice visual effect */
@@ -429,27 +430,27 @@ html {
   opacity: 1;
 }
 
-/* change this to flex end/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
-.info-card:first-child {
+/* change these 2  to flex end/start to adjust how the info cards are displayed, or delete/ comment out if a straight line is preferred */
+ /* .info-card:first-child {
   align-self: flex-end;
-}
+} 
 
-/* change this to flex end/start to adjust how the tiles are displayed, or leave delete if a straight line is preferred */
 .info-card:last-child {
   align-self: flex-start;
-}
+}  */
 
 /* adjusts the size of the image used on each card*/
 .info-img {
   width: 100%;
   border-radius: .5rem;
+  max-height: 20%;
 }
 
 /* the heading for each card */
 .info-name {
   font-size: 2.3rem;
   font-weight: 700;
-  color: #796717;
+  color: var(--secondary-colour);
   margin-top: 2rem;
 }
 
