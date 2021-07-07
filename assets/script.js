@@ -20,7 +20,9 @@ const calculateIncome = () => {
     modal2.style.display = "none";
     modal3.style.display = "none";
     // variables for wages
-    let gross = document.getElementById("grossIncome").value;
+    let gross;
+    let inputGross = document.getElementById("grossIncome").value;
+    let frequency = document.getElementById("gross-income-frequency").value;   
     let natIns;
     let natInsBase = 9500;
     let maxNormalNatIns = 4892.4; //this is 50270 (after which national insurance drops to 2%) -9500, which is  40,770, then multiplied by 12%
@@ -51,6 +53,19 @@ const calculateIncome = () => {
     let studentLoanPaid;
     let net;
 
+
+    getGross = () => {
+        if (frequency === "week") {
+            gross = (inputGross*48);
+        } else if (frequency === "fortnight"){
+            gross = (inputGross*24);
+        } else if (frequency === "month") {
+            gross = (inputGross *12)
+        } else {
+            gross = inputGross ;
+        }
+
+    }
     getNatIns = () => {
         if (gross > 50270) {
             natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
@@ -119,6 +134,7 @@ const calculateIncome = () => {
         net = (gross - taxPaid - natIns - studentLoanPaid);
     }
 
+    getGross();
     getNatIns();
     chooseTax();
     getStudentLoan();
