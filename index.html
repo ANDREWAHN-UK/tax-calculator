@@ -84,8 +84,15 @@
 
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <label for="gross-income">Type in your £ gross income:</label>
+                    <label for="gross-income">Type in your income:</label>
                     <input type="number" placeholder=" £0" id="grossIncome">
+
+                    <select name="gross-income-frequency" id="gross-income-frequency">
+                        <option value="week"> per week (48)</option>
+                        <option value="fortnight"> every 2 weeks (48)</option>
+                        <option value="month"> per month (12)</option>
+                        <option value="year"> per year </option>                       
+                    </select>
                     <br>
                     <button onclick="startModalOne(), closeModalTwo()" type="button" id="modalTwoPrevButton"
                         class="modalButton">
