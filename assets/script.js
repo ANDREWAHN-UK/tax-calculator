@@ -21,11 +21,26 @@ const calculateIncome = () => {
     let natInsBase = 9500;
     let maxNormalNatIns = 4892.4; //this is 50270 (after which national insurance drops to 2%) -9500, which is  40,770, then multiplied by 12%
     let taxPaid;
+    // selects country for tax purposes
+    let country = document.getElementById("country").value;
+    // non scot tax
     let taxOne = 12570;
     let taxTwo = 50270;
     let TaxThree = 150001;
     let maxTaxOne = ((taxTwo - taxOne) * 0.2);
-    let maxTaxtwo = ((TaxThree - taxTwo) * 0.4);
+    let maxTaxTwo = ((TaxThree - taxTwo) * 0.4);
+    // scot tax
+    let scotOne = taxOne;
+    let scotTwo = 14667;
+    let scotThree = 25296;
+    let scotFour = 43662;
+    let scotFive = 150000;
+    let scotSix = TaxThree;
+    let maxScotOne = ((scotTwo - scotOne) * 0.19);
+    let maxScotTwo = ((scotThree -scotTwo) * 0.2);
+    let maxScotThree = ((scotFour - scotThree) * 0.21);
+    let maxScotFour = ((scotFive - scotFour) * 0.41);
+    // student loan
     let studentLoanOne = 19895;
     let studentLoanTwo = 27295;
     let studentLoanFour = 25000;
@@ -42,9 +57,18 @@ const calculateIncome = () => {
         }
     }
 
+
+    chooseTax = () => {
+        if (country === 'Scotland') {
+            getScotTax();
+        } else {
+            getTax();
+        }
+    }
+
     getTax = () => {
         if (gross > TaxThree) {
-            taxPaid = (((gross - TaxThree) * 0.45) + maxTaxOne + maxTaxtwo);
+            taxPaid = (((gross - TaxThree) * 0.45) + maxTaxOne + maxTaxTwo);
         } else if (gross > taxTwo && gross < TaxThree) {
             taxPaid = (((gross - taxTwo) * 0.4) + maxTaxOne);
         } else if (gross > taxOne && gross < taxTwo) {
@@ -53,6 +77,24 @@ const calculateIncome = () => {
             taxPaid = 0;
         }
     }
+
+
+    getScotTax = () => {
+        if (gross > scotFive) {
+            taxPaid = (((gross - scotFive) * 0.46) + maxScotOne + maxScotTwo + maxScotThree + maxScotFour);
+        } else if (gross > scotFour && gross < scotFive) {
+            taxPaid = (((gross - scotFour) * 0.41) + maxScotOne + maxScotTwo + maxScotThree);
+        } else if (gross > scotThree && gross < scotFour){
+            taxPaid = (((gross - scotThree) * 0.21) + maxScotOne + maxScotTwo);
+        } else if (gross > scotTwo && gross < scotThree){
+            taxPaid = (((gross - scotTwo) * 0.2) + maxScotOne);
+        } else if (gross > scotOne && gross < scotTwo){
+            taxPaid = (((gross - scotOne) * 0.19));
+        } else {
+            taxPaid = 0;
+        }
+    }
+
 
     getStudentLoan = () => {
         let studentLoanChoice = document.getElementById("student-loan").value;
@@ -74,7 +116,7 @@ const calculateIncome = () => {
     }
 
     getNatIns();
-    getTax();
+    chooseTax();
     getStudentLoan();
     getNetPay();
     document.getElementById('countryOfResidence').innerHTML = document.getElementById('country').value;
