@@ -254,7 +254,8 @@ html {
 .calculation-form input,
 #student-loan,
 #country,
-#grossIncome {
+#grossIncome,
+#gross-income-frequency {
   margin: 1rem;
   padding: 1rem;
   font-size: 1.3rem;
@@ -262,6 +263,10 @@ html {
   border: none;
   border-radius: 2.5rem;
   box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
+}
+
+#grossIncome{
+  width: 6vw;
 }
 
 /* The Modal (background) */
