@@ -164,7 +164,9 @@ html {
   align-items: center;
   justify-content: space-evenly;
 }
-
+.section-2-heading{
+  color: var(--secondary-colour);
+}
 .form-container {
   width: 80%;
   height: 70vh;
