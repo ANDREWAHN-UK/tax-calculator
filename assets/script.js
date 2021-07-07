@@ -24,7 +24,7 @@ const calculateIncome = () => {
     let inputGross = document.getElementById("grossIncome").value;
     let frequency = document.getElementById("gross-income-frequency").value;   
     let natIns;
-    let natInsBase = 9500;
+    let natInsBase = 9568;
     let maxNormalNatIns = 4892.4; //this is 50270 (after which national insurance drops to 2%) -9500, which is  40,770, then multiplied by 12%
     let taxPaid;
     // selects country for tax purposes
@@ -69,8 +69,8 @@ const calculateIncome = () => {
     getNatIns = () => {
         if (gross > 50270) {
             natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
-        } else if (gross >= natInsBase && gross < 50270) {
-            natIns = ((gross - natInsBase) * 0.09);
+        } else if (gross > natInsBase && gross < 50270) {
+            natIns = ((gross - natInsBase) * 0.12);
         } else {
             natIns = 0;
         }
