@@ -77,9 +77,8 @@ html {
 }
 
 .header {
-  width: 100%;
-  /* this puts a 3.5 rem margin around the whole header */
-  height: calc(100vh - 7rem);
+  width: 100vw;
+  height: 100vh;
   /* this puts a filter on the image, heightening visibility of text */
   background: linear-gradient(rgba(218, 226, 238, 0.5), rgba(180, 183, 189, 0.3)),
     url(images/money-tree.jpg) center no-repeat;
@@ -114,7 +113,7 @@ html {
 /* adjusting how "wage calculator is displayed" */
 .logo {
   position: absolute;
-  top: 4rem;
+  top: 10rem;
   right: 10vw;
 }
 
@@ -136,33 +135,10 @@ html {
   border-radius: 50%;
 }
 
-@keyframes coin-fall {
-  0% {
-    top: 0rem;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: .7;
-  }
-
-  75% {
-    opacity: .5;
-  }
-
-  100% {
-    top: 35rem;
-    opacity: 0;
-  }
-}
-
 .beginButton input {
   border-radius: 5rem;
   position: absolute;
-  bottom: 4rem;
+  bottom: 10rem;
   right: 10vw;
   width: 20vw;
   height: 6vh;
@@ -230,7 +206,7 @@ html {
 }
 
 /* styles the calculation form  */
-/* transform rotate with a negative value tilts the envelope as if the right edge is closer to the viewer */
+/* transform rotate with a negative value tilts the image as if the right edge is closer to the viewer */
 .calculation-form {
   width: 45rem;
   background-color: var(--light-grey-translucent);
@@ -270,9 +246,10 @@ html {
   margin: 1rem;
   padding: 1rem;
   font-size: 1.3rem;
-  border-radius: 2.5rem;
-  text-decoration: none;
+  border-radius: 2.5rem; 
 }
+
+ a, a:hover {text-decoration: none;}
 
 /* this affects how the input fields in the modal look */
 .calculation-form input,
