@@ -240,9 +240,7 @@ html {
   box-shadow: 5rem 5rem 7rem #aaa;
 }
 
-#restartButton,
-#goToHomeButton,
-#goToPageThreeButton {
+.pageButtons{
   margin: 1rem;
   padding: 1rem;
   font-size: 1.3rem;
