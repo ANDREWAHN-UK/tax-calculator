@@ -247,7 +247,6 @@ html {
   border-radius: 2.5rem; 
 }
 
- a, a:hover {text-decoration: none;}
 
 /* this affects how the input fields in the modal look */
 .calculation-form input,
