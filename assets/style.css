@@ -271,6 +271,7 @@ html {
   padding: 1rem;
   font-size: 1.3rem;
   border-radius: 2.5rem;
+  text-decoration: none;
 }
 
 /* this affects how the input fields in the modal look */
