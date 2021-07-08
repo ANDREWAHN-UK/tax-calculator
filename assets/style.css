@@ -19,7 +19,7 @@ html {
   --primary-colour: #fff;
   --secondary-colour: rgb(143, 6, 6);
   --grey-colour: #555;
-  --light-grey-colour: rgb(119, 119, 119);
+  --light-grey-colour: rgb(119, 119, 119, 0.5);
   --light-grey-translucent: rgba(119, 119, 119, 0.092);
   --black-colour: rgb(2, 2, 2);
 }
@@ -164,9 +164,57 @@ html {
   align-items: center;
   justify-content: space-evenly;
 }
+
+/* this houses the house image and the text that labels it as a home button */
+.image-container {
+  position: relative;
+  text-align: center;
+  transform: rotateY(20deg);
+  transition: all .5s;  
+  width: 29vw;
+  border-radius: 2.5rem;  
+  color: var(--black-colour);
+}
+
+/* this centres the relevant text onto the house image */
+.centre-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+
+/* styles the house image */
+/* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
+.form-img {
+  width: 30vw;
+  background-color: var(--primary-colour);
+  padding: 1rem;
+  opacity: .6;
+  box-shadow: -3rem 3rem 4rem #aaa;
+  border-radius: 2.5rem;
+  transform: rotateY(20deg);
+  transition: all .5s;
+}
+
+/* this hover effect adjusts the opacity of the house image */
+.form-img:hover {  
+  opacity: 1;
+} 
+
+/* this hover effect moves the image container up a bit, and keeps it angled away from the viewer, and moves the box shadow */
+.image-container:hover {
+  transform: translateY(-2rem) rotateY(20deg);
+  box-shadow: 5rem 5rem 7rem #aaa;
+  opacity: 1;
+}
 .section-2-heading{
   color: var(--secondary-colour);
 }
+
+/* this holds the image and calculation forms divs */
 .form-container {
   width: 80%;
   height: 70vh;
@@ -180,6 +228,7 @@ html {
   opacity: .8;
   transition: all .5s;
   top: 15%;
+  color: var(--black-colour);
 }
 
 .form-container:hover {
@@ -187,25 +236,6 @@ html {
 }
 
 
-/* styles the envelope image */
-/* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
-.form-img {
-  width: 30vw;
-  background-color: var(--primary-colour);
-  padding: 1rem;
-  opacity: .6;
-  box-shadow: -3rem 3rem 4rem #aaa;
-  border-radius: 2.5rem;
-  transform: rotateY(20deg);
-  transition: all .5s;
-}
-
-/* this hover effect moves the image up a bit, and keeps it angled away from the viewer, and moves the box shadow */
-.form-img:hover {
-  transform: translateY(-2rem) rotateY(20deg);
-  box-shadow: 5rem 5rem 7rem #aaa;
-  opacity: 1;
-}
 
 /* styles the calculation form  */
 /* transform rotate with a negative value tilts the image as if the right edge is closer to the viewer */
@@ -220,7 +250,8 @@ html {
   transform: rotateY(-20deg);
   transition: all .5s;
   border-style: solid;
-  border: var(--black-colour)
+  border: var(--black-colour);
+  color: var(--black-colour);
 }
 
 /* affects the look of the .calculation-form child elements */
@@ -230,7 +261,7 @@ html {
   font-weight: 300;
 }
 
-/* affects the look of the .calculation-form child elements */
+/* affects the look of the .calculation-form results that are displayed once the calculations are complete*/
 .calculation-form div {
   color: var(--secondary-colour);
   font-size: 2rem;
@@ -240,6 +271,7 @@ html {
 .calculation-form:hover {
   transform: translateY(-2rem) rotateY(-20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
+  background-color: var(--light-grey-colour);
 }
 
 .pageButtons{
