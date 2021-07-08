@@ -16,7 +16,7 @@ html {
 
 /* this sets a directory of predefined colours that can be referred to throughout the project */
 :root {
-  --primary-colour: #fff;
+  --primary-colour: rgb(255, 255, 255);
   --secondary-colour: rgb(143, 6, 6);
   --grey-colour: #555;
   --light-grey-colour: rgb(119, 119, 119, 0.5);
@@ -47,6 +47,17 @@ html {
   transition: top .4s .2s;  
 }
 
+.navButtons{
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: 2.5rem; 
+  opacity: 1;
+  color: var(--primary-colour);
+  background-color: var(--black-colour);
+  border-color: var(--primary-colour);
+  font-size: 2.3rem;
+}
 .container-fluid {
   padding: 0;
 }
@@ -112,13 +123,19 @@ html {
   right: 10vw;
 }
 
-.logo p {
+/* although the below shows up in section 3, stylistically it is adjustment of the above, so I am leaving it here */
+.section-3-logo {
+  position: absolute;
+  top: 10rem;
+  right: 50vw;
+}
+.logo .section-3-logo p {
   font-size: 2rem;
   color: var(--black-colour);
 }
 
-/* adjusting how "wage calculator is displayed" */
-.logo h1 span {
+/* adjusting appearance of section 1 and 3 headings*/
+.logo h1 span, .section-3-logo h1 span {
   font-size: 3rem;
   font-weight: 900;
   color: var(--secondary-colour);
@@ -229,8 +246,6 @@ html {
 .form-container:hover {
   opacity: 1.5;
 }
-
-
 
 /* styles the calculation form  */
 /* transform rotate with a negative value tilts the image as if the right edge is closer to the viewer */
@@ -412,12 +427,14 @@ html {
   padding: 5rem 0;
 }
 
+
 /* this makes the cards go horizontal, very important */
 .info-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70%;
+  padding-top:20vh;
 }
 
 /* this is for each item of information */
