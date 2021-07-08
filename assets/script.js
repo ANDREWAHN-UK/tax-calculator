@@ -1,6 +1,8 @@
 
 const startPageOne = () => {
     document.getElementById("section-one").style.display = "flex";
+    document.getElementById("section-two").style.display = "none";
+    document.getElementById("section-three").style.display = "none";
 }
 
 const startPageTwo = () => {
