@@ -50,7 +50,10 @@ html {
 
 .navbar a {
   color: var(--primary-colour);
+  background-color: none ;
 }
+
+
 
 .container-fluid {
   padding: 0;
