@@ -54,7 +54,10 @@ html {
 }
 
 
+.navbar-nav{
+  text-decoration: none;
 
+}
 .container-fluid {
   padding: 0;
 }
