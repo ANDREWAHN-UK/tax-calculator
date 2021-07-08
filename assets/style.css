@@ -44,20 +44,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: top .4s .2s;
+  transition: top .4s .2s;  
 }
 
-
-.navbar a {
-  color: var(--primary-colour);
-  background-color: none ;
-}
-
-
-.navbar-nav{
-  text-decoration: none;
-
-}
 .container-fluid {
   padding: 0;
 }
