@@ -13,6 +13,7 @@ const startPageTwo = () => {
 const startPageThree = () => {
     document.getElementById("section-three").style.display = "flex";
     document.getElementById("section-one").style.display = "none";
+    document.getElementById("section-two").style.display = "none";
 }
 
 const calculateIncome = () => {
