@@ -381,12 +381,6 @@ html {
   height: 8rem;
   width: 16rem;  
   left: 20%;
-  /* position: absolute;
-  bottom: 20vh;
-  border-radius: 30%;
-  background-color: rgba(218, 226, 238, 0.2);
-  color: var(--primary-colour);
-  font-size: 4rem; */
 }
 
 
@@ -394,24 +388,12 @@ html {
   height: 8rem;
   width: 12rem;
   left: 70%;
-  /* position: absolute;  
-  bottom: 20vh;
-  border-radius: 30%;
-  background-color: rgba(218, 226, 238, 0.2);
-  color: var(--primary-colour);
-  font-size: 4rem; */
 }
 
 #calcButton {
   height:12rem;
   width: 18rem;  
   left: 70%;
-  /* position: absolute;
-  bottom: 20vh;
-  border-radius: 30%;
-  background-color: rgba(218, 226, 238, 0.2);
-  color: var(--primary-colour);
-  font-size: 4rem; */
 } 
 
 /* The x Button for the modals */
