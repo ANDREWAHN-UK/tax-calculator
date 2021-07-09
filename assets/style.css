@@ -588,11 +588,11 @@ html {
   margin-bottom: 2rem;
 }
 
-.story-paragraph,
-.story-paragraph li {
+.story-paragraph {
   font-size: 1.2rem;
   color: #eee;
-  text-align: justify;
+  text-align: left;
   letter-spacing: .1rem;
   text-indent: 2rem;
+  float: left;
 }
