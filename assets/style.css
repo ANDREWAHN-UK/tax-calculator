@@ -330,17 +330,20 @@ html {
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: var(--grey-colour);
+  background-image: url(images/coin-stack.jpg);
+  background-size: cover;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: var(--secondary-colour);
   margin: 15% auto;
-  padding: 20px;
+  margin-top: 8%;
+  padding: 3rem;
+  padding-left: 4rem;
   border: 1px solid var(--light-grey-colour);
-  width: 42vw;
-  height: 40vh;
+  width: 80vw;
+  height: 80vh;
   background-image: url(images/coin-background.jpg);
   background-size: cover;
   border-radius: 5rem;
@@ -348,56 +351,68 @@ html {
 
 /* this is the text with instructions on the modal, e.g. 'type your income' */
 .modal-content label {
-  margin: 15% auto;
+  margin: 20% auto;
   color: var(--primary-colour);
   margin-left: 20%;
-  font-size: 2rem;
+  font-size: 3rem;  
 }
 
-#modalOneButton {
-  height: 4rem;
-  width: 6rem;
-  position: absolute;
-  left: 50%;
+.modal-content select{
+ padding-left: 10%;
+}
+
+.modal-button{  
+  position: absolute; 
+  bottom: 20vh;
   border-radius: 30%;
   background-color: rgba(218, 226, 238, 0.2);
   color: var(--primary-colour);
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+#modalOneButton {
+  height: 8rem;
+  width: 12rem;  
+  left: 50%;  
 }
 
 #modalTwoPrevButton,
 #modalThreePrevButton {
-  height: 4rem;
-  width: 10rem;
-  position: absolute;
+  height: 8rem;
+  width: 16rem;  
   left: 20%;
+  /* position: absolute;
+  bottom: 20vh;
   border-radius: 30%;
   background-color: rgba(218, 226, 238, 0.2);
   color: var(--primary-colour);
-  font-size: 2rem;
+  font-size: 4rem; */
 }
 
+
 #modalTwoButton {
-  height: 4rem;
-  width: 6rem;
-  position: absolute;
+  height: 8rem;
+  width: 12rem;
   left: 70%;
+  /* position: absolute;  
+  bottom: 20vh;
   border-radius: 30%;
   background-color: rgba(218, 226, 238, 0.2);
   color: var(--primary-colour);
-  font-size: 2rem;
+  font-size: 4rem; */
 }
 
 #calcButton {
-  height: 6rem;
-  width: 10rem;
-  position: absolute;
+  height:12rem;
+  width: 18rem;  
   left: 70%;
+  /* position: absolute;
+  bottom: 20vh;
   border-radius: 30%;
   background-color: rgba(218, 226, 238, 0.2);
   color: var(--primary-colour);
-  font-size: 2rem;
-}
+  font-size: 4rem; */
+} 
 
 /* The x Button for the modals */
 .close {
@@ -510,7 +525,7 @@ html {
 
 
 /* this makes the colour scheme match the 'water my money tree' button in section 1 */
-#goToHomeButton{
+#goToHomeButton {
   color: var(--secondary-colour);
   background-color: var(--primary-colour);
 }
@@ -595,4 +610,48 @@ html {
   letter-spacing: .1rem;
   text-indent: 2rem;
   float: left;
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* section 1 adjustments */
+  .logo {
+    right: 23vw;
+    font-size: 3rem;
+    top: 12rem;
+  }
+
+  .logo h1 span{
+    font-size: 6.5rem;
+  }
+  .header-text{
+    left: 25vw;
+  }
+
+  .heading-paragraph{
+    font-size: 3.5rem;
+  }
+
+  .header-quote {
+    font-size: 2.5rem;
+  }
+
+  .beginButton input{
+    width: 35vw;
+  }
+
+ .footer p {
+   font-size:3rem;
+ }
+
+ .navButtons{
+   font-size: 3rem;
+ }
+  
+ /* section 2 adjustments */
+
+ .modal-content{
+  width: 80vw;
+  height: 80vh;
+ }
 }
