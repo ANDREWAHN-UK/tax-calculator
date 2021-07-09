@@ -22,6 +22,7 @@ html {
   --light-grey-colour: rgb(119, 119, 119, 0.5);
   --light-grey-translucent: rgba(119, 119, 119, 0.092);
   --black-colour: rgb(2, 2, 2);
+  --gold-colour: rgba(243, 229, 29, 0.863);
 }
 
 .footer {
@@ -44,20 +45,21 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: top .4s .2s;  
+  transition: top .4s .2s;
 }
 
-.navButtons{
+.navButtons {
   margin: 1rem;
   padding: 1rem;
   font-size: 1.3rem;
-  border-radius: 2.5rem; 
+  border-radius: 2.5rem;
   opacity: 1;
   color: var(--primary-colour);
   background-color: var(--black-colour);
   border-color: var(--primary-colour);
   font-size: 2.3rem;
 }
+
 .container-fluid {
   padding: 0;
 }
@@ -68,7 +70,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 
 /* section 1 */
 .section-1 {
@@ -131,13 +132,15 @@ html {
   width: 50%;
   margin: 0 auto;
 }
+
 .logo .section-3-logo p {
   font-size: 2rem;
   color: var(--black-colour);
 }
 
 /* adjusting appearance of section 1 and 3 headings*/
-.logo h1 span, .section-3-logo h1 span {
+.logo h1 span,
+.section-3-logo h1 span {
   font-size: 3rem;
   font-weight: 900;
   color: var(--secondary-colour);
@@ -184,21 +187,20 @@ html {
   position: relative;
   text-align: center;
   transform: rotateY(20deg);
-  transition: all .5s;  
+  transition: all .5s;
   width: 29vw;
-  border-radius: 2.5rem;  
+  border-radius: 2.5rem;
   color: var(--black-colour);
 }
 
 /* this centres the relevant text onto the house image */
-.centre-text{
+.centre-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
 }
-
 
 /* styles the house image */
 /* transform rotate with a positive value tilts the image as if the left edge is closer to the viewer */
@@ -214,18 +216,15 @@ html {
 }
 
 /* this hover effect adjusts the opacity of the house image */
-.form-img:hover {  
+.form-img:hover {
   opacity: 1;
-} 
+}
 
 /* this hover effect moves the image container up a bit, and keeps it angled away from the viewer, and moves the box shadow */
 .image-container:hover {
   transform: translateY(-2rem) rotateY(20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
   opacity: 1;
-}
-.section-2-heading{
-  color: var(--secondary-colour);
 }
 
 /* this holds the image and calculation forms divs */
@@ -253,7 +252,7 @@ html {
 /* transform rotate with a negative value tilts the image as if the right edge is closer to the viewer */
 .calculation-form {
   width: 45rem;
-  background-color: var(--light-grey-translucent);
+  background-color: var(--light-grey-colour);
   display: flex;
   flex-direction: column;
   padding: 3rem;
@@ -266,16 +265,16 @@ html {
   color: var(--black-colour);
 }
 
-/* affects the look of the .calculation-form child elements */
+/* affects the look of the .calculation-form labels, i.e. 'tax owed' etc.*/
 .calculation-form label {
-  color: var(--black-colour);
   font-size: 2rem;
   font-weight: 300;
 }
 
+
 /* affects the look of the .calculation-form results that are displayed once the calculations are complete*/
 .calculation-form div {
-  color: var(--secondary-colour);
+  color: var(--gold-colour);
   font-size: 2rem;
 }
 
@@ -283,15 +282,25 @@ html {
 .calculation-form:hover {
   transform: translateY(-2rem) rotateY(-20deg);
   box-shadow: 5rem 5rem 7rem #aaa;
+  background-color: var(--grey-colour);
+  color: var(--primary-colour);
+}
+
+
+
+.pageButtons {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2.3rem;
+  border-radius: 2.5rem;
+  border: var(--primary-colour);
+  opacity: 1;
   background-color: var(--light-grey-colour);
 }
 
-.pageButtons{
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 1.3rem;
-  border-radius: 2.5rem; 
-}
+/* .pageButtons:hover {
+  background-color: var(--light-grey-translucent);
+} */
 
 
 /* this affects how the input fields in the modal look */
@@ -309,7 +318,7 @@ html {
   box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
 }
 
-#grossIncome{
+#grossIncome {
   width: 6vw;
 }
 
@@ -436,7 +445,7 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 70%;
-  padding-top:20vh;
+  padding-top: 20vh;
 }
 
 /* this is for each item of information */
@@ -450,7 +459,8 @@ html {
   opacity: .7;
   transform: opacity 0.5s;
   border-radius: 2.5rem;
-   margin: 5rem;  /*this puts space between the info cards */
+  margin: 5rem;
+  /*this puts space between the info cards */
 }
 
 /* upon mouse hover, adjusts the opacity, nice visual effect */
@@ -459,7 +469,7 @@ html {
 }
 
 /* change these 2  to flex end/start to adjust how the info cards are displayed, or delete/ comment out if a straight line is preferred */
- /* .info-card:first-child {
+/* .info-card:first-child {
   align-self: flex-end;
 } 
 
