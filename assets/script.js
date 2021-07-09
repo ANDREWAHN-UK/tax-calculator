@@ -57,7 +57,6 @@ const calculateIncome = () => {
     let studentLoanPaid;
     let net;
 
-   console.log(maxNormalNatIns);
     getGross = () => {
         if (frequency === "week") {
             gross = (inputGross*48);
@@ -72,9 +71,9 @@ const calculateIncome = () => {
     }
     getNatIns = () => {
         if (gross >= 50270) {
-            natIns = (((gross - 50270) * .02) + (maxNormalNatIns)).toFixed(2);
+            natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
         } else if (gross > natInsBase && gross < 50270) {
-            natIns = (((gross - natInsBase) * 0.12)).toFixed(2);
+            natIns = ((gross - natInsBase) * 0.12);
         } else {
             natIns = 0;
         }
@@ -144,10 +143,10 @@ const calculateIncome = () => {
     getNetPay();
     document.getElementById('countryOfResidence').innerHTML = document.getElementById('country').value;
     document.getElementById('grossIncomeEntered').innerHTML = '£ ' + gross;
-    document.getElementById('taxOwed').innerHTML = '£ ' + taxPaid;
-    document.getElementById('natInsOwed').innerHTML = '£ ' + natIns;
-    document.getElementById('netWage').innerHTML = '£ ' + net;
-    document.getElementById('studentLoanOwed').innerHTML = '£ ' + studentLoanPaid;
+    document.getElementById('taxOwed').innerHTML = '£ ' + taxPaid.toFixed(2);
+    document.getElementById('natInsOwed').innerHTML = '£ ' + natIns.toFixed(2);
+    document.getElementById('netWage').innerHTML = '£ ' + net.toFixed(2);
+    document.getElementById('studentLoanOwed').innerHTML = '£ ' + studentLoanPaid.toFixed(2);
 }
 
 
