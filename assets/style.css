@@ -286,8 +286,6 @@ html {
   color: var(--primary-colour);
 }
 
-
-
 .pageButtons {
   margin: 1rem;
   padding: 1rem;
@@ -332,7 +330,7 @@ html {
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--grey-colour);
 }
 
 /* Modal Content/Box */
@@ -348,6 +346,7 @@ html {
   border-radius: 5rem;
 }
 
+/* this is the text with instructions on the modal, e.g. 'type your income' */
 .modal-content label {
   margin: 15% auto;
   color: var(--primary-colour);
@@ -450,8 +449,8 @@ html {
 
 /* this is for each item of information */
 .info-card {
-  width: 30rem;
-  height: 60vh;
+  width: 18vw;
+  height: 55vh;
   background-color: var(--primary-colour);
   padding: 1rem 1rem 2rem 1rem;
   box-shadow: 1rem 1 rem 2 rem #ddd, -1rem -1rem -2 rem #eee;
@@ -509,6 +508,13 @@ html {
   margin-left: 2rem;
 }
 
+
+/* this makes the colour scheme match the 'water my money tree' button in section 1 */
+#goToHomeButton{
+  color: var(--secondary-colour);
+  background-color: var(--primary-colour);
+}
+
 /* links to relevant tax page */
 .link-btn {
   background-color: var(--secondary-colour);
@@ -550,7 +556,6 @@ html {
   height: .1rem;
   background-color: #fff;
 }
-
 
 /* this appears when the top right button of the info card is clicked */
 .story-wrapper {
