@@ -80,7 +80,6 @@ const calculateIncome = () => {
         }
     }
 
-
     chooseTax = () => {
         if (country === 'Scotland') {
             getScotTax();
@@ -105,13 +104,13 @@ const calculateIncome = () => {
     getScotTax = () => {
         if (gross > scotFive) {
             taxPaid = (((gross - scotFive) * 0.46) + maxScotOne + maxScotTwo + maxScotThree + maxScotFour);
-        } else if (gross > scotFour && gross < scotFive) {
+        } else if (gross >= scotFour && gross < scotFive) {
             taxPaid = (((gross - scotFour) * 0.41) + maxScotOne + maxScotTwo + maxScotThree);
-        } else if (gross > scotThree && gross < scotFour){
+        } else if (gross >= scotThree && gross < scotFour){
             taxPaid = (((gross - scotThree) * 0.21) + maxScotOne + maxScotTwo);
-        } else if (gross > scotTwo && gross < scotThree){
+        } else if (gross >= scotTwo && gross < scotThree){
             taxPaid = (((gross - scotTwo) * 0.2) + maxScotOne);
-        } else if (gross > scotOne && gross < scotTwo){
+        } else if (gross >= scotOne && gross < scotTwo){
             taxPaid = (((gross - scotOne) * 0.19));
         } else {
             taxPaid = 0;
