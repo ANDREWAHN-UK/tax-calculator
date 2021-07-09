@@ -22,14 +22,7 @@ const calculateIncome = () => {
     modal1.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
-    // variables for wages
-    let gross;
-    let inputGross = document.getElementById("grossIncome").value;
-    let frequency = document.getElementById("gross-income-frequency").value;   
-    let natIns;
-    let natInsBase = 9568;
-    let maxNormalNatIns = 4892.4; //this is 50270 (after which national insurance drops to 2%) -9500, which is  40,770, then multiplied by 12%
-    let taxPaid;
+    
     // selects country for tax purposes
     let country = document.getElementById("country").value;
     // non scot tax
@@ -44,11 +37,19 @@ const calculateIncome = () => {
     let scotThree = 25296;
     let scotFour = 43662;
     let scotFive = 150000;
-    let scotSix = TaxThree;
     let maxScotOne = ((scotTwo - scotOne) * 0.19);
     let maxScotTwo = ((scotThree -scotTwo) * 0.2);
     let maxScotThree = ((scotFour - scotThree) * 0.21);
     let maxScotFour = ((scotFive - scotFour) * 0.41);
+
+    // variables for wages
+    let gross;
+    let inputGross = document.getElementById("grossIncome").value;
+    let frequency = document.getElementById("gross-income-frequency").value;   
+    let natIns;
+    let natInsBase = 9568;
+    let maxNormalNatIns = ((taxTwo - natInsBase)*.12);
+    let taxPaid;
     // student loan
     let studentLoanOne = 19895;
     let studentLoanTwo = 27295;
@@ -56,7 +57,7 @@ const calculateIncome = () => {
     let studentLoanPaid;
     let net;
 
-
+   console.log(maxNormalNatIns);
     getGross = () => {
         if (frequency === "week") {
             gross = (inputGross*48);
@@ -70,7 +71,7 @@ const calculateIncome = () => {
 
     }
     getNatIns = () => {
-        if (gross > 50270) {
+        if (gross >= 50270) {
             natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
         } else if (gross > natInsBase && gross < 50270) {
             natIns = ((gross - natInsBase) * 0.12);
@@ -91,7 +92,7 @@ const calculateIncome = () => {
     getTax = () => {
         if (gross > TaxThree) {
             taxPaid = (((gross - TaxThree) * 0.45) + maxTaxOne + maxTaxTwo);
-        } else if (gross > taxTwo && gross < TaxThree) {
+        } else if (gross >= taxTwo && gross < TaxThree) {
             taxPaid = (((gross - taxTwo) * 0.4) + maxTaxOne);
         } else if (gross > taxOne && gross < taxTwo) {
             taxPaid = ((gross - taxOne) * 0.2);
