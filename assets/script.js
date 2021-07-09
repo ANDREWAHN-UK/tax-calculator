@@ -72,9 +72,9 @@ const calculateIncome = () => {
     }
     getNatIns = () => {
         if (gross >= 50270) {
-            natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
+            natIns = (((gross - 50270) * .02) + (maxNormalNatIns)).toFixed(2);
         } else if (gross > natInsBase && gross < 50270) {
-            natIns = ((gross - natInsBase) * 0.12);
+            natIns = (((gross - natInsBase) * 0.12)).toFixed(2);
         } else {
             natIns = 0;
         }
