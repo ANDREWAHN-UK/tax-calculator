@@ -357,11 +357,11 @@ html {
   font-size: 3rem;
 }
 
-.modal-content select{
- padding-left: 10%;
+.modal-content select {
+  padding-left: 10%;
 }
 
-.modal-button{
+.modal-button {
   position: absolute;
   bottom: 20vh;
   border-radius: 30%;
@@ -391,7 +391,7 @@ html {
 }
 
 #calcButton {
-  height:12rem;
+  height: 12rem;
   width: 18rem;
   left: 70%;
 }
@@ -435,49 +435,49 @@ html {
 }
 
 
-/* this makes the cards go horizontal, very important */
-.info-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70%;
-  padding-top: 20vh;
+
+.swiper-container {
+  width: 40vw;
+  height: 80vh;
+  padding-top: 10vh;
 }
 
 /* this is for each item of information */
-.info-card {
-  width: 18vw;
-  height: 55vh;
+.swiper-slide {
+  width: 40vw;
+  height: 75vh;
   background-color: var(--primary-colour);
   padding: 1rem 1rem 2rem 1rem;
   box-shadow: 1rem 1 rem 2 rem #ddd, -1rem -1rem -2 rem #eee;
   position: relative;
   opacity: .7;
   transform: opacity 0.5s;
-  border-radius: 2.5rem;
-  margin: 5rem;
-  /*this puts space between the info cards */
+  border-radius: 5rem;
 }
 
 /* upon mouse hover, adjusts the opacity, nice visual effect */
-.info-card:hover {
+.swiper-slide:hover {
   opacity: 1;
 }
 
-/* change these 2  to flex end/start to adjust how the info cards are displayed, or delete/ comment out if a straight line is preferred */
-/* .info-card:first-child {
-  align-self: flex-end;
+
+.swiper-button-next {
+  right: 40vw;
+  top: 85vh;
+}
+.swiper-button-prev {
+ left: 40vw;
+ top: 85vh;
 }
 
-.info-card:last-child {
-  align-self: flex-start;
-}  */
 
 /* adjusts the size of the image used on each card*/
 .info-img {
-  width: 100%;
+  width: 25vw;
   border-radius: .5rem;
-  height: 40%;
+  height: 25vh;
+  position: relative;
+  left: calc(50% - 12.5vw);  
 }
 
 /* the heading for each card */
@@ -492,17 +492,17 @@ html {
   font-size: 1.7rem;
 }
 
+
 .info-summary {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0 2rem 0;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.info-summary p,
 .info-summary li {
-  font-size: 1.5rem;
-  color: #505050;
-  margin-left: 2rem;
+  color: var(--black-colour);
+  font-size: 2rem;
 }
 
 
@@ -523,9 +523,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  width: 6vw;
+  position: absolute;
+  bottom: 5vh;
+  left: calc(50% - 3vw);
 }
 
-/* this styles the button, placing it top right of the information card */
+/* this styles the button, placing it top right of the swiper */
 .story-btn {
   width: 4rem;
   height: 4rem;
@@ -554,7 +558,7 @@ html {
   background-color: #fff;
 }
 
-/* this appears when the top right button of the info card is clicked */
+/* this appears when the top right button of the swiper is clicked */
 .story-wrapper {
   width: 100%;
   height: 100%;
@@ -595,6 +599,7 @@ html {
 }
 
 
+
 @media screen and (max-width: 1024px) {
 
   /* section 1 adjustments */
@@ -604,14 +609,15 @@ html {
     top: 12rem;
   }
 
-  .logo h1 span{
+  .logo h1 span {
     font-size: 6.5rem;
   }
-  .header-text{
+
+  .header-text {
     left: 25vw;
   }
 
-  .heading-paragraph{
+  .heading-paragraph {
     font-size: 3.5rem;
   }
 
@@ -619,23 +625,23 @@ html {
     font-size: 2.5rem;
   }
 
-  .beginButton input{
+  .beginButton input {
     width: 35vw;
   }
 
- .footer p {
-   font-size:3rem;
- }
+  .footer p {
+    font-size: 3rem;
+  }
 
- .navButtons{
-   font-size: 3rem;
- }
+  .navButtons {
+    font-size: 3rem;
+  }
 
- /* section 2 adjustments */
+  /* section 2 adjustments */
 
- .modal-content{
-  width: 80vw;
-  height: 80vh;
-  margin: 15% auto;
- }
+  .modal-content {
+    width: 80vw;
+    height: 80vh;
+    margin: 15% auto;
+  }
 }
