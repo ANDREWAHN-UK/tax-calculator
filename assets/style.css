@@ -434,8 +434,6 @@ html {
   padding: 5rem 0;
 }
 
-
-
 .swiper-container {
   width: 40vw;
   height: 80vh;
@@ -444,14 +442,12 @@ html {
 
 /* this is for each item of information */
 .swiper-slide {
-  width: 40vw;
-  height: 75vh;
+  width: 35vw;
+  height: 70vh;
   background-color: var(--primary-colour);
-  padding: 1rem 1rem 2rem 1rem;
-  box-shadow: 1rem 1 rem 2 rem #ddd, -1rem -1rem -2 rem #eee;
+  padding: 1rem 5rem 1rem;
   position: relative;
   opacity: .7;
-  transform: opacity 0.5s;
   border-radius: 5rem;
 }
 
@@ -460,14 +456,15 @@ html {
   opacity: 1;
 }
 
-
-.swiper-button-next {
+/* left and right buttons for the carousel */
+.swiper-button-next, .swiper-button-prev  {
+  color: var(--secondary-colour);
   right: 40vw;
-  top: 85vh;
+  top: 77vh;
 }
+
 .swiper-button-prev {
  left: 40vw;
- top: 85vh;
 }
 
 
@@ -503,6 +500,7 @@ html {
 .info-summary li {
   color: var(--black-colour);
   font-size: 2rem;
+  margin-left: 3rem;
 }
 
 
@@ -515,28 +513,29 @@ html {
 /* links to relevant tax page */
 .link-btn {
   background-color: var(--secondary-colour);
-  color: #fff;
+  color:var(--primary-colour);
   padding: .5rem 1.5rem;
   border-radius: 5rem;
   font-size: 1.5rem;
   letter-spacing: .2rem;
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  width: 6vw;
+  align-items: center;
+  width: 8vw;
+  height: 5rem;
   position: absolute;
-  bottom: 5vh;
-  left: calc(50% - 3vw);
+  bottom: 8.5rem;
+  left: calc(50% - 4vw);
 }
 
 /* this styles the button, placing it top right of the swiper */
 .story-btn {
   width: 4rem;
   height: 4rem;
-  background-color: #222;
+  background-color: var(--black-colour);
   position: absolute;
   top: -1rem;
-  right: -1rem;
+  right: .2rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
