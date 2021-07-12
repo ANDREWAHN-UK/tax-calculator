@@ -511,7 +511,7 @@ html {
 }
 
 /* links to relevant tax page */
-.link-btn {
+.hmrc-button {
   background-color: var(--secondary-colour);
   color:var(--primary-colour);
   padding: .5rem 1.5rem;
