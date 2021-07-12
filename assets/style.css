@@ -127,7 +127,7 @@ html {
 /* although the below shows up in section 3, stylistically it is adjustment of the above, so I am leaving it here */
 .section-3-logo {
   position: absolute;
-  top: 10rem;
+  top: 8rem;
   /* the 2 lines below centre it*/
   width: 50%;
   margin: 0 auto;
