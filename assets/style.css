@@ -457,14 +457,15 @@ html {
 }
 
 /* left and right buttons for the carousel */
-.swiper-button-next, .swiper-button-prev  {
+.swiper-button-next,
+.swiper-button-prev {
   color: var(--secondary-colour);
   right: 40vw;
   top: 77vh;
 }
 
 .swiper-button-prev {
- left: 40vw;
+  left: 40vw;
 }
 
 
@@ -474,7 +475,7 @@ html {
   border-radius: .5rem;
   height: 25vh;
   position: relative;
-  left: calc(50% - 12.5vw);  
+  left: calc(50% - 12.5vw);
 }
 
 /* the heading for each card */
@@ -489,7 +490,6 @@ html {
   font-size: 1.7rem;
 }
 
-
 .info-summary {
   flex-direction: column;
   justify-content: center;
@@ -499,8 +499,10 @@ html {
 .info-summary p,
 .info-summary li {
   color: var(--black-colour);
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-left: 3rem;
+  float: left;
+  letter-spacing: .1rem;
 }
 
 
@@ -513,7 +515,7 @@ html {
 /* links to relevant tax page */
 .hmrc-button {
   background-color: var(--secondary-colour);
-  color:var(--primary-colour);
+  color: var(--primary-colour);
   padding: .5rem 1.5rem;
   border-radius: 5rem;
   font-size: 1.5rem;
