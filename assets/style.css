@@ -296,11 +296,6 @@ html {
   background-color: var(--light-grey-colour);
 }
 
-/* .pageButtons:hover {
-  background-color: var(--light-grey-translucent);
-} */
-
-
 /* this affects how the input fields in the modal look */
 .calculation-form input,
 #student-loan,
@@ -442,8 +437,8 @@ html {
 
 /* this is for each item of information */
 .swiper-slide {
-  width: 35vw;
-  height: 70vh;
+  width: 30vw;
+  height: 60vh;
   background-color: var(--primary-colour);
   padding: 1rem 5rem 1rem;
   position: relative;
@@ -459,13 +454,13 @@ html {
 /* left and right buttons for the carousel */
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--secondary-colour);
-  right: 40vw;
-  top: 77vh;
+  color: var(--primary-colour);
+  right: 40%;
+  top: 81%;
 }
 
 .swiper-button-prev {
-  left: 40vw;
+  left: 40%;
 }
 
 
@@ -510,6 +505,8 @@ html {
 #goToHomeButton {
   color: var(--secondary-colour);
   background-color: var(--primary-colour);
+  position: relative;
+  bottom: 10vh;
 }
 
 /* links to relevant tax page */
@@ -523,11 +520,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8vw;
+  width: 10vw;
   height: 5rem;
   position: absolute;
   bottom: 8.5rem;
-  left: calc(50% - 4vw);
+  left: calc(50% - 5vw);
 }
 
 /* this styles the button, placing it top right of the swiper */
@@ -576,6 +573,7 @@ html {
   transform-origin: top right;
   transition: all .5s;
   color: var(--primary-colour);
+  font-size: 4rem;
 }
 
 .change.overlay-wrapper {
@@ -586,13 +584,14 @@ html {
 .overlay-heading {
   font-size: 4rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--primary-colour);
   margin-bottom: 2rem;
+  top: 5rem;
 }
 
 .overlay-paragraph {
-  font-size: 1.2rem;
-  color: #eee;
+  font-size: 2rem;
+  color: var(--primary-colour);
   text-align: left;
   letter-spacing: .1rem;
   text-indent: 2rem;
@@ -645,4 +644,25 @@ html {
     height: 80vh;
     margin: 15% auto;
   }
+
+  /* section 3 adjustments */
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 83%;
+  }
+
+  .swiper-button-next{
+    right: 32%;
+  }
+
+  .swiper-button-prev{
+    left: 32%;
+  }
+
+  .hmrc-button {
+    width: 20vw;
+    left: calc(50% - 10vw);
+  }
+    
 }
