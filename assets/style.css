@@ -607,7 +607,7 @@ html {
 }
 .swipe-wrap > div {
   float: left;
-  width: 100%;
+  width: 20vw;
   position: relative;
 }
 
