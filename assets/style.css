@@ -594,23 +594,6 @@ html {
   float: left;
 }
 
-/* swipe stylings */
-
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float: left;
-  width: 20vw;
-  position: relative;
-}
-
 @media screen and (max-width: 1024px) {
 
   /* section 1 adjustments */
