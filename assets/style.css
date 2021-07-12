@@ -594,6 +594,11 @@ html {
   float: left;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 @media screen and (max-width: 1024px) {
 
   /* section 1 adjustments */
