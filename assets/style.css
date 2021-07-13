@@ -472,8 +472,10 @@ html {
   left: calc(50% - 12.5vw);
 }
 
-/* the heading for each card = the hmrc link*/
-.info-name, .hmrc-button { 
+/* the heading for each card + the hmrc link*/
+.info-name,
+.hmrc-button,
+.home-button {
   padding: .5rem .5rem;
   border-radius: 5rem;
   font-size: 2.5rem;
@@ -484,20 +486,31 @@ html {
   width: 10vw;
   height: 4vh;
   position: relative;
-  left: calc(50% - 5vw);  
 }
 
 .info-name {
   font-weight: 700;
-   background-color: var(--primary-colour);
+  background-color: var(--primary-colour);
   color: var(--secondary-colour);
   width: 16vw;
-  left: calc(50% - 8vw); 
+  left: calc(50% - 8vw);
 }
 
 .hmrc-button {
   background-color: var(--secondary-colour);
   color: var(--primary-colour);
+  left: calc(50% - 5vw);
+}
+
+/* this makes the colour scheme match the 'water my money tree' button in section 1 */
+.home-button {
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
+  width: 12vw;
+  font-size: 2rem;
+  height: 6vh;
+  z-index: 1;
+  bottom: 10%;
 }
 
 .info-summary {
@@ -514,17 +527,6 @@ html {
   float: left;
   letter-spacing: .1rem;
 }
-
-
-/* this makes the colour scheme match the 'water my money tree' button in section 1 */
-#goToHomeButton {
-  color: var(--secondary-colour);
-  background-color: var(--primary-colour);
-  position: relative;
-  bottom: 10vh;
-}
-
-
 
 /* this styles the button, placing it top right of the swiper */
 .overlay-btn {
@@ -651,11 +653,11 @@ html {
     top: 83%;
   }
 
-  .swiper-button-next{
+  .swiper-button-next {
     right: 32%;
   }
 
-  .swiper-button-prev{
+  .swiper-button-prev {
     left: 32%;
   }
 
@@ -663,13 +665,13 @@ html {
     width: 20vw;
     left: calc(50% - 10vw);
   }
-    
-  .swiper-slide{
+
+  .swiper-slide {
     height: 66vh;
     width: 40vw;
   }
 
-  #goToHomeButton {
+  #moneyTreeButton {
     bottom: 9vh;
   }
 
@@ -678,7 +680,7 @@ html {
     top: 10vw;
   }
 
-  .section-3-logo h1 span{
+  .section-3-logo h1 span {
     height: 5rem;
     width: 5rem;
   }
