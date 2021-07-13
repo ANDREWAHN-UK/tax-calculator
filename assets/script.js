@@ -1,10 +1,4 @@
 
-
-function changePage(id) {
-  
-}
-
-
 function startPageOne() {
     document.getElementById("section-one").style.display = "flex";
     document.getElementById("section-two").style.display = "none";
