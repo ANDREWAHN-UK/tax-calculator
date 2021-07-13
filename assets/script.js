@@ -1,25 +1,28 @@
 
+
 function changePage(id) {
   
 }
 
 
-const startPageOne = () => {
+function startPageOne() {
     document.getElementById("section-one").style.display = "flex";
     document.getElementById("section-two").style.display = "none";
     document.getElementById("section-three").style.display = "none";
 }
 
-const startPageTwo = () => {
+function startPageTwo () {
     document.getElementById("section-two").style.display = "flex";
     document.getElementById("section-one").style.display = "none";
     document.getElementById("section-three").style.display = "none";
 }
 
-const startPageThree = () => {
+function startPageThree() {
     document.getElementById("section-three").style.display = "flex";
     document.getElementById("section-one").style.display = "none";
     document.getElementById("section-two").style.display = "none";
+
+    
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
@@ -41,9 +44,10 @@ const startPageThree = () => {
           el: '.swiper-scrollbar',
         },
       });
+    
 }
 
-const calculateIncome = () => {
+function calculateIncome() {
     // hides the modals
     modal1.style.display = "none";
     modal2.style.display = "none";
@@ -202,7 +206,7 @@ let span1 = document.getElementsByClassName("close")[0];
 let span2 = document.getElementsByClassName("close")[1];
 let span3 = document.getElementsByClassName("close")[2];
 
-// this makes so that when the website loads the modal displays, but it won't be visible until page 2 is activated by the button on page1
+// this makes so that when the website loads,  the modal loads but does not display, but becomes visible when page 2 is activated by the button on page1
 window.addEventListener('load', (event) => {
     modal1.style.display = "block";
 });
