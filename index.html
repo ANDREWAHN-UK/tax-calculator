@@ -17,13 +17,12 @@
     <nav class="navbar ">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button onclick="gitg()" type="button" class="navButtons" id="moneyTreeButton">Money Tree (Home)</button>
-                <button onclick="startPageTwo()" type="button" class="navButtons" id="wageCalculatorButton">Wage Calculator
+                <button onclick="selectPage('one')" type="button" class="navButtons" >Money Tree (Home)</button>
+                <button onclick="selectPage('two')" type="button" class="navButtons" id="wageCalculatorButton">Wage Calculator
                 </button>
-                <button onclick="startPageThree()" type="button" class="navButtons" id="importantInfoButton">Important
+                <button onclick="selectPage('three')" type="button" class="navButtons" id="importantInfoButton">Important
                     information</button>
             </div>
-
         </div>
     </nav>
 
@@ -54,7 +53,7 @@
                     </h1>
                     <p> (a website to work out your taxes and net wage)</p>
                 </div>
-                <div class="beginButton" onclick="startPageTwo()"><INPUT type="submit" name="beginButton"
+                <div class="beginButton" onclick="selectPage('two')"><INPUT type="submit" name="beginButton"
                         value="Water my money tree!"></div>
                 <!-- this loads page 2 -->
             </header>
@@ -133,7 +132,7 @@
 
                 <div class="image-container">
                     <img src="assets/images/calculator-house.jpg" alt="picture of a toy house on a calculator"
-                        class="form-img" onclick="startPageOne()">
+                        class="form-img" onclick="selectPage('one')" >
                     <div class="centre-text"> Home</div>
                 </div>
 
@@ -354,10 +353,9 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-            <button onclick="startPageOne()" type="button" id="goToHomeButton" class="pageButtons">Go to Home
-        Page</button>
+            <button onclick="selectPage('one')" type="button" class="home-button" >Money Tree (Home)</button>
+           
+        
     </div>
 
     
