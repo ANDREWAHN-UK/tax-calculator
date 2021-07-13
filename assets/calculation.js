@@ -1,54 +1,55 @@
 function calculateIncome() {
 
-    country = document.getElementById("country").value;
+   let country = document.getElementById("country").value;
 
         const engTax = {
             taxOne: 12570,
             taxTwo: 50270,
             TaxThree: 150001,
-            maxTaxOne: ((taxTwo - taxOne) * 0.2),
-            maxTaxTwo: ((TaxThree - taxTwo) * 0.4),
-        },
+            maxTaxOne: ((this.taxTwo - this.taxOne) * 0.2),
+            maxTaxTwo: ((this.TaxThree - this.taxTwo) * 0.4),
+        }
 
         const scotTax = {
-            scotOne: taxOne,
+            scotOne: 12570,
             scotTwo: 14667,
             scotThree: 25296,
             scotFour: 43662,
             scotFive: 150000,
-            maxScotOne: ((scotTwo - scotOne) * 0.19),
-            maxScotTwo: ((scotThree - scotTwo) * 0.2),
-            maxScotThree: ((scotFour - scotThree) * 0.21),
-            maxScotFour: ((scotFive - scotFour) * 0.41),
-        },
+            maxScotOne: ((this.scotTwo - this.scotOne) * 0.19),
+            maxScotTwo: ((this.scotThree - this.scotTwo) * 0.2),
+            maxScotThree: ((this.scotFour - this.scotThree) * 0.21),
+            maxScotFour: ((this.scotFive - this.scotFour) * 0.41),
+        }
 
-        const wages = {            
-            inputGross = document.getElementById("grossIncome").value,
-            frequency = document.getElementById("gross-income-frequency").value,            
+        const wages = {           
             natInsBase: 9568,
-            maxNormalNatIns: ((taxTwo - natInsBase) * .12), 
-        },            
+            maxNormalNatIns: ((engTax.taxTwo - this.natInsBase) * .12), 
+        }          
 
         const studentLoan = {
             studentLoanOne: 19895,
             studentLoanTwo: 27295,
             studentLoanFour: 25000,            
-        },
-gross;
-natIns;
-taxPaid;
-studentLoanPaid;  
-net;
+        }
+
+let inputGross = document.getElementById("grossIncome").value;
+let frequency = document.getElementById("gross-income-frequency").value; 
+let gross;
+let natIns;
+let taxPaid;
+let studentLoanPaid;
+let net;
         
         getGross = () => {
-            if (wages.frequency === "week") {
-                gross = (wages.inputGross*48);
-            } else if (wages.frequency === "fortnight"){
-                gross = (wages.inputGross*24);
-            } else if (wages.frequency === "month") {
-                gross = (wages.inputGross*12)
+            if (frequency === "week") {
+                gross = (inputGross*48);
+            } else if (frequency === "fortnight"){
+                gross = (inputGross*24);
+            } else if (frequency === "month") {
+                gross = (inputGross*12)
             } else {
-                gross = wages.inputGross;
+                gross = inputGross;
             }
         }
 
@@ -85,7 +86,7 @@ net;
 
 
     getScotTax = () => {
-        if (gross > scotFive) {
+        if (gross > scotTax.scotFive) {
             taxPaid = (((gross - scotTax.scotFive) * 0.46) + scotTax.maxScotOne + scotTax.maxScotTwo + scotTax.maxScotThree + scotTax.maxScotFour);
         } else if (gross >= scotTax.scotFour && gross < scotTax.scotFive) {
             taxPaid = (((gross - scotTax.scotFour) * 0.41) + scotTax.maxScotOne + scotTax.maxScotTwo + scotTax.maxScotThree);
