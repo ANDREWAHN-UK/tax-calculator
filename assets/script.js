@@ -1,52 +1,38 @@
-
-function startPageOne() {
-    document.getElementById("section-one").style.display = "flex";
-    document.getElementById("section-two").style.display = "none";
-    document.getElementById("section-three").style.display = "none";
-}
-
-function startPageTwo () {
-    document.getElementById("section-two").style.display = "flex";
-    document.getElementById("section-one").style.display = "none";
-    document.getElementById("section-three").style.display = "none";
-}
-
-function startPageThree() {
-    document.getElementById("section-three").style.display = "flex";
-    document.getElementById("section-one").style.display = "none";
-    document.getElementById("section-two").style.display = "none";
-
+const selectPage = (page) => {
+    document.getElementById("section-one").style.display = page === 'one' ? "flex" : "none";
+    document.getElementById("section-two").style.display = page === 'two' ? "flex" : "none";
+    document.getElementById("section-three").style.display = page === 'three' ? "flex" : "none";
     
     const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-    
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
 }
+
 
 function calculateIncome() {
     // hides the modals
     modal1.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
-    
+
     // selects country for tax purposes
     let country = document.getElementById("country").value;
     // non scot tax
@@ -62,17 +48,17 @@ function calculateIncome() {
     let scotFour = 43662;
     let scotFive = 150000;
     let maxScotOne = ((scotTwo - scotOne) * 0.19);
-    let maxScotTwo = ((scotThree -scotTwo) * 0.2);
+    let maxScotTwo = ((scotThree - scotTwo) * 0.2);
     let maxScotThree = ((scotFour - scotThree) * 0.21);
     let maxScotFour = ((scotFive - scotFour) * 0.41);
 
     // variables for wages
     let gross;
     let inputGross = document.getElementById("grossIncome").value;
-    let frequency = document.getElementById("gross-income-frequency").value;   
+    let frequency = document.getElementById("gross-income-frequency").value;
     let natIns;
     let natInsBase = 9568;
-    let maxNormalNatIns = ((taxTwo - natInsBase)*.12);
+    let maxNormalNatIns = ((taxTwo - natInsBase) * .12);
     let taxPaid;
     // student loan
     let studentLoanOne = 19895;
@@ -83,13 +69,13 @@ function calculateIncome() {
 
     getGross = () => {
         if (frequency === "week") {
-            gross = (inputGross*48);
-        } else if (frequency === "fortnight"){
-            gross = (inputGross*24);
+            gross = (inputGross * 48);
+        } else if (frequency === "fortnight") {
+            gross = (inputGross * 24);
         } else if (frequency === "month") {
-            gross = (inputGross *12)
+            gross = (inputGross * 12)
         } else {
-            gross = inputGross ;
+            gross = inputGross;
         }
 
     }
@@ -129,11 +115,11 @@ function calculateIncome() {
             taxPaid = (((gross - scotFive) * 0.46) + maxScotOne + maxScotTwo + maxScotThree + maxScotFour);
         } else if (gross >= scotFour && gross < scotFive) {
             taxPaid = (((gross - scotFour) * 0.41) + maxScotOne + maxScotTwo + maxScotThree);
-        } else if (gross >= scotThree && gross < scotFour){
+        } else if (gross >= scotThree && gross < scotFour) {
             taxPaid = (((gross - scotThree) * 0.21) + maxScotOne + maxScotTwo);
-        } else if (gross >= scotTwo && gross < scotThree){
+        } else if (gross >= scotTwo && gross < scotThree) {
             taxPaid = (((gross - scotTwo) * 0.2) + maxScotOne);
-        } else if (gross >= scotOne && gross < scotTwo){
+        } else if (gross >= scotOne && gross < scotTwo) {
             taxPaid = (((gross - scotOne) * 0.19));
         } else {
             taxPaid = 0;
