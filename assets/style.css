@@ -349,7 +349,7 @@ modal-content select,
   font-size: 4rem;
   height: 4vh;
   width: 12vw;
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: calc(30% - 6vw);
 
@@ -357,14 +357,14 @@ modal-content select,
 
 #grossIncome {
   width: 6vw;
-  position: fixed;
+  position: absolute;
   top: 55%;
   left: calc(50% - 6vw);
 }
 
 .modal-content select {
-  position: fixed;
-  top: 60%;
+  position: absolute;
+  top: 62%;
   left: calc(50% - 6vw);
   width: 20%;
 }
@@ -669,7 +669,7 @@ modal-content select,
     top: 55%;
   }
 
-  #grossIncome{
+  #grossIncome {
     top: 50%;
   }
 
