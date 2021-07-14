@@ -308,12 +308,8 @@ html {
   letter-spacing: .1rem;
   border: none;
   border-radius: 2.5rem;
-  box-shadow: inset .1rem .1rem .2rem #ddd, inset -.1rem -.1rem -.2rem #ddd;
 }
 
-#grossIncome {
-  width: 6vw;
-}
 
 /* The Modal (background) */
 .modal {
@@ -345,20 +341,35 @@ html {
 }
 
 /* this is the text with instructions on the modal, e.g. 'type your income' */
-.modal-content label {
-  margin: 20% auto;
+.modal-content label, modal-content select, .modal-content input {
   color: var(--primary-colour);
   margin-left: 20%;
-  font-size: 3rem;
+  font-size: 4rem;
+  height: 4vh;
+  width : 12vw;
+  position: fixed;
+  top: 35%;
+  left: calc(30% - 6vw);
+  
 }
 
-.modal-content select {
-  padding-left: 10%;
+#grossIncome {
+  width: 6vw;
+  position: fixed;
+  top: 55%;
+  left: calc(50% - 6vw);
+}
+
+.modal-content select{
+ position: fixed;
+  top: 60%;
+  left: calc(50% - 6vw);
+  width: 20%;
 }
 
 .modal-button {
   position: absolute;
-  bottom: 20vh;
+  top: 55vh;
   border-radius: 30%;
   background-color: rgba(218, 226, 238, 0.2);
   color: var(--primary-colour);
@@ -368,7 +379,7 @@ html {
 #modalOneButton {
   height: 8rem;
   width: 12rem;
-  left: 50%;
+  left: 70%;
 }
 
 #modalTwoPrevButton,
@@ -376,6 +387,7 @@ html {
   height: 8rem;
   width: 16rem;
   left: 20%;
+  top: 55vh;
 }
 
 
@@ -383,6 +395,7 @@ html {
   height: 8rem;
   width: 12rem;
   left: 70%;
+  top: 55vh;
 }
 
 #calcButton {
@@ -395,7 +408,7 @@ html {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -644,6 +657,11 @@ html {
     width: 80vw;
     height: 80vh;
     margin: 15% auto;
+  }
+
+  .modal-content label {
+    display: flex;
+    left: 50%;
   }
 
   /* section 3 adjustments */
