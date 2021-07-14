@@ -198,26 +198,6 @@ const selectModal = (modal) => {
     document.getElementById("ModalThree").style.display = modal === 'three' ? "block" : "none";
 }
 
-const startModalOne = () => {
-    modal1.style.display = "block";
-}
-
-const startModalTwo = () => {
-    modal2.style.display = "block";
-}
-
-const closeModalTwo = () => {
-    modal2.style.display = "none";
-}
-
-const startModalThree = () => {
-    modal3.style.display = "block";
-}
-
-const closeModalThree = () => {
-    modal3.style.display = "none";
-}
-
 // When the user clicks on <span> (x), close the modal
 span1.onclick = function () {
     modal1.style.display = "none";
