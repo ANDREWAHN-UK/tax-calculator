@@ -194,8 +194,8 @@ window.addEventListener('load', (event) => {
 
 const selectModal = (modal) => {
     document.getElementById("ModalOne").style.display = modal === 'one'? "block": "none";
-    document.getElementById("ModalTwo").style.display = modal === 'two' ? "flex" : "none";
-    document.getElementById("ModalThree").style.display = modal === 'three' ? "flex" : "none";
+    document.getElementById("ModalTwo").style.display = modal === 'two' ? "block" : "none";
+    document.getElementById("ModalThree").style.display = modal === 'three' ? "block" : "none";
 }
 
 const startModalOne = () => {
