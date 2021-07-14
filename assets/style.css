@@ -650,7 +650,7 @@ html {
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: 83%;
+    top: 85%;
   }
 
   .swiper-button-next {
@@ -672,7 +672,9 @@ html {
   }
 
  .home-button{
-    bottom: 9vh;
+    bottom: 7vh;
+    width: 20vw;
+    height: 4vh;
   }
 
   .section-3-logo {
