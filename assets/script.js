@@ -171,26 +171,13 @@ document.querySelectorAll('.overlay-btn').forEach(btn => {
 
 
 
-// Get the modals
-let modal1 = document.getElementById("ModalOne");
-let modal2 = document.getElementById("ModalTwo");
-let modal3 = document.getElementById("ModalThree");
 
-// Get the buttons that open the modals sequentially
-let modalTwoPrevButton = document.getElementById("modalTwoPrevButton");
-let modal1button = document.getElementById("modalOneButton");
-let modal2button = document.getElementById("modalTwoButton");
-
-// Get the <span> element that closes the modal
-let span1 = document.getElementsByClassName("close")[0];
-let span2 = document.getElementsByClassName("close")[1];
-let span3 = document.getElementsByClassName("close")[2];
 
 // this makes so that when the website loads,  the modal loads but does not display, but becomes visible when page 2 is activated by the button on page1
 window.addEventListener('load', (event) => {
-    modal1.style.display = "block";
+    document.getElementById("ModalOne").style.display = "block";
 });
-// When the user clicks on the buttons, open the modals in sequence
+// When the user clicks on the next or previous buttons, open the modals in sequence. Also works when the relevant span (x) of the modal is clicked
 
 const selectModal = (modal) => {
     document.getElementById("ModalOne").style.display = modal === 'one'? "block": "none";
@@ -198,19 +185,12 @@ const selectModal = (modal) => {
     document.getElementById("ModalThree").style.display = modal === 'three' ? "block" : "none";
 }
 
-// When the user clicks on <span> (x), close the modal
-span1.onclick = function () {
-    modal1.style.display = "none";
-}
-span2.onclick = function () {
-    modal1.style.display = "none";
-    modal2.style.display = "none";
-}
-span3.onclick = function () {
-    modal1.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-}
+// Get the modals
+
+let modalContent = document.getElementsByClassName("modal-content");
+let modal1 = document.getElementById("ModalOne");
+let modal2 = document.getElementById("ModalTwo");
+let modal3 = document.getElementById("ModalThree");
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -225,3 +205,5 @@ window.onclick = function (event) {
         modal3.style.display = "none";
     }
 }
+
+
