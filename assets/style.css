@@ -360,6 +360,7 @@ modal-content select,
   position: absolute;
   top: 55%;
   left: calc(50% - 6vw);
+  color: var(--black-colour);
 }
 
 .modal-content select {
