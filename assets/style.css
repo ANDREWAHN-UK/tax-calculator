@@ -341,16 +341,18 @@ html {
 }
 
 /* this is the text with instructions on the modal, e.g. 'type your income' */
-.modal-content label, modal-content select, .modal-content input {
+.modal-content label,
+modal-content select,
+.modal-content input {
   color: var(--primary-colour);
   margin-left: 20%;
   font-size: 4rem;
   height: 4vh;
-  width : 12vw;
+  width: 12vw;
   position: fixed;
   top: 35%;
   left: calc(30% - 6vw);
-  
+
 }
 
 #grossIncome {
@@ -360,8 +362,8 @@ html {
   left: calc(50% - 6vw);
 }
 
-.modal-content select{
- position: fixed;
+.modal-content select {
+  position: fixed;
   top: 60%;
   left: calc(50% - 6vw);
   width: 20%;
@@ -656,12 +658,19 @@ html {
   .modal-content {
     width: 80vw;
     height: 80vh;
-    margin: 15% auto;
   }
 
   .modal-content label {
     display: flex;
-    left: 50%;
+    left: 25%;
+  }
+
+  .modal-content select {
+    top: 55%;
+  }
+
+  #grossIncome{
+    top: 50%;
   }
 
   /* section 3 adjustments */
@@ -689,7 +698,7 @@ html {
     width: 40vw;
   }
 
- .home-button{
+  .home-button {
     bottom: 7vh;
     width: 20vw;
     height: 4vh;
