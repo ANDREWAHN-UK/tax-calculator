@@ -192,6 +192,12 @@ window.addEventListener('load', (event) => {
 });
 // When the user clicks on the buttons, open the modals in sequence
 
+const selectModal = (modal) => {
+    document.getElementById("ModalOne").style.display = modal === 'one'? "block": "none";
+    document.getElementById("ModalTwo").style.display = modal === 'two' ? "flex" : "none";
+    document.getElementById("ModalThree").style.display = modal === 'three' ? "flex" : "none";
+}
+
 const startModalOne = () => {
     modal1.style.display = "block";
 }
