@@ -110,14 +110,16 @@
 
                 <div class="modal-content">
                     <span class="close" onclick = "selectModal('')">&times;</span>
-                    <label for="student loan">Choose your loan type:</label>
-
-                    <select name="student-loan" id="student-loan">
+                    <div class="modal-options"> 
+                        <select name="student-loan" id="student-loan">
                         <option value="0">No student loan</option>
                         <option value="1">Plan 1 (non Scots from 1998 to 2011)</option>
                         <option value="2">Plan 2 (non Scots from 2012)</option>
                         <option value="4">Plan 4 (Scottish students only)</option>
-                    </select>
+                    </select></div>
+                    <label for="student loan">Choose your loan type:</label>
+
+                   
                     <br>
                     <button onclick="selectModal('two')" type="button" id="modalThreePrevButton"
                         class="modal-button">Previous </button>
