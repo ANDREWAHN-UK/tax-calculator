@@ -3,27 +3,27 @@ const selectPage = (page) => {
     document.getElementById("section-two").style.display = page === 'two' ? "flex" : "none";
     document.getElementById("section-three").style.display = page === 'three' ? "flex" : "none";
     
-    const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+//     const swiper = new Swiper('.swiper-container', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
 }
 
 
@@ -173,9 +173,31 @@ document.querySelectorAll('.overlay-btn').forEach(btn => {
 
 
 
-// this makes so that when the website loads,  the modal loads but does not display, but becomes visible when page 2 is activated by the button on page1
+// this makes so that when the website loads,  the modal and carousel load
 window.addEventListener('load', (event) => {
     document.getElementById("ModalOne").style.display = "block";
+
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+    
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
 });
 // When the user clicks on the next or previous buttons, open the modals in sequence. Also works when the relevant span (x) of the modal is clicked
 
