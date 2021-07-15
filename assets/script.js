@@ -3,27 +3,27 @@ const selectPage = (page) => {
     document.getElementById("section-two").style.display = page === 'two' ? "flex" : "none";
     document.getElementById("section-three").style.display = page === 'three' ? "flex" : "none";
     
-//     const swiper = new Swiper('.swiper-container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
+    const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// });
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
 }
 
 
@@ -159,8 +159,6 @@ function calculateIncome() {
     document.getElementById('studentLoanOwed').innerHTML = '£ ' + studentLoanPaid.toFixed(2);
 }
 
-
-
 // click functionality for section 3
 document.querySelectorAll('.overlay-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -173,31 +171,9 @@ document.querySelectorAll('.overlay-btn').forEach(btn => {
 
 
 
-// this makes so that when the website loads,  the modal and carousel load
+// this makes so that when the website loads,  the modal loads
 window.addEventListener('load', (event) => {
-    document.getElementById("ModalOne").style.display = "block";
-
-    const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-    
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
+    document.getElementById("ModalOne").style.display = "block";    
 });
 // When the user clicks on the next or previous buttons, open the modals in sequence. Also works when the relevant span (x) of the modal is clicked
 
