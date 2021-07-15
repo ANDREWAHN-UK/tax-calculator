@@ -51,13 +51,13 @@ html {
 .navButtons {
   margin: 1rem;
   padding: 1rem;
-  font-size: 1.3rem;
   border-radius: 2.5rem;
   opacity: 1;
   color: var(--primary-colour);
   background-color: var(--black-colour);
   border-color: var(--primary-colour);
   font-size: 2.3rem;
+  position: relative;
 }
 
 .container-fluid {
@@ -117,7 +117,7 @@ html {
   margin: auto;
 }
 
-/* adjusting how "wage calculator is displayed" */
+/* adjusting how "money tree" is displayed*/
 .logo {
   position: absolute;
   top: 10rem;
@@ -297,11 +297,7 @@ html {
 }
 
 /* this affects how the input fields in the modal look */
-.calculation-form input,
-#student-loan,
-#country,
-#grossIncome,
-#gross-income-frequency {
+.modal-input{
   margin: 1rem;
   padding: 1rem;
   font-size: 1.3rem;
@@ -309,7 +305,6 @@ html {
   border: none;
   border-radius: 2.5rem;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -352,14 +347,13 @@ modal-content select,
   position: absolute;
   top: 35%;
   left: calc(30% - 6vw);
-
 }
 
 #grossIncome {
-  width: 6vw;
+  width: 12vw;
   position: absolute;
   top: 55%;
-  left: calc(50% - 6vw);
+  left: calc(30% - 5.5vw);
   color: var(--black-colour);
 }
 
@@ -377,34 +371,28 @@ modal-content select,
   background-color: rgba(218, 226, 238, 0.2);
   color: var(--primary-colour);
   font-size: 4rem;
-}
-
-#modalOneButton {
   height: 8rem;
   width: 12rem;
-  left: 70%;
+}
+
+#modalOneButton, #modalTwoButton {
+  
+  right: 20%;
 }
 
 #modalTwoPrevButton,
 #modalThreePrevButton {
-  height: 8rem;
   width: 16rem;
   left: 20%;
   top: 55vh;
 }
 
 
-#modalTwoButton {
-  height: 8rem;
-  width: 12rem;
-  left: 70%;
-  top: 55vh;
-}
 
 #calcButton {
   height: 12rem;
   width: 18rem;
-  left: 70%;
+  right: 20%;
 }
 
 /* The x Button for the modals */
@@ -617,7 +605,7 @@ modal-content select,
 
 
 /* this is for Ipad Pro */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
 
   /* section 1 adjustments */
   .logo {
@@ -714,4 +702,84 @@ modal-content select,
     height: 5rem;
     width: 5rem;
   }
+}
+
+
+/* this is for Kindle Fire */
+@media screen and (max-width: 800px) and (max-height: 1280px) {
+  /* section 1 adjustments */
+  .beginButton input {
+    width: 40vw;
+  }
+
+  .logo {
+    right: 8vw;
+    /* font-size: 3rem;
+    top: 12rem; */
+  }
+
+  .logo h1 span {
+    font-size: 5.5rem;
+  }
+
+  .navButtons {
+    font-size: 2.5rem;
+  }
+
+  
+  /* section 2 adjustments */
+
+  .modal-content select {
+    top: 60%;
+  }
+
+  #grossIncome {
+    top: 52%;
+  }
+
+  .modal-content{
+    margin-top: 20%;
+  }  
+  
+  /* section 3 adjustments */
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 85%;
+  }
+
+  .swiper-button-next {
+    right: 32%;
+  }
+
+  .swiper-button-prev {
+    left: 32%;
+  }
+
+  .hmrc-button {
+    width: 20vw;
+    left: calc(50% - 10vw);
+  }
+
+  .swiper-slide {
+    height: 66vh;
+    width: 40vw;
+  }
+
+  .home-button {
+    bottom: 7vh;
+    width: 20vw;
+    height: 4vh;
+  }
+
+  .section-3-logo {
+    width: 55vw;
+    top: 10vw;
+  }
+
+  .section-3-logo h1 span {
+    height: 5rem;
+    width: 5rem;
+  }
+
+
 }
