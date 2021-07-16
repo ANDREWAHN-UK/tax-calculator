@@ -861,5 +861,36 @@ modal-content select,
     height: 6vh;
   }
 
+  /* section 3 */
+  .section-3-logo h1 span{
+    font-size: 1.8rem;
+  }
+
+  .section-3-logo{
+    left: 5vw;
+  }
+
+  .info-summary p, .info-summary li{
+    font-size: 2rem;
+  }
+
+  .info-name, .hmrc-button, .home-button{
+    font-size: 1.5rem;
+    width: 20rem;
+    
+  }
+
+  .info-name, .hmrc-button{
+    left: calc(50% - 10rem);
+  }
+
+  .info-img{
+    display: none;
+  }
+
+  .overlay-paragraph{
+    font-size: 1.5rem;
+  }
+
 }
 
