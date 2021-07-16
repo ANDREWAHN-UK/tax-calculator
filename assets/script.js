@@ -205,3 +205,17 @@ window.onclick = function (event) {
 }
 
 
+function checkForm(){
+    let inputGross = document.getElementById("grossIncome").value;
+	if (inputGross === "")	{		
+		alert("Please enter a gross value");
+		
+	}
+	else {
+        modal3.style.display = "flex";
+    }
+	
+	}
+	
+
+	
