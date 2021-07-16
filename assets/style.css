@@ -778,4 +778,22 @@ modal-content select,
     left: 2%;
   }
 
+  /* section 3 */
+  .swiper-container{
+    left: -5vw;
+  }
+
+  .swiper-button-prev{
+    left: 22%;
+  }
+
+  .home-button{   
+    width: 30vw;
+    left: -6vw;
+  }
+
+  .section-3-logo{
+    left: 10%;
+  }
+
 }
