@@ -192,8 +192,6 @@ const selectModal = (modal) => {
 }
 
 // Get the modals
-
-let modalContent = document.getElementsByClassName("modal-content");
 let modal1 = document.getElementById("ModalOne");
 let modal2 = document.getElementById("ModalTwo");
 let modal3 = document.getElementById("ModalThree");
