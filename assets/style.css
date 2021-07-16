@@ -355,23 +355,24 @@ modal-content select,
 }
 
 .modal-content label{
+  display: flex;
   left: 20%;
   width: 30vw;
 }
 
 #grossIncome {
-  width: 12vw;
+  width: 20vw;
   position: absolute;
   top: 55%;
-  left: calc(30% - 5.5vw);
+  left: calc(31% - 10vw);
   color: var(--black-colour);
 }
 
 .modal-content select {
   position: absolute;
   top: 62%;
-  left: calc(50% - 6vw);
-  width: 20%;
+  left: calc(50% - 10vw);
+  width: 20vw;
 }
 
 .modal-button {
@@ -651,7 +652,6 @@ modal-content select,
   }
 
   .modal-content label {
-    display: flex;
     left: 10%;
     width: 100%;
     height: 20vh;
@@ -772,4 +772,10 @@ modal-content select,
     padding: .5rem;
     font-size: 2.5rem;
   }
+
+  /* section 2 */
+  .modal-content label{
+    left: 2%;
+  }
+
 }
