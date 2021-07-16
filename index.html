@@ -90,8 +90,8 @@
                 <div class="modal-content">
                     <span class="close" onclick="selectModal('')">&times;</span>
                     <label for="gross-income">Type in your income:</label>
-                    <input type="number" placeholder="£0" id="grossIncome" class="modal-input">
-
+                    <input type="number" placeholder = "£0" id="grossIncome" class="modal-input"> 
+                   
                     <select name="gross-income-frequency" id="gross-income-frequency" class="modal-input">
                         <option value="week"> per week (48)</option>
                         <option value="fortnight"> every 2 weeks (48)</option>
@@ -102,7 +102,7 @@
                     <button onclick="selectModal('one')" type="button" id="modalTwoPrevButton" class="modal-button">
                         Previous
                     </button>
-                    <button onclick="selectModal('three')" type="button" id="modalTwoButton" class="modal-button">
+                    <button onclick="checkForm()" type="button" id="modalTwoButton" class="modal-button">
                         Next
                     </button>
                 </div>
