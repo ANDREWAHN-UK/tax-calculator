@@ -26,47 +26,52 @@ const selectPage = (page) => {
 });
 }
 
+    /*this function gets the gross income, calculates national insurance and tax owed, and from these 
+determines the net WebGLActiveInfo, then displays all of this to the results page */
 
 function calculateIncome() {
     // hides the modals
     modal1.style.display = "none";
     modal2.style.display = "none";
     modal3.style.display = "none";
+    
+ // selects country for tax purposes
+ let country = document.getElementById("country").value;
+ // non scot tax
+ let taxOne = 12570;
+ let taxTwo = 50270;
+ let TaxThree = 150001;
+ let maxTaxOne = ((taxTwo - taxOne) * 0.2);
+ let maxTaxTwo = ((TaxThree - taxTwo) * 0.4);
 
-    // selects country for tax purposes
-    let country = document.getElementById("country").value;
-    // non scot tax
-    let taxOne = 12570;
-    let taxTwo = 50270;
-    let TaxThree = 150001;
-    let maxTaxOne = ((taxTwo - taxOne) * 0.2);
-    let maxTaxTwo = ((TaxThree - taxTwo) * 0.4);
-    // scot tax
-    let scotOne = taxOne;
-    let scotTwo = 14667;
-    let scotThree = 25296;
-    let scotFour = 43662;
-    let scotFive = 150000;
-    let maxScotOne = ((scotTwo - scotOne) * 0.19);
-    let maxScotTwo = ((scotThree - scotTwo) * 0.2);
-    let maxScotThree = ((scotFour - scotThree) * 0.21);
-    let maxScotFour = ((scotFive - scotFour) * 0.41);
+  // scot tax
+  let scotOne = taxOne;
+  let scotTwo = 14667;
+  let scotThree = 25296;
+  let scotFour = 43662;
+  let scotFive = 150000;
+  let maxScotOne = ((scotTwo - scotOne) * 0.19);
+  let maxScotTwo = ((scotThree - scotTwo) * 0.2);
+  let maxScotThree = ((scotFour - scotThree) * 0.21);
+  let maxScotFour = ((scotFive - scotFour) * 0.41);
 
-    // variables for wages
-    let gross;
-    let inputGross = document.getElementById("grossIncome").value;
-    let frequency = document.getElementById("gross-income-frequency").value;
-    let natIns;
-    let natInsBase = 9568;
-    let maxNormalNatIns = ((taxTwo - natInsBase) * .12);
-    let taxPaid;
-    // student loan
-    let studentLoanOne = 19895;
-    let studentLoanTwo = 27295;
-    let studentLoanFour = 25000;
-    let studentLoanPaid;
-    let net;
+  // variables for wages
+  let gross;
+  let inputGross = document.getElementById("grossIncome").value;
+  let frequency = document.getElementById("gross-income-frequency").value;
+  let natIns;
+  let natInsBase = 9568;
+  let maxNormalNatIns = ((taxTwo - natInsBase) * .12);
+  let taxPaid;
 
+  // student loan
+  let studentLoanOne = 19895;
+  let studentLoanTwo = 27295;
+  let studentLoanFour = 25000;
+  let studentLoanPaid;
+  let net;
+
+    // this takes the user input and turns it into an annual gross
     getGross = () => {
         if (frequency === "week") {
             gross = (inputGross * 48);
@@ -77,8 +82,9 @@ function calculateIncome() {
         } else {
             gross = inputGross;
         }
-
     }
+
+    // this determines the users' national insurance based on their wages
     getNatIns = () => {
         if (gross >= 50270) {
             natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
@@ -89,6 +95,7 @@ function calculateIncome() {
         }
     }
 
+    // this determines if the user pays scottish tax or not
     chooseTax = () => {
         if (country === 'Scotland') {
             getScotTax();
@@ -97,6 +104,7 @@ function calculateIncome() {
         }
     }
 
+    // this works out non scot tax
     getTax = () => {
         if (gross > TaxThree) {
             taxPaid = (((gross - TaxThree) * 0.45) + maxTaxOne + maxTaxTwo);
@@ -109,7 +117,7 @@ function calculateIncome() {
         }
     }
 
-
+    // this works out scottish tax
     getScotTax = () => {
         if (gross > scotFive) {
             taxPaid = (((gross - scotFive) * 0.46) + maxScotOne + maxScotTwo + maxScotThree + maxScotFour);
@@ -126,7 +134,7 @@ function calculateIncome() {
         }
     }
 
-
+    // this works out how much student loan the user is to pay
     getStudentLoan = () => {
         let studentLoanChoice = document.getElementById("student-loan").value;
         if (studentLoanChoice === '0') {
@@ -142,6 +150,7 @@ function calculateIncome() {
         }
     }
 
+    // this takes the previous inputs and determines the net wage
     getNetPay = () => {
         net = (gross - taxPaid - natIns - studentLoanPaid);
     }
@@ -151,6 +160,8 @@ function calculateIncome() {
     chooseTax();
     getStudentLoan();
     getNetPay();
+
+    // the following post the results of the calculations to the html results page
     document.getElementById('countryOfResidence').innerHTML = document.getElementById('country').value;
     document.getElementById('grossIncomeEntered').innerHTML = '£ ' + gross;
     document.getElementById('taxOwed').innerHTML = '£ ' + taxPaid.toFixed(2);
@@ -167,14 +178,10 @@ document.querySelectorAll('.overlay-btn').forEach(btn => {
     })
 })
 
-
-
-
-
 // this makes so that when the website loads,  the modal loads
-window.addEventListener('load', (event) => {
-    document.getElementById("ModalOne").style.display = "block";    
-});
+// window.addEventListener('load', (event) => {
+//     document.getElementById("ModalOne").style.display = "block";    
+// });
 // When the user clicks on the next or previous buttons, open the modals in sequence. Also works when the relevant span (x) of the modal is clicked
 
 const selectModal = (modal) => {
@@ -207,9 +214,8 @@ window.onclick = function (event) {
 
 function checkForm(){
     let inputGross = document.getElementById("grossIncome").value;
-	if (inputGross === "")	{		
-		alert("Please enter a gross value");
-		
+	if (inputGross ==="")	{		
+		alert("Please enter a gross value");		
 	}
 	else {
         modal3.style.display = "flex";
