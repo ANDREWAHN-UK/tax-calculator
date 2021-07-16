@@ -179,9 +179,10 @@ document.querySelectorAll('.overlay-btn').forEach(btn => {
 })
 
 // this makes so that when the website loads,  the modal loads
-// window.addEventListener('load', (event) => {
-//     document.getElementById("ModalOne").style.display = "block";    
-// });
+window.addEventListener('load', (event) => {
+    document.getElementById("ModalOne").style.display = "block";    
+});
+
 // When the user clicks on the next or previous buttons, open the modals in sequence. Also works when the relevant span (x) of the modal is clicked
 
 const selectModal = (modal) => {
