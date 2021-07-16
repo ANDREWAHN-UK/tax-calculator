@@ -797,6 +797,8 @@ modal-content select,
 }
 
 @media screen and (max-width: 540px) and (max-height: 720px) {
+
+  /* section1 */
   .footer p{
     font-size: 2rem;
   }
@@ -821,6 +823,42 @@ modal-content select,
     width: fit-content;
     height: fit-content;
     left: 40%;
+  }
+
+  /* section 2 */
+  .modal-content label{
+    font-size: 3rem;
+    left: -10%;
+  }
+
+  .modal-button {
+    font-size: 2rem;
+    height: fit-content;
+    width: 10rem;
+  }
+
+  #calcButton {
+    height:6rem;
+    width: 10rem;
+    right: 10%;
+  }
+
+  #modalOneButton, #modalTwoButton {  
+    right: 10%;
+  }
+  
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
+    width: 10rem;
+    left: 10%;
+  }
+
+  .modal-content select {
+    position: absolute;
+    top: 60%;
+    left: calc(50% - 15vw);
+    width: 30vw;
+    height: 6vh;
   }
 
 }
