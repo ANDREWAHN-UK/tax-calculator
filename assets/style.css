@@ -861,6 +861,11 @@ modal-content select,
     height: 6vh;
   }
 
+  #grossIncome{
+    width:28vw;
+    left: 12vw;
+  }
+
   /* section 3 */
   .section-3-logo h1 span{
     font-size: 1.8rem;
