@@ -916,7 +916,6 @@ modal-content select,
 @media screen and (max-width: 414px) and (max-height: 736px) {
 
   /* section1 */
-
   .section-1 {
     position: absolute;
   }
@@ -1026,6 +1025,10 @@ modal-content select,
     font-size: 1.4rem;
     width: 40vw;
     left: 25%;    
+  }
+
+  .home-button{
+    left: 1vw;
   }
 
   .overlay-paragraph{
@@ -1157,7 +1160,7 @@ modal-content select,
   .overlay-heading{
     font-size: 2rem;
     }
-  } 
+
   .overlay-paragraph{
     font-size: 1.5rem;
   }
