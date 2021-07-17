@@ -1239,3 +1239,46 @@ modal-content select,
   }
 
 }
+
+/* this is for the moto G4 and Galaxy S5  */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+
+  /* section 1 */
+  .navButtons {
+    margin: 0.3rem;
+    padding: 0.3rem;
+  }
+
+  .logo h1 span {
+    font-size: 1.4rem;
+  }
+
+  .heading-paragraph, .header-quote {
+    font-size: 1.8rem;
+  }
+
+  /* section 2 */
+  .modal-content select{
+    width: 50vw;
+    height: 4rem;
+    left: 18%;
+  }
+
+  #grossIncome{    
+    left: 10%;   
+  }
+
+  .modal-content label {
+    font-size: 2rem;
+  }
+
+  /* section 3 */
+  .overlay-heading{
+    font-size: 1.8rem;
+    }
+
+  .overlay-paragraph{
+    font-size: 1.4rem;
+  }
+
+}
