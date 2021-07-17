@@ -1075,7 +1075,7 @@ modal-content select,
   /* section 2 */
   .modal-content select{
     width: 40vw;
-    left: 20vw;
+    left: 20%;
     top: 40vh;
   }
 
@@ -1181,16 +1181,29 @@ modal-content select,
   }
 
   .logo h1 span {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   /* section 2 */
 
+  #grossIncome{    
+    left: 7%;   
+  }
+
   #modalOneButton,
   #modalTwoButton,
   #modalTwoPrevButton,
-  #modalThreePrevButton,
-  #calcButton{
+  #modalThreePrevButton{
     left: 9rem;
   }
+
+  #calcButton{
+    left: 7rem;
+  }
+
+  /* section 3 */
+  .section-3-logo h1 span {
+    font-size: 1.6rem;
+  }
+
 }
