@@ -1115,7 +1115,6 @@ modal-content select,
   }
 
   /* section 3 */
-
   .section-3-logo{
     text-align: center;
   }
@@ -1155,13 +1154,40 @@ modal-content select,
     top: 88vh;
   }
 
-  .overlay-heading,  
+  .overlay-heading{
+    font-size: 2rem;
+    }
+  } 
   .overlay-paragraph{
     font-size: 1.5rem;
   }
-  
+
   .info-summary p,
   .info-summary li{
     font-size: 2rem;
+  }
+}
+
+/* this is for the iPhoneX */
+@media screen and (max-width: 375px) and (max-height: 812px) {
+
+/* section 1 */
+  .navButtons {
+    margin: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  .logo h1 span {
+    font-size: 1.3rem;
+  }
+
+  /* section 2 */
+
+  #modalOneButton,
+  #modalTwoButton,
+  #modalTwoPrevButton,
+  #modalThreePrevButton,
+  #calcButton{
+    left: 9rem;
   }
 }
