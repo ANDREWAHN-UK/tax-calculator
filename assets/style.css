@@ -269,6 +269,7 @@ html {
   border-style: solid;
   border: var(--black-colour);
   color: var(--black-colour);
+  text-align: center;
 }
 
 /* affects the look of the .calculation-form labels, i.e. 'tax owed' etc.*/
@@ -790,7 +791,6 @@ modal-content select,
 
   .home-button {
     width: 30vw;
-    
   }
 
   .section-3-logo {
@@ -1024,9 +1024,6 @@ modal-content select,
 
   .info-name, .hmrc-button, .home-button{
     font-size: 1.4rem;
-  }
-
-  .info-name, .hmrc-button, .hmrc-button{
     width: 40vw;
     left: 25%;    
   }
@@ -1046,7 +1043,6 @@ modal-content select,
 
   
   /* section1 */
-
   .footer p {
     font-size: 2rem;
   }
@@ -1071,5 +1067,101 @@ modal-content select,
   .beginButton input {
     width: fit-content;
     height: fit-content; 
+  }
+
+  /* section 2 */
+  .modal-content select{
+    width: 40vw;
+    left: 20vw;
+    top: 40vh;
+  }
+
+  #grossIncome{
+    top: 35vh;
+    width: 35vw;
+    left: 10%;
+    font-size: 3rem;;
+  }
+
+  .modal-content label{
+    font-size: 2.5rem;
+    left: 3.5%;
+  }
+
+  #modalOneButton,
+  #modalTwoButton, #calcButton {
+    top: 65vh;
+  }
+
+  #modalOneButton,
+  #modalTwoButton,
+  #modalTwoPrevButton,
+  #modalThreePrevButton,
+  #calcButton{
+    left: 12rem;
+    height: 6rem;
+    width: 12rem;
+    font-size: 3rem;
+  }
+  
+  #calcButton {    
+    height: 10rem;
+    width: 16rem; 
+    left: 10rem;
+  }
+
+  .calculation-form{
+    padding: 0;
+  }
+
+  /* section 3 */
+
+  .section-3-logo{
+    text-align: center;
+  }
+
+  .section-3-logo h1 span {
+    font-size: 2rem;
+  }
+
+  .swiper-slide{
+    top: 5vh;
+    padding: 1rem;
+  }
+
+  .swiper-container{
+    width: 80vw;
+  }
+
+  .info-name, .hmrc-button, .home-button{
+    font-size: 1.8rem;
+    width: 40vw;
+    left: 25%;    
+  }
+
+  .home-button{
+    bottom: 6.5vh;
+    left: 2vw;  
+    font-size: 1.5rem; 
+  }
+
+  .swiper-button-prev {
+    left: 20%;
+    top: 88vh;
+  }
+
+  .swiper-button-next{
+    right: 20%;
+    top: 88vh;
+  }
+
+  .overlay-heading,  
+  .overlay-paragraph{
+    font-size: 1.5rem;
+  }
+  
+  .info-summary p,
+  .info-summary li{
+    font-size: 2rem;
   }
 }
