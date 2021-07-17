@@ -1207,3 +1207,35 @@ modal-content select,
   }
 
 }
+
+/* this is for the iPhone 6,7 8 normal - NOT PLUS!!!! */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+
+  /* section 1 */
+  .beginButton input{
+    font-size: 3rem;
+  }
+
+  /* section 2 */
+  #modalOneButton,
+  #modalTwoButton,
+  #modalTwoPrevButton,
+  #modalThreePrevButton{
+    height: 4rem;
+    font-size: 2.5;
+  }
+  #calcButton{
+    height: 6rem;
+    font-size: 2.2rem;
+  }
+
+  /* section 3 */
+  .home-button{
+    font-size: 1.2rem;
+  }
+
+  .info-summary p, .info-summary li{
+    font-size: 1.8rem;
+  }
+
+}
