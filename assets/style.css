@@ -1390,7 +1390,7 @@ modal-content select,
     margin: 0.2rem;
   }
 
-  .logo p{
+  .logo p {
     font-size: 1.8rem;
   }
 
@@ -1413,7 +1413,7 @@ modal-content select,
 
   .modal-content label {
     font-size: 1.8rem;
-  } 
+  }
 
   .modal-content select {
     width: 60vw;
@@ -1452,12 +1452,13 @@ modal-content select,
     margin: 0.2rem;
   }
 
-  .swiper-slide{
+  .swiper-slide {
     height: 64vh;
   }
 
-  .hmrc-button{
-    font-size: 1rem;;
+  .hmrc-button {
+    font-size: 1rem;
+    ;
   }
 
   .overlay-heading {
@@ -1472,4 +1473,153 @@ modal-content select,
   .info-summary li {
     font-size: 1.45rem;
   }
+}
+
+
+/* this is for the Galaxy A21*/
+@media screen and (max-width: 720px) and (max-height: 1600px) {
+
+  /* section 1 */
+  .navButtons {
+    font-size: 2.3rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    left: 10rem;
+    top: 20rem;
+  }
+
+  .logo h1 span {
+    font-size: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem;
+  }
+
+  .logo p {
+    font-size: 3rem;
+  }
+
+  .heading-paragraph,
+  .header-quote {
+    font-size: 4rem;
+    width: 50vw;
+  }
+
+  .header-text {
+    left: 10vw;
+  }
+
+  .beginButton input {
+    font-size: 3rem;
+    left: 25vw;
+    width: 50vw;
+    bottom: 25vw;
+  }
+
+  /* section 2 */
+  .modal-content select {
+    width: 40vw;
+    left: 23%;
+    height: 8vw;
+  }
+
+  .modal-content label {
+    font-size: 3.5rem;
+    width: 50vw;
+  }
+
+
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
+    left: 5.5rem;
+  }
+
+  #modalOneButton,
+  #modalTwoButton,
+  #calcButton {
+    right: 5.5rem;
+  }
+
+  /* section 3 */
+
+  /* section 3 */
+
+  .section-3-logo {
+    width: 80vw;
+    left: 10vw;
+    text-align: center;
+    top: 16vw;
+  }
+
+  .section-3-logo h1 span {
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 1.5rem;
+  }
+
+  .swiper-slide {
+    height: 64vh;
+  }
+
+  .swiper-container {
+    width: 80vw;
+  }
+
+  .overlay-btn {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .info-img {
+    width: 40vw;
+    border-radius: .5rem;
+    height: 20vh;
+    position: relative;
+    left: calc(50% - 20vw);
+  }
+
+  .info-name{
+    font-size: 3rem;
+  }
+
+  .hmrc-button {
+    font-size: 2.5rem;
+    width: 30vw;
+    text-align: center;
+    left: calc(50% - 15vw);
+  }
+
+  .home-button{
+    font-size: 3rem;
+    left: 2%;
+    width: 50vw;
+    bottom: 19vw;
+  }
+
+  .overlay-heading {
+    font-size: 3.4rem;
+  }
+
+  .overlay-paragraph {
+    font-size: 3rem;
+  }
+
+  .info-summary p,
+  .info-summary li {
+    font-size: 3rem;
+  }
+
+  .swiper-button-next{
+    right: 10%;
+  }
+
+  .swiper-button-prev{
+    left: 10%;
+  }
+
+
 }
