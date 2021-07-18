@@ -621,9 +621,13 @@ modal-content select,
 
   /* section 1 adjustments */
   .logo {
-    right: 23vw;
-    font-size: 3rem;
+    left: 12rem;
+    
     top: 12rem;
+  }
+
+  .logo p{
+    font-size: 3.5rem;
   }
 
   .logo h1 span {
@@ -631,19 +635,21 @@ modal-content select,
   }
 
   .header-text {
-    left: 25vw;
+    left: 20vw;
+    width: 50vw;
   }
 
   .heading-paragraph {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .header-quote {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .beginButton input {
-    width: 35vw;
+    width: 45vw;
+    bottom: 20vw;
   }
 
   .navButtons {
@@ -662,7 +668,9 @@ modal-content select,
   }
 
   .modal-content select {
-    top: 58%;
+    top: 45vh;
+    width: 30vw;
+    left: 25vw;
   }
 
   #grossIncome {
@@ -670,8 +678,6 @@ modal-content select,
   }
 
   /* section 3 adjustments */
-
-
   .swiper-button-next,
   .swiper-button-prev {
     top: 82.8vh;
@@ -685,10 +691,11 @@ modal-content select,
     left: 32%;
   }
 
-  .hmrc-button {
+  .hmrc-button, .info-name {
     width: 20vw;
     left: calc(50% - 10vw);
     bottom: 15%;
+    font-size: 3rem;;
   }
 
   .swiper-slide {
@@ -701,8 +708,9 @@ modal-content select,
 
   .home-button {
     bottom: 12vh;
-    width: 20vw;
+    width: 30vw;
     height: 5vh;
+    font-size: 3rem;
   }
 
   .section-3-logo {
@@ -714,8 +722,16 @@ modal-content select,
   .section-3-logo h1 span {
     height: 5rem;
     width: 5rem;
+    font-size: 4rem;
   }
 
+  .overlay-heading{
+    font-size: 4rem;
+  }
+
+  .overlay-paragraph{
+    font-size: 3rem;
+  }
 }
 
 
@@ -869,8 +885,6 @@ modal-content select,
   #calcButton {
     right: 5.5rem;
   }
-
-  /* section 3 */
 
   /* section 3 */
 
