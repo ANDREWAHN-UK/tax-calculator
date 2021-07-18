@@ -1130,6 +1130,11 @@ modal-content select,
   .overlay-heading {
     font-size: 2.5rem;
   }
+
+  .overlay-btn{
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 /* this is for the iPhone 6,7,8 Plus */
@@ -1145,16 +1150,23 @@ modal-content select,
   }
 
   .navButtons {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin: 1rem;
   }
 
   .logo h1 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: .5rem;
   }
 
   .logo {
     top: 5rem;
-    left: 10%;
+    left: 10vw;
+  }
+
+  .logo p {
+    font-size: 2rem;
   }
 
   .heading-paragraph {
@@ -1217,11 +1229,11 @@ modal-content select,
 
   /* section 3 */
   .section-3-logo h1 span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 2rem;
     height: 2rem;
     margin: 0.2rem;
-    margin: 5% auto;
+    margin: 1% auto;
   }
 
   .swiper-container {
@@ -1230,6 +1242,8 @@ modal-content select,
 
   .swiper-slide {
     padding: .5rem;
+    height: 55vh;
+    top: 5vh;
   }
 
   .info-summary p,
@@ -1259,6 +1273,11 @@ modal-content select,
 
   .overlay-heading {
     font-size: 2rem;
+  }
+
+  .overlay-btn{
+    height: 3rem;
+    width: 3rem;
   }
 
 }
