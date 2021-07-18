@@ -1012,18 +1012,23 @@ modal-content select,
   }
 
   .navButtons {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .logo p {
+    font-size: 2rem;
   }
 
   .logo h1 span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .logo {
     top: 5rem;
+    left: 8vw;
   }
 
-  .heading-paragraph {
+  .heading-paragraph, .header-quote {
     font-size: 2.5rem;
   }
 
@@ -1042,6 +1047,7 @@ modal-content select,
     font-size: 2rem;
     height: fit-content;
     width: 10rem;
+    height: 6rem;
   }
 
   #calcButton {
@@ -1076,16 +1082,19 @@ modal-content select,
 
   /* section 3 */
   .section-3-logo h1 span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    
   }
 
   .section-3-logo {
-    left: 5vw;
+    left: 10vw;
+    top: 5vh;
   }
 
   .info-summary p,
   .info-summary li {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .info-name,
@@ -1095,13 +1104,23 @@ modal-content select,
     width: 20rem;
   }
 
+  .home-button{
+    height: 5rem;
+    bottom: 11.5vh;
+  }
+
   .info-name,
   .hmrc-button {
     left: calc(50% - 10rem);
   }
 
-  .info-img {
-    display: none;
+  .info-img{
+    padding: 0;
+  }
+
+  .swiper-slide{
+    height: 58vh;
+    top: 2.5vh;
   }
 
   .overlay-paragraph {
