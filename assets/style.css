@@ -839,8 +839,22 @@ modal-content select,
     left: 10%;
   }
 
-  .info-img {
-    display: none;
+  .home-button{
+    font-size: 2rem;
+  }
+
+  .section-3-logo{
+    left: 5vw;
+  }
+
+  .overlay-heading{
+    font-size: 3rem;
+  }
+
+  .overlay-paragraph,
+  .info-summary p, 
+  .info-summary li{
+    font-size: 2rem;
   }
 }
 
