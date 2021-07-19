@@ -1630,12 +1630,12 @@ modal-content select,
   /* section 1 */
   .navButtons {
     font-size: 1.1rem;
-    margin: 0.2rem;
-    padding: 0.15rem;
+    margin: 0.1rem;
+    padding: 0.1rem;
   }
 
   .logo h1 span {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 
   .logo {
@@ -1645,7 +1645,7 @@ modal-content select,
 
   .heading-paragraph,
   .header-quote {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .beginButton input {
@@ -1679,7 +1679,8 @@ modal-content select,
 
   /* section 3 */
   .section-3-logo h1 span {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    margin: .1rem;
   }
 
   .overlay-heading {
@@ -1697,6 +1698,10 @@ modal-content select,
 
   .home-button {
     font-size: 1rem;
+  }
+
+  .swiper-slide{
+    top: 7vh;
   }
 }
 
