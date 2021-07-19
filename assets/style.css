@@ -1440,8 +1440,6 @@ modal-content select,
    top: 5vh;
    left: calc(50% - 35vw);
   }
-
-
 }
 
 
@@ -1450,16 +1448,29 @@ modal-content select,
 
   /* section 1 */
   .navButtons {
-    margin: 0.5rem;
-    padding: 0.4rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-size: 1.3rem;
   }
 
   .logo h1 span {
     font-size: 1.6rem;
   }
 
-  /* section 2 */
+  .logo p{
+    font-size: 2.5rem;
+  }
 
+  .header-text{
+    left: 15vw;
+    top: -2rem;
+  }
+
+  .beginButton input{
+    left: 10vw;
+  }
+
+  /* section 2 */
   #grossIncome {
     left: 7%;
   }
@@ -1480,6 +1491,9 @@ modal-content select,
     font-size: 1.6rem;
   }
 
+  .modal-content label{
+    width: 80vw;
+  }
 }
 
 /* this is for the iPhone 6,7 8 normal - NOT PLUS!!!! */
