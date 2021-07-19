@@ -1606,8 +1606,6 @@ modal-content select,
     font-size: 2rem;
   }
 
-
-
   .modal-content label {
     font-size: 2rem;
   }
@@ -1619,6 +1617,10 @@ modal-content select,
 
   .overlay-paragraph {
     font-size: 1.4rem;
+  }
+
+  .swiper-slide{
+    height: 60vh;
   }
 }
 
