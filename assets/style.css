@@ -1,10 +1,11 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   outline: none;
   font-weight: 400;
+  font-family: "Exo", sans-serif;;
 }
 
 /*reduces the size of html font, so the rem goes from 16 to 10 pixels*/
