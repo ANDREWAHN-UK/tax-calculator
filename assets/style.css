@@ -621,8 +621,7 @@ modal-content select,
 
   /* section 1 adjustments */
   .logo {
-    left: 12rem;
-    
+    left: 12rem;    
     top: 12rem;
   }
 
@@ -760,7 +759,7 @@ modal-content select,
   .logo h1 span {
     font-size: 5.5rem;
   }
-
+/* for .navButtons, adjust the margin to bring the buttons closer together, adjust the padding to increase/decrease space inside the button */
   .navButtons {
     font-size: 2.5rem;
   }
@@ -1148,7 +1147,7 @@ modal-content select,
   .footer p {
     font-size: 1.8rem;
   }
-
+  
   .navButtons {
     font-size: 1.2rem;
     padding: .5rem;
@@ -1501,7 +1500,26 @@ modal-content select,
 
   /* section 1 */
   .beginButton input {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    left: 12vw;
+  }
+
+  .navButtons{
+    margin: 0rem;
+    padding: 0.3rem;
+  }
+
+  .logo p{
+    font-size: 2rem;
+  }
+
+  .logo h1 span {
+    font-size: 2rem;
+    margin: 0.2rem;
+  }
+
+  .beginButton input{
+    padding: .3rem;
   }
 
   /* section 2 */
@@ -1528,10 +1546,17 @@ modal-content select,
     font-size: 1.8rem;
   }
 
+  .overlay-paragraph{
+    font-size: 1.3rem;
+  }
+
+  .section-3-logo{
+    left: calc(50% - 40vw);
+  }
 }
 
 /* this is for the moto G4 and Galaxy S5  */
-@media screen and (max-width: 375px) and (max-height: 667px) {
+@media screen and (max-width: 375px) and (max-height: 640px) {
 
   /* section 1 */
   .navButtons {
