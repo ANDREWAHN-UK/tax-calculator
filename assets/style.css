@@ -1287,16 +1287,19 @@ modal-content select,
 
 
   /* section1 */
+
   .footer p {
     font-size: 2rem;
   }
 
   .navButtons {
     font-size: 1.2rem;
+    margin: .5rem;
   }
 
   .logo h1 span {
     font-size: 2rem;
+    margin: .5rem;
   }
 
   .logo {
@@ -1312,6 +1315,7 @@ modal-content select,
   .beginButton input {
     width: fit-content;
     height: fit-content;
+    left: 15vw;
   }
 
   /* section 2 */
@@ -1319,13 +1323,14 @@ modal-content select,
     width: 40vw;
     left: 20%;
     top: 40vh;
+    height: 4rem;
   }
 
   #grossIncome {
     top: 35vh;
     width: 35vw;
-    left: 10%;
-    font-size: 3rem;
+    left: 5.8%;
+    font-size: 2.5rem;
     ;
   }
 
@@ -1345,7 +1350,7 @@ modal-content select,
   #modalTwoPrevButton,
   #modalThreePrevButton,
   #calcButton {
-    left: 12rem;
+    left: 10rem;
     height: 6rem;
     width: 12rem;
     font-size: 3rem;
@@ -1354,7 +1359,7 @@ modal-content select,
   #calcButton {
     height: 10rem;
     width: 16rem;
-    left: 10rem;
+    left: 8rem;
   }
 
   .calculation-form {
@@ -1368,6 +1373,7 @@ modal-content select,
 
   .section-3-logo h1 span {
     font-size: 2rem;
+    margin: .5rem;
   }
 
   .swiper-slide {
@@ -1413,7 +1419,12 @@ modal-content select,
 
   .info-summary p,
   .info-summary li {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .overlay-btn{
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
 
