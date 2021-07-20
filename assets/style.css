@@ -1552,10 +1552,10 @@ modal-content select,
     font-size: 1.2rem;
   }
 
-  .logo h1 span {
-    font-size: 2rem;
+  .logo h1 span, .logo p{
+    font-size: 1.8rem;
   }
-
+  
   .heading-paragraph,
   .header-quote {
     font-size: 2rem;
@@ -1574,17 +1574,31 @@ modal-content select,
     font-size: 2rem;
   }
 
+  #calcButton{
+    height: 8rem;
+    width: 14rem;
+    left: 8rem;
+  } 
+
   .modal-content label {
     font-size: 2rem;
   }
 
-  /* section 3 */
-  .overlay-heading {
+  .calculation-form div, .calculation-form label{
     font-size: 1.8rem;
   }
 
+  .calculation-form{
+    padding: .5rem;
+  }
+
+  /* section 3 */
+  .overlay-heading {
+    font-size: 1.5rem;
+  }
+
   .overlay-paragraph {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .swiper-slide{
