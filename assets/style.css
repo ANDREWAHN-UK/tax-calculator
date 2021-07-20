@@ -1131,7 +1131,6 @@ modal-content select,
   .section-3-logo h1 span {
     font-size: 2rem;
     margin: 1rem;
-
   }
 
   .section-3-logo {
@@ -1244,38 +1243,41 @@ modal-content select,
     padding: .5rem;
   }
 
-  .modal-button {
-    font-size: 2rem;
-    height: fit-content;
-    width: 10rem;
-  }
 
   #calcButton {
-    height: 6rem;
-    width: 10rem;
+    height: 10rem;
+    width: 12rem;
     right: 10%;
+    font-size: 2.5rem;
   }
 
   #modalOneButton,
   #modalTwoButton {
     right: 10%;
+    /* font-size: 2.8rem; */
   }
 
   #modalTwoPrevButton,
   #modalThreePrevButton {
-    width: 10rem;
+    width: 12rem;
+    font-size: 2.8rem;
     left: 10%;
   }
 
   .modal-content select {
-    left: calc(50% - 20vw);
-    width: 40vw;
-    height: 5vh;
+    left: calc(50% - 30vw);
+    width: 60vw;
+    height: 6vh;
+    font-size: 2rem;;
   }
 
   #grossIncome {
     width: 28vw;
     left: 12vw;
+  }
+
+  .close{
+    line-height: 0;
   }
 
   /* section 3 */
@@ -1284,7 +1286,11 @@ modal-content select,
     width: 2rem;
     height: 2rem;
     margin: 0.2rem;
-    margin: 1% auto;
+    margin: .5rem;   
+  }
+
+  .section-3-logo{
+    left: 15vw;
   }
 
   .swiper-container {
@@ -1330,7 +1336,6 @@ modal-content select,
     height: 3rem;
     width: 3rem;
   }
-
 }
 
 /* this is for the Pixel2 XL */
