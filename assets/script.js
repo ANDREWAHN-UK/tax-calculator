@@ -43,7 +43,7 @@ window.addEventListener('load', (event) => {
 
 // When the user clicks on the next or previous buttons, open the modals in sequence. Also works when the relevant span (x) of the modal is clicked
 
-const selectModal = (modal) => {
+function selectModal(modal){
     document.getElementById("ModalOne").style.display = modal === 'one' ? "block" : "none";
     document.getElementById("ModalTwo").style.display = modal === 'two' ? "block" : "none";
     document.getElementById("ModalThree").style.display = modal === 'three' ? "block" : "none";
