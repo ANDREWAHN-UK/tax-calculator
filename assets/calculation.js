@@ -129,6 +129,7 @@ function calculateIncome() {
         net = (gross - taxPaid - natIns - studentLoanPaid);
     }
 
+    // these call the relevant functions, ending with determining the net wages
     getGross();
     getNatIns();
     chooseTax();
