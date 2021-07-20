@@ -959,7 +959,6 @@ modal-content select,
     width: 80vw;
   }
 
-
   #modalTwoPrevButton,
   #modalThreePrevButton {
     left: 15%;
@@ -1083,9 +1082,7 @@ modal-content select,
   }
 
   .beginButton input {
-    width: fit-content;
-    height: fit-content;
-    left: 40%;
+    font-size: 3rem;
   }
 
   /* section 2 */
@@ -1093,36 +1090,32 @@ modal-content select,
     font-size: 3rem;
   }
 
-  .modal-button {
-    font-size: 2rem;
-    height: fit-content;
-    width: 10rem;
-    height: 6rem;
-  }
-
-  #calcButton {
-    height: 6rem;
-    width: 10rem;
+  #calcButton {    
+    width: 15rem; 
     right: 10%;
+    font-size: 3rem;
   }
 
   #modalOneButton,
   #modalTwoButton {
     right: 10%;
+    font-size: 3rem;
   }
 
   #modalTwoPrevButton,
   #modalThreePrevButton {
-    width: 10rem;
+    width: 14rem;
     left: 10%;
+    font-size: 3rem;
+  }
+
+  #grossIncome{
+    font-size: 3rem;
   }
 
   .modal-content select {
-    position: absolute;
-    top: 60%;
-    left: calc(50% - 15vw);
-    width: 30vw;
-    height: 6vh;
+    font-size: 2rem;
+    left: 12vw;
   }
 
   #grossIncome {
@@ -1130,9 +1123,13 @@ modal-content select,
     left: 12vw;
   }
 
+  .calculation-form div, .calculation-form label, #restartButton{
+    font-size: 2rem;
+  }
+
   /* section 3 */
   .section-3-logo h1 span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem;
 
   }
@@ -1140,6 +1137,10 @@ modal-content select,
   .section-3-logo {
     left: 10vw;
     top: 5vh;
+  }
+
+  .swiper-slide{
+    padding: 0rem;
   }
 
   .info-summary p,
@@ -1156,7 +1157,7 @@ modal-content select,
 
   .home-button {
     height: 5rem;
-    bottom: 11.5vh;
+    bottom: 9.5vh;
   }
 
   .info-name,
