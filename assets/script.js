@@ -1,8 +1,10 @@
-const selectPage = (page) => {
+
+// this function is used to navigate between the sections
+function selectPage(page){
     document.getElementById("section-one").style.display = page === 'one' ? "flex" : "none";
     document.getElementById("section-two").style.display = page === 'two' ? "flex" : "none";
     document.getElementById("section-three").style.display = page === 'three' ? "flex" : "none";
-
+// lines 8-28 are from swiper.js
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
@@ -24,15 +26,15 @@ const selectPage = (page) => {
             el: '.swiper-scrollbar',
         },
     });
-}
+};
 
 // click functionality for section 3
 document.querySelectorAll('.overlay-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        btn.classList.toggle('change')
-        btn.nextElementSibling.classList.toggle('change')
-    })
-})
+        btn.classList.toggle('change');
+        btn.nextElementSibling.classList.toggle('change');
+    });
+});
 
 // this makes so that when the website loads,  the modal loads
 window.addEventListener('load', (event) => {
@@ -45,7 +47,7 @@ const selectModal = (modal) => {
     document.getElementById("ModalOne").style.display = modal === 'one' ? "block" : "none";
     document.getElementById("ModalTwo").style.display = modal === 'two' ? "block" : "none";
     document.getElementById("ModalThree").style.display = modal === 'three' ? "block" : "none";
-}
+};
 
 // Get the modals
 let modal1 = document.getElementById("ModalOne");
@@ -64,7 +66,7 @@ window.onclick = function (event) {
         modal2.style.display = "none";
         modal3.style.display = "none";
     }
-}
+};
 
 function checkForm() {
     let inputGross = document.getElementById("grossIncome").value;
