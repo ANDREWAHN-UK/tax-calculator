@@ -136,7 +136,7 @@ html {
   top: 8rem;
   /* the 2 lines below centre it*/
   width: 50vw;
-  left: 35vw;
+  left: 25vw;
   text-align: center;
 }
 
@@ -909,9 +909,9 @@ modal-content select,
 
   /* section 1 */
   .navButtons {
-    font-size: 2.3rem;
-    margin: 1rem;
-    padding: 1rem;
+    font-size: 2.5rem;
+    margin: .5rem;
+    padding: .5rem;
   }
 
   .logo {
@@ -920,14 +920,14 @@ modal-content select,
   }
 
   .logo h1 span {
-    font-size: 3rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: 1rem;
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem;
   }
 
   .logo p {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .heading-paragraph,
@@ -941,38 +941,39 @@ modal-content select,
   }
 
   .beginButton input {
-    font-size: 3rem;
-    left: 25vw;
-    width: 50vw;
-    bottom: 25vw;
+    font-size: 4rem;
+    left: 20vw;
+    width: 60vw;
+    bottom: 30vw;
   }
 
   /* section 2 */
   .modal-content select {
-    width: 40vw;
-    left: 23%;
+    width: 50vw;
+    left: 20vw;
     height: 8vw;
   }
 
   .modal-content label {
-    font-size: 3.5rem;
-    width: 50vw;
+    font-size: 4rem;
+    width: 80vw;
   }
 
 
   #modalTwoPrevButton,
   #modalThreePrevButton {
-    left: 5.5rem;
+    left: 15%;
+    font-size: 4rem;
   }
 
   #modalOneButton,
   #modalTwoButton,
   #calcButton {
-    right: 5.5rem;
+    right: 15%;
+    font-size: 4rem;
   }
 
   /* section 3 */
-
   .section-3-logo {
     width: 80vw;
     left: 10vw;
@@ -981,10 +982,10 @@ modal-content select,
   }
 
   .section-3-logo h1 span {
-    font-size: 2.5rem;
+    font-size: 4rem;
     width: 4rem;
     height: 4rem;
-    margin: 1.5rem;
+    margin: 1rem;
   }
 
   .swiper-slide {
@@ -1041,10 +1042,12 @@ modal-content select,
 
   .swiper-button-next {
     right: 10%;
+    top: 85.5vh;
   }
 
   .swiper-button-prev {
     left: 10%;
+    top: 85.5vh;
   }
 
 }
