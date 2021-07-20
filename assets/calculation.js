@@ -1,5 +1,4 @@
- 
- 
+  
  /*this function gets the gross income, calculates national insurance and tax owed, and from these 
 determines the net WebGLActiveInfo, then displays all of this to the results page */
 
@@ -35,7 +34,7 @@ function calculateIncome() {
   let frequency = document.getElementById("gross-income-frequency").value;
   let natIns;
   let natInsBase = 9568;
-  let maxNormalNatIns = ((taxTwo - natInsBase) * .12);
+  let maxNormalNatIns = ((taxTwo - natInsBase) * 0.12);
   let taxPaid;
 
   // student loan
@@ -52,21 +51,21 @@ function calculateIncome() {
         } else if (frequency === "fortnight") {
             gross = (inputGross * 24);
         } else if (frequency === "month") {
-            gross = (inputGross * 12)
+            gross = (inputGross * 12);
         } else {
             gross = inputGross;
         }
-    }
+    };
 
     // this determines the users' national insurance based on their wages
     getNatIns = () => {
         if (gross >= 50270) {
-            natIns = ((gross - 50270) * .02) + (maxNormalNatIns);
+            natIns = ((gross - 50270) * 0.02) + (maxNormalNatIns);
         } else if (gross > natInsBase && gross < 50270) {
             natIns = ((gross - natInsBase) * 0.12);
         } else {
             natIns = 0;
-        }
+        };
     }
 
     // this determines if the user pays scottish tax or not
@@ -76,7 +75,7 @@ function calculateIncome() {
         } else {
             getTax();
         }
-    }
+    };
 
     // this works out non scot tax
     getTax = () => {
@@ -89,7 +88,7 @@ function calculateIncome() {
         } else {
             taxPaid = 0;
         }
-    }
+    };
 
     // this works out scottish tax
     getScotTax = () => {
@@ -106,7 +105,7 @@ function calculateIncome() {
         } else {
             taxPaid = 0;
         }
-    }
+    };
 
     // this works out how much student loan the user is to pay
     getStudentLoan = () => {
@@ -122,7 +121,7 @@ function calculateIncome() {
         } else {
             studentLoanPaid = 0;
         }
-    }
+    };
 
     // this takes the previous inputs and determines the net wage
     getNetPay = () => {
