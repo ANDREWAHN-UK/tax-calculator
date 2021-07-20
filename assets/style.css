@@ -1532,6 +1532,10 @@ modal-content select,
     font-size: 1.6rem;
   }
 
+  .section-3-logo{
+    left: 12vw;
+  }
+
   .modal-content label {
     width: 80vw;
   }
