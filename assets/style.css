@@ -127,6 +127,7 @@ html {
   position: absolute;
   top: 10rem;
   right: 10vw;
+  text-align: center;
 }
 
 /* although the below shows up in section 3, stylistically it is adjustment of the above, so I am leaving it here */
@@ -136,6 +137,7 @@ html {
   /* the 2 lines below centre it*/
   width: 50vw;
   left: 35vw;
+  text-align: center;
 }
 
 .logo p,
@@ -384,7 +386,7 @@ modal-content select,
   position: absolute;
   top: 55vh;
   border-radius: 30%;
-  background-color: rgba(218, 226, 238, 0.2);
+  background-color: var(--light-grey-colour);
   color: var(--primary-colour);
   font-size: 4rem;
   height: 8rem;
@@ -622,12 +624,12 @@ modal-content select,
 
   /* section 1 adjustments */
   .logo {
-    left: 12rem;
+    left: 15rem;
     top: 12rem;
   }
 
   .logo p {
-    font-size: 3.5rem;
+    font-size: 3.5rem;    
   }
 
   .logo h1 span {
@@ -650,6 +652,7 @@ modal-content select,
   .beginButton input {
     width: 45vw;
     bottom: 20vw;
+    font-size: 4.5rem;
   }
 
   .navButtons {
@@ -664,17 +667,29 @@ modal-content select,
   }
 
   .modal-content label {
-    width: 100%;
+    width: 100vw;
+    font-size: 5rem;
+    left: 20%;
   }
 
   .modal-content select {
     top: 45vh;
     width: 30vw;
     left: 25vw;
+    height: 5vh;
+    font-size: 3.5rem;
+  }
+
+  #modalTwoPrevButton, #modalThreePrevButton {
+    width: 20rem;
   }
 
   #grossIncome {
     top: 50%;
+  }
+
+  .close {
+    font-size: 5rem; 
   }
 
   /* section 3 adjustments */
@@ -718,7 +733,7 @@ modal-content select,
   .section-3-logo {
     width: 90vw;
     top: 10vw;
-    left: 20%;
+    left: 5vw;
   }
 
   .section-3-logo h1 span {
@@ -744,6 +759,11 @@ modal-content select,
     width: 30vw;
     height: 20vh;
     left: 12vw;
+  }
+
+  .overlay-btn{
+    width: 5rem;
+    height: 5rem;
   }
 }
 
