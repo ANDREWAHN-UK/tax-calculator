@@ -380,6 +380,7 @@ modal-content select,
   top: 62%;
   left: calc(50% - 10vw);
   width: 20vw;
+  text-align: center;
 }
 
 .modal-button {
@@ -773,11 +774,12 @@ modal-content select,
 
   /* section 1 adjustments */
   .beginButton input {
-    width: 40vw;
+    width: 55vw;
+    font-size: 4rem;
   }
 
   .logo {
-    right: 8vw;
+    left: 8vw;
   }
 
   .logo h1 span {
@@ -791,16 +793,23 @@ modal-content select,
 
   /* section 2 adjustments */
   .modal-content select {
-    top: 60%;
+    top: 45vh;
+    width: 50vw;
+    font-size: 3rem;
+    left: 15vw;
   }
 
   .modal-content label {
-    font-size: 3.5rem;
+    font-size: 4rem;
     left: 10%;
   }
 
   #grossIncome {
-    top: 52%;
+    top: 40vh;
+  }
+
+  .calculation-form div, .calculation-form label, #restartButton{
+    font-size: 3rem;
   }
 
   /* section 3 adjustments */
@@ -813,7 +822,7 @@ modal-content select,
   .section-3-logo {
     width: 90vw;
     top: 12vw;
-    left: 10%;
+    left: 8vw;
   }
 
   .hmrc-button,
