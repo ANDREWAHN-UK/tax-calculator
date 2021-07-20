@@ -5,7 +5,8 @@ body {
   text-decoration: none;
   outline: none;
   font-weight: 400;
-  font-family: "Exo", sans-serif;;
+  font-family: "Exo", sans-serif;
+  ;
 }
 
 /*reduces the size of html font, so the rem goes from 16 to 10 pixels*/
@@ -631,7 +632,7 @@ modal-content select,
   }
 
   .logo p {
-    font-size: 3.5rem;    
+    font-size: 3.5rem;
   }
 
   .logo h1 span {
@@ -682,7 +683,8 @@ modal-content select,
     font-size: 3.5rem;
   }
 
-  #modalTwoPrevButton, #modalThreePrevButton {
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
     width: 20rem;
   }
 
@@ -691,7 +693,7 @@ modal-content select,
   }
 
   .close {
-    font-size: 5rem; 
+    font-size: 5rem;
   }
 
   /* section 3 adjustments */
@@ -763,7 +765,7 @@ modal-content select,
     left: 12vw;
   }
 
-  .overlay-btn{
+  .overlay-btn {
     width: 5rem;
     height: 5rem;
   }
@@ -771,7 +773,7 @@ modal-content select,
 
 
 /* this is for Kindle Fire */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
   /* section 1 adjustments */
   .beginButton input {
@@ -809,7 +811,9 @@ modal-content select,
     top: 40vh;
   }
 
-  .calculation-form div, .calculation-form label, #restartButton{
+  .calculation-form div,
+  .calculation-form label,
+  #restartButton {
     font-size: 3rem;
   }
 
@@ -856,15 +860,18 @@ modal-content select,
     left: 10%;
   }
 
-  #modalTwoPrevButton, #modalThreePrevButton{
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
     width: 18rem;
   }
 
-  .modal-button{
+  .modal-button {
     font-size: 3.5rem;
   }
 
-  #modalOneButton, #modalTwoButton, #calcButton {
+  #modalOneButton,
+  #modalTwoButton,
+  #calcButton {
     right: 18%;
   }
 
@@ -904,7 +911,7 @@ modal-content select,
   }
 }
 
- 
+
 /* this is for the Galaxy A21*/
 @media screen and (max-width: 720px) {
 
@@ -1091,8 +1098,8 @@ modal-content select,
     font-size: 3rem;
   }
 
-  #calcButton {    
-    width: 15rem; 
+  #calcButton {
+    width: 15rem;
     right: 10%;
     font-size: 3rem;
   }
@@ -1110,7 +1117,7 @@ modal-content select,
     font-size: 3rem;
   }
 
-  #grossIncome{
+  #grossIncome {
     font-size: 3rem;
   }
 
@@ -1124,7 +1131,9 @@ modal-content select,
     left: 12vw;
   }
 
-  .calculation-form div, .calculation-form label, #restartButton{
+  .calculation-form div,
+  .calculation-form label,
+  #restartButton {
     font-size: 2rem;
   }
 
@@ -1139,7 +1148,7 @@ modal-content select,
     top: 5vh;
   }
 
-  .swiper-slide{
+  .swiper-slide {
     padding: 0rem;
   }
 
@@ -1269,7 +1278,8 @@ modal-content select,
     left: calc(50% - 30vw);
     width: 60vw;
     height: 6vh;
-    font-size: 2rem;;
+    font-size: 2rem;
+    ;
   }
 
   #grossIncome {
@@ -1277,7 +1287,7 @@ modal-content select,
     left: 12vw;
   }
 
-  .close{
+  .close {
     line-height: 0;
   }
 
@@ -1287,10 +1297,10 @@ modal-content select,
     width: 2rem;
     height: 2rem;
     margin: 0.2rem;
-    margin: .5rem;   
+    margin: .5rem;
   }
 
-  .section-3-logo{
+  .section-3-logo {
     left: 15vw;
   }
 
@@ -1533,7 +1543,7 @@ modal-content select,
     font-size: 1.6rem;
   }
 
-  .section-3-logo{
+  .section-3-logo {
     left: 12vw;
   }
 
@@ -1544,7 +1554,7 @@ modal-content select,
 
 
 /* this is for the moto G4 and Galaxy S5  */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
 
   /* section 1 */
   .navButtons {
@@ -1553,10 +1563,11 @@ modal-content select,
     font-size: 1.2rem;
   }
 
-  .logo h1 span, .logo p{
+  .logo h1 span,
+  .logo p {
     font-size: 1.8rem;
   }
-  
+
   .heading-paragraph,
   .header-quote {
     font-size: 2rem;
@@ -1575,21 +1586,22 @@ modal-content select,
     font-size: 2rem;
   }
 
-  #calcButton{
+  #calcButton {
     height: 8rem;
     width: 14rem;
     left: 8rem;
-  } 
+  }
 
   .modal-content label {
     font-size: 2rem;
   }
 
-  .calculation-form div, .calculation-form label{
+  .calculation-form div,
+  .calculation-form label {
     font-size: 1.8rem;
   }
 
-  .calculation-form{
+  .calculation-form {
     padding: .5rem;
   }
 
@@ -1602,13 +1614,13 @@ modal-content select,
     font-size: 1.2rem;
   }
 
-  .swiper-slide{
+  .swiper-slide {
     height: 60vh;
   }
 }
 
 /* this is for iPhone5/ SE */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 
   /* section 1 */
   /* as the view port is so narrow, this makes the nav bar buttons stack ontop of each other */
@@ -1616,16 +1628,16 @@ modal-content select,
     font-size: 1.5rem;
     margin: .2rem;
     padding: .2rem;
-    display: flex;   
-    width: 20rem;  
+    display: flex;
+    width: 20rem;
   }
 
   /* this makes the navbar a bit wider,to accomodate the navbar buttons */
-  .navbar{
+  .navbar {
     height: 10rem;
   }
 
-  
+
   .logo {
     left: 2rem;
     top: 8rem;
@@ -1637,7 +1649,7 @@ modal-content select,
     height: 3rem;
     margin: 0rem;
   }
-  
+
   .heading-paragraph,
   .header-quote {
     font-size: 1.8rem;
@@ -1654,8 +1666,8 @@ modal-content select,
     left: 10vw;
   }
 
-  /* section 2 */  
-  .modal-content{
+  /* section 2 */
+  .modal-content {
     height: 70vh;
     margin-top: 20%;
   }
@@ -1673,14 +1685,14 @@ modal-content select,
   #modalTwoButton,
   #modalTwoPrevButton,
   #modalThreePrevButton,
-  #calcButton  {
+  #calcButton {
     left: 20vw;
     top: 58vh;
     height: 4rem;
   }
 
   #modalTwoPrevButton,
-  #modalThreePrevButton{
+  #modalThreePrevButton {
     top: 50vh;
   }
 
@@ -1703,9 +1715,7 @@ modal-content select,
   }
 
   /* section 3 */
-  
-
-  .section-3-logo{
+  .section-3-logo {
     left: 2rem;
     top: 6.5rem;
   }
@@ -1720,14 +1730,14 @@ modal-content select,
   .swiper-slide {
     height: 55vh;
     top: 12vh;
-    padding: 0rem;    
+    padding: 0rem;
   }
 
   .hmrc-button {
     font-size: 1rem;
   }
 
-  .home-button{
+  .home-button {
     width: 42vw;
     left: 1vw;
     bottom: 10vw;
@@ -1735,120 +1745,34 @@ modal-content select,
 
   .overlay-heading {
     font-size: 1.4rem;
-    
+
   }
 
   .overlay-paragraph {
     font-size: 1rem;
-    margin: 0;    
+    margin: 0;
   }
 
   .info-summary p,
   .info-summary li {
     font-size: 1.45rem;
-    margin: 0;    
+    margin: 0;
   }
 
-  
+
 }
 
 /* this is for the Galaxy Fold*/
-@media screen and (max-width: 280px){
+@media screen and (max-width: 280px) {
 
-  section 1
-  /* as the view port is so narrow, this makes the nav bar buttons stack ontop of each other */
-  /* .navButtons {
-    font-size: 1.5rem;
-    margin: .2rem;
-    padding: .2rem;
-    display: flex;     
-  } */
-
-  /* this makes the navbar a bit wider,to accomodate the navbar buttons */
-  /* .navbar{
-    height: 10rem;
-  }
-
+  /* section 1 */
   .logo {
-    left: 2rem;
+    left: 6vw;
     top: 8rem;
-  }
-
-  .logo h1 span {
-    font-size: 1.9rem;
-    width: 3rem;
-    height: 3rem;
-    margin: 0rem;
-  }
-
-  .logo p {
-    font-size: 1.8rem;
-  }
-
-  .header-text{
-    top: 3vh;
-  }
-
-  .heading-paragraph,
-  .header-quote {
-    font-size: 1.8rem;
-    width: 50vw;
-  }
-
-  .header-text {
-    left: 10vw;
   }
 
   .beginButton input {
     font-size: 2.5rem;
-    left: 5%;
-  } */
-
-  /* section 2 */
-
-  .modal-content{
-    height: 70vh;
-    margin-top: 20%;
+    left: 5vw;
   }
-
-  .modal-content label {
-    font-size: 1.8rem;
-  }
-
-  .modal-content select {
-    width: 60vw;
-    left: 10%;
-  }
-
-  #modalOneButton,
-  #modalTwoButton,
-  #modalTwoPrevButton,
-  #modalThreePrevButton,
-  #calcButton  {
-    left: 5.5rem;
-    top: 60vh;
-  }
-
-  #modalTwoPrevButton,
-  #modalThreePrevButton{
-    top: 52vh;
-  }
-
-  #calcButton {
-    left: 3.5rem;
-  }
-
-  .calculation-form label {
-    font-size: 1.3rem;
-  }
-
-  .calculation-form div {
-    font-size: 1.2rem;
-  }
-
-  #restartButton {
-    font-size: 1.4rem;
-  }
-
-  /* section 3 */
 }
