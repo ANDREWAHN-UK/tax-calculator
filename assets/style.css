@@ -1343,19 +1343,18 @@ modal-content select,
 
 
   /* section1 */
-
   .footer p {
     font-size: 2rem;
   }
 
   .navButtons {
-    font-size: 1.2rem;
-    margin: .5rem;
+    font-size: 1.4rem;
+    margin: 0rem;
   }
 
   .logo h1 span {
     font-size: 2rem;
-    margin: .5rem;
+    margin: .3rem;
   }
 
   .logo {
@@ -1376,10 +1375,11 @@ modal-content select,
 
   /* section 2 */
   .modal-content select {
-    width: 40vw;
-    left: 20%;
+    width: 60vw;
+    left: 10%;
     top: 40vh;
     height: 4rem;
+    font-size: 1.8rem;
   }
 
   #grossIncome {
@@ -1409,7 +1409,7 @@ modal-content select,
     left: 10rem;
     height: 6rem;
     width: 12rem;
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   #calcButton {
