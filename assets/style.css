@@ -247,7 +247,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: .3rem .3rem .4rem #ccc, -.1rem -.1rem -.4 rem #ccc;
+  box-shadow: .3rem .3rem .4rem #ccc, -.1rem -.1rem -.4rem #ccc;
   border-radius: .5rem;
   perspective: 100rem;
   opacity: .8;
@@ -257,7 +257,7 @@ html {
 }
 
 .form-container:hover {
-  opacity: 1.5;
+  opacity: 1;
 }
 
 /* styles the calculation form  */
@@ -269,7 +269,7 @@ html {
   flex-direction: column;
   padding: 3rem;
   border-radius: 2.5rem;
-  box-shadow: 3rem 3rem 4 rem #aaa;
+  box-shadow: 3rem 3rem 4rem #aaa;
   transform: rotateY(-20deg);
   transition: all .5s;
   border-style: solid;
