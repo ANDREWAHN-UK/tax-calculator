@@ -618,7 +618,7 @@ modal-content select,
 
 
 /* this is for Ipad Pro */
-@media screen and (max-width: 1024px), (max-height: 1366px) {
+@media screen and (max-width: 1024px) {
 
   /* section 1 adjustments */
   .logo {
@@ -749,7 +749,7 @@ modal-content select,
 
 
 /* this is for Kindle Fire */
-@media screen and (max-width: 800px), (max-height: 1280px) {
+@media screen and (max-width: 800px){
 
   /* section 1 adjustments */
   .beginButton input {
@@ -812,7 +812,7 @@ modal-content select,
 }
 
 /* this is for Ipad */
-@media screen and (max-width: 768px), (max-height: 1024px) {
+@media screen and (max-width: 768px) {
 
   /* section 1 */
   .navButtons {
@@ -863,9 +863,9 @@ modal-content select,
   }
 }
 
-
+ 
 /* this is for the Galaxy A21*/
-@media screen and (max-width: 720px) , (max-height: 1600px) {
+@media screen and (max-width: 720px) {
 
   /* section 1 */
   .navButtons {
@@ -1010,7 +1010,7 @@ modal-content select,
 }
 
 /* this is for the surface duo */
-@media screen and (max-width: 540px), (max-height: 720px) {
+@media screen and (max-width: 540px) {
 
   /* section1 */
   .footer p {
@@ -1145,7 +1145,7 @@ modal-content select,
 }
 
 /* this is for the iPhone 6,7,8 Plus */
-@media screen and (max-width: 414px),(max-height: 736px) {
+@media screen and (max-width: 414px) {
 
   /* section1 */
   .section-1 {
@@ -1290,7 +1290,7 @@ modal-content select,
 }
 
 /* this is for the Pixel2 XL */
-@media screen and (max-width: 411px),(max-height: 823px) {
+@media screen and (max-width: 411px) {
 
 
   /* section1 */
@@ -1436,7 +1436,7 @@ modal-content select,
 }
 
 /* this is for the Pixel2*/
-@media screen and (max-width: 411px), (max-height: 731px) {
+@media screen and (max-width: 411px) {
 
   /* section 3 */
   .section-3-logo h1 span {
@@ -1452,7 +1452,7 @@ modal-content select,
 
 
 /* this is for the iPhoneX */
-@media screen and (max-width: 375px), (max-height: 812px) {
+@media screen and (max-width: 375px) {
 
   /* section 1 */
   .navButtons {
@@ -1505,7 +1505,7 @@ modal-content select,
 }
 
 /* this is for the iPhone 6,7 8 normal - NOT PLUS!!!! */
-@media screen and (max-width: 375px), (max-height: 667px) {
+@media screen and (max-width: 375px) {
 
   /* section 1 */
   .beginButton input {
@@ -1576,7 +1576,7 @@ modal-content select,
 }
 
 /* this is for the moto G4 and Galaxy S5  */
-@media screen and (max-width: 375px), (max-height: 640px) {
+@media screen and (max-width: 375px){
 
   /* section 1 */
   .navButtons {
@@ -1626,7 +1626,7 @@ modal-content select,
 }
 
 /* this is for iPhone5/ SE */
-@media screen and (max-width: 320px), (max-height: 568px) {
+@media screen and (max-width: 320px){
 
   /* section 1 */
   .navButtons {
@@ -1707,7 +1707,7 @@ modal-content select,
 }
 
 /* this is for the Galaxy Fold*/
-@media screen and (max-width: 280px), (max-height: 653px){
+@media screen and (max-width: 280px){
 
   /* section 1 */
   /* as the view port is so narrow, this makes the nav bar buttons stack ontop of each other */
