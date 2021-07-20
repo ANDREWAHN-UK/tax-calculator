@@ -855,8 +855,19 @@ modal-content select,
     left: 10%;
   }
 
-  /* section 3 */
+  #modalTwoPrevButton, #modalThreePrevButton{
+    width: 18rem;
+  }
 
+  .modal-button{
+    font-size: 3.5rem;
+  }
+
+  #modalOneButton, #modalTwoButton, #calcButton {
+    right: 18%;
+  }
+
+  /* section 3 */
   .swiper-button-prev {
     left: 22%;
   }
