@@ -1,52 +1,95 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MILESTONE PROJECT TWO
+**Purpose of the project:**
 
-Welcome ANDREWAHN-UK,
+The purpose of this project is to provide an interactive front end website, which adapts the output based on user input. Specifically, it is intended to provide a guide as to how much of his/her wage a user can expect to keep, i.e. after taxes etc.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+The idea came about after I received several job offers (a high quality problem) and was confused as to the financial viability of each, namely how much of the advertised salary would I actually get. 
 
-## Gitpod Reminders
+It got to the point where I was able to roughly calculate the net wage from a job offer, but obviously with a degree of human error.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+In addition, my partner also received some job offers, and as she has no student loan, the mental arithmetic became a bit more interesting.
 
-`python3 -m http.server`
+So I ended up working out her net wages using a pen and paper.
 
-A blue button should appear to click: _Make Public_,
+And then I realised that programs like Javascript would make all this brainwork trivial, and so the idea of this website took root.
 
-Another blue button should appear to click: _Open Browser_.
+### User Goals/stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* As a **Potential Employer** for a Coding Role, I want to view Andrew’s website, to see how he performs as a Full stack developer. I want to be able to navigate the website and compare it to others, of similar scope.
+* As a **Potential Employer** for a Coding Role, further to the above, I would be particularly interested in the Javascript coding for this website.
+* As a **general user** living and earning in the UK, I want to be able to navigate through the page easily, and not get trapped at the bottom of any single page.
+* As a **general user** living and earning in the UK,  further to the above I wish to be able to ascertain my tax etc liability and determine my net wages, in a timely fashion, without an excess of clicks.
 
-A blue button should appear to click: _Make Public_,
+### Stakeholder Goals
 
-Another blue button should appear to click: _Open Browser_.
+To lead the user to get their net wages and understand their liabilities for tax, national insurance and student loan, in an easy fashion, without information overload.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Typography and colour scheme:
+    * Font - Exo and Sans serif. This is because they worked well in the Code Institute models (i.e., easy to read) and worked well in Milestone Project 1.
+    * Icons - very few icons were used here. there are some included in the Swiper.JS library, for previous and next buttons
+    * Colours – The primary colours are black (header,footer) red and white (labels, buttons and font therein) with some grey. The colours used throughout are set in the root folder.
+    * Images – I sourced the images from google images and unsplash. In CSS I used a filter on section 1 to darken the image, so any text displayed stands out better.
+Features:
 
-To log into the Heroku toolbelt CLI you can use:
+* Header - to consist of the website name, along with links to section 2 (Wage Calculator,)  Section 3(Important information) These are what I deemed to be essential, when planning the project. In the future, this may be expanded to include a link to a contact button.
+* Footer - a very simple footer that just repeats the name of the website, with a copyright logo and “all rights reserved” text.
+* Homepage (Money Tree):
+Here I wanted the page to be visually clean, with an image supporting and showing the purpose of the website.
 
-`heroku login -i`
+In this case a potted plant with coins seemingly in lieu of soil, and therefore a money plant, or “money tree.” 
 
-If you have Multi-Factor Authentication (MFA) enabled then use the API key that was generated for you at [Heroku](https://dashboard.heroku.com/account) as your password.
-This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+Communicating the purpose of the website is further supported by some text that explains what it is (“a website to work out your taxes and net wage”) and a quote to set the scene (I chose the very famous and often misquoted “death and taxes,” which, as it turns out, does not originate from Benjamin Franklin) and finally a visible call to action, in the form of a clickable button labelled “water my money tree.”
 
-## Updates Since The Instructional Video
+* Section 2 (Wage calculator):
+ This consists of a series of modals designed to get the following relevant information,in this order, from the user:
+    * residency - because the rules are different in Scotland
+    * gross wage - either weekly, fortnightly, monthly or annually, which is then processed and turned into an annual amount.
+    * student loan type - as there are different student loans in the UK, with varying criteria for repayment
+    
+There are buttons on the modal that clearly label going to the previous modal, or going forward, culminating with a very visible “calculate income” button, the pressing of which calculates the results and displays them in a container, and hides the modals. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+An alert is shown if the user does not enter a value into the gross income field.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+In the container there is a button to restart the modals, should the user so wish.
+ 
+* Section 3 (Important Information):
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+ This contains the somewhat dry, but very important information regarding how taxes etc are calculated. I believe this to be necessary information, however there is a considerable amount, which is why I have put it in its own section, for the user to peruse at their own discretion.
+ 
+ I have summarised what I feel to be the relevant information.
+ 
+The summary takes 2 forms, an initial, very condensed summary on a tile, with a button in the top right to click that brings up an expanded summary.
+ 
+On each tile I have  placed a “HRMC info” which takes the user directly to the HMRC website concerning that subject, e.g. the national insurance HMRC info button takes the user to https://www.gov.uk/national-insurance. 
+ 
+I initially had all the tiles in a simple line, like so:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+[info tile] [info tile] [info tile] [info tile] [info tile]
+ 
+but this was cluttered, especially on smaller viewports, so I placed the entire section inside a carousel, using swiper.js, so a single tile is displayed prominently, and the user can swipe left and right at their discretion.
+ 
+It is worth stressing that this information informs the algorithms used, but it is absolutely *not* necessary for the user to understand any of this, for the website to work. 
+ 
+Other tax calculation websites (see section 9)  that I looked at tend to place everything, including the input and display and introduction, all on one page, which I think creates a cluttered feel.
+ 
+* The minimal viable product for this website is
+    * header
+    * footer
+    * homepage (Money tree)
+    * Section 2 (wage calculator)
+  * Section 3 (Important information)
+  
+* Ideas for expanding the website:
+    * creating a contact page
+    * expanding the utility of the website, by creating a function whereby a user can enter multiple streams of income. For example, they can select “income type: 
+    
+    wage/rent/royalties/savings interest” and have a separate wage calculator for each type, and then save that, and allow the user to add another, and then have a function that
+    
+    checks if the new, combined income now hits certain thresholds, and modifies the net received accordingly. 
+    
+So a user could enter “wage 1” with a net income of x, then “wage 2” with a net income of y, and then “rental 1” with a net income of z, and the function would return net income 
+a which combines net income x,y and z, runs it against tax etc thresholds and comes up with what is hopefully a nice, accurate and easy to understand summation of multiple streams of income.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+Moving even further afield, the website can be broadened to account for multiple countries, and perhaps even for users with income streams from multiple countries, e.g. if you 
+are resident in England, have a wage in England, but are receiving rental income from a timeshare in Spain.
+ - - - -
