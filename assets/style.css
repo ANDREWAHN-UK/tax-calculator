@@ -773,7 +773,7 @@ modal-content select,
 }
 
 
-/* this is for Kindle Fire */
+/* this is for Kindle Fire portrait orientation*/
 @media screen and (max-width: 800px) {
 
   /* section 1 adjustments */
@@ -844,6 +844,40 @@ modal-content select,
     right: 25%;
   }
 
+  .overlay-paragraph{
+    font-size: 2rem;
+  }
+}
+
+/* this is for Kindle Fire landscape orientation*/
+@media screen and (max-device-width: 1280px){
+  .beginButton input {
+    width: 40vw;
+    font-size: 4rem;
+    height: 6rem;
+  }
+
+  .hmrc-button,
+  .home-button,
+  .info-name, 
+  .info-summary p,
+  .info-summary li {
+    font-size: 2rem;
+  }
+
+  .swiper-slide{
+    padding: 0rem;
+    width: 40vw;
+    height: 65vh;
+  }
+
+  .home-button{
+    bottom: 7vh;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+  top: 88vh;
+}
 }
 
 /* this is for Ipad */
