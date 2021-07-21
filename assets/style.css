@@ -854,7 +854,7 @@ modal-content select,
 }
 
 /* this is for Kindle Fire landscape orientation*/
-@media screen and (max-device-width: 1280px) and (max-device-height: 800px){
+@media screen and (max-device-width: 1280px) and (max-device-height: 802px){
   /* section 1 */
 
   .logo h1 span{
