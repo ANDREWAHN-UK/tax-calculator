@@ -545,7 +545,7 @@ modal-content select,
 .info-summary p,
 .info-summary li {
   color: var(--black-colour);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-left: 3rem;
   float: left;
   letter-spacing: .1rem;
