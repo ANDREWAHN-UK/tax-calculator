@@ -1,5 +1,9 @@
 # MILESTONE PROJECT TWO
-**Purpose of the project:**
+ - - - -
+
+**1. Purpose of the project:**
+ - - - -
+
 
 The purpose of this project is to provide an interactive front end website, which adapts the output based on user input. Specifically, it is intended to provide a guide as to how much of his/her wage a user can expect to keep, i.e. after taxes etc.
 
@@ -13,23 +17,33 @@ So I ended up working out her net wages using a pen and paper.
 
 And then I realised that programs like Javascript would make all this brainwork trivial, and so the idea of this website took root.
 
-### User Goals/stories
+**2. User Goals/stories**
+ - - - -
+
 
 * As a **Potential Employer** for a Coding Role, I want to view Andrew’s website, to see how he performs as a Full stack developer. I want to be able to navigate the website and compare it to others, of similar scope.
 * As a **Potential Employer** for a Coding Role, further to the above, I would be particularly interested in the Javascript coding for this website.
 * As a **general user** living and earning in the UK, I want to be able to navigate through the page easily, and not get trapped at the bottom of any single page.
 * As a **general user** living and earning in the UK,  further to the above I wish to be able to ascertain my tax etc liability and determine my net wages, in a timely fashion, without an excess of clicks.
 
-### Stakeholder Goals
+**3. Stakeholder Goals**
+ - - - -
+
 
 To lead the user to get their net wages and understand their liabilities for tax, national insurance and student loan, in an easy fashion, without information overload.
 
-* Typography and colour scheme:
-    * Font - Exo and Sans serif. This is because they worked well in the Code Institute models (i.e., easy to read) and worked well in Milestone Project 1.
-    * Icons - very few icons were used here. there are some included in the Swiper.JS library, for previous and next buttons
-    * Colours – The primary colours are black (header,footer) red and white (labels, buttons and font therein) with some grey. The colours used throughout are set in the root folder.
-    * Images – I sourced the images from google images and unsplash. In CSS I used a filter on section 1 to darken the image, so any text displayed stands out better.
-Features:
+**4. Typography and colour scheme:**
+ - - - -
+
+
+* Font - Exo and Sans serif. This is because they worked well in the Code Institute models (i.e., easy to read) and worked well in Milestone Project 1.
+* Icons - very few icons were used here. there are some included in the Swiper.JS library, for previous and next buttons
+* Colours – The primary colours are black (header,footer) red and white (labels, buttons and font therein) with some grey. The colours used throughout are set in the root folder.
+* Images – I sourced the images from google images and unsplash. In CSS I used a filter on section 1 to darken the image, so any text displayed stands out better.
+
+**5. Features:**
+ - - - -
+
 
 * Header - to consist of the website name, along with links to section 2 (Wage Calculator,)  Section 3(Important information) These are what I deemed to be essential, when planning the project. In the future, this may be expanded to include a link to a contact button.
 * Footer - a very simple footer that just repeats the name of the website, with a copyright logo and “all rights reserved” text.
@@ -81,15 +95,10 @@ Other tax calculation websites (see section 9)  that I looked at tend to place e
   
 * Ideas for expanding the website:
     * creating a contact page
-    * expanding the utility of the website, by creating a function whereby a user can enter multiple streams of income. For example, they can select “income type: 
-    
-    wage/rent/royalties/savings interest” and have a separate wage calculator for each type, and then save that, and allow the user to add another, and then have a function that
-    
-    checks if the new, combined income now hits certain thresholds, and modifies the net received accordingly. 
+    * expanding the utility of the website, by creating a function whereby a user can enter multiple streams of income. For example, they can select “income type: wage/rent/royalties/savings interest” and have a separate wage calculator for each type, and then save that, and allow the user to add another, and then have a function that   checks if the new, combined income now hits certain thresholds, and modifies the net received accordingly. 
     
 So a user could enter “wage 1” with a net income of x, then “wage 2” with a net income of y, and then “rental 1” with a net income of z, and the function would return net income 
 a which combines net income x,y and z, runs it against tax etc thresholds and comes up with what is hopefully a nice, accurate and easy to understand summation of multiple streams of income.
 
 Moving even further afield, the website can be broadened to account for multiple countries, and perhaps even for users with income streams from multiple countries, e.g. if you 
 are resident in England, have a wage in England, but are receiving rental income from a timeshare in Spain.
- - - - -
