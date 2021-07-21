@@ -624,7 +624,7 @@ modal-content select,
 
 
 /* this is for Ipad Pro */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1366px) {
 
   /* section 1 adjustments */
   .logo {
@@ -680,8 +680,12 @@ modal-content select,
     top: 45vh;
     width: 30vw;
     left: 25vw;
-    height: 5vh;
+    height: 6vh;
     font-size: 3.5rem;
+  }
+
+  .close{
+    line-height: 0;
   }
 
   #modalTwoPrevButton,
@@ -737,7 +741,7 @@ modal-content select,
 
   .section-3-logo {
     width: 90vw;
-    top: 10vw;
+    top: 8vw;
     left: 5vw;
   }
 
@@ -757,7 +761,7 @@ modal-content select,
 
   .info-summary p,
   .info-summary li {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .info-img {
@@ -850,24 +854,59 @@ modal-content select,
 }
 
 /* this is for Kindle Fire landscape orientation*/
-@media screen and (max-device-width: 1280px){
+@media screen and (max-device-width: 1280px) and (max-device-height: 800px){
+  /* section 1 */
+
+  .logo h1 span{
+    font-size: 5rem;
+  }
+
   .beginButton input {
     width: 40vw;
     font-size: 4rem;
     height: 6rem;
+    bottom: 10vw;
   }
 
+  .navbar{
+    height: 8vh;
+  }
+
+  .header-quote, .heading-paragraph{
+    font-size: 3rem;
+  }
+
+  /* section 2 */
+  .modal-content label{
+    top: 20%;
+  }
+
+  #grossIncome{
+    top: 50%;
+  }
+
+  .modal-content select{
+    height: 7vh;
+  }
+
+  /* section 3 */
+
+  .section-3-logo{
+    top: 7vh;
+  }
   .hmrc-button,
   .home-button,
-  .info-name, 
+  .info-name {
+    font-size: 2.5rem;
+  }
   .info-summary p,
-  .info-summary li {
-    font-size: 2rem;
+  .info-summary li,.overlay-paragraph p, .overlay-paragraph li{
+    font-size: 2.5rem;
   }
 
   .swiper-slide{
-    padding: 0rem;
-    width: 40vw;
+    padding: 1rem 5rem;
+    width: 35vw;
     height: 65vh;
   }
 
@@ -877,10 +916,10 @@ modal-content select,
 
   .swiper-button-next, .swiper-button-prev {
   top: 88vh;
-}
+  }
 }
 
-/* this is for Ipad */
+/* this is for Ipad portrait*/
 @media screen and (max-width: 768px) {
 
   /* section 1 */
@@ -945,6 +984,8 @@ modal-content select,
     font-size: 2rem;
   }
 }
+
+
 
 
 /* this is for the Galaxy A21*/
