@@ -140,7 +140,7 @@ The website has been deployed on:
 
 *9.1 Github*
 
-To deploy the website using Github:
+**To deploy the website using Github:**
   1. 	go to github.com and log in
   2.	locate the list of repositories, top left of screen
   3.	click on the required repository, in this case   https://github.com/ANDREWAHN-UK/tax-calculator 
@@ -157,7 +157,7 @@ NB, at step 7, if your page has been published before, the message will read: "Y
 
 GitHub is the preferred website for the Coding institute.
 
-To create a fork/backup:
+**To create a fork/backup:**
 
 GitHub does not currently allow you to directly fork your own repo, but there is a workaround:
 
@@ -180,7 +180,7 @@ https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cl
 
 I chose Netlify because it connects very easily to GitHub and is thus a very suitable backup.
 
-For Netlify:
+**For Netlify:**
 
   1.	got to https://app.netlify.com/
   2.	log in using one of the available options (I used GitHub)
