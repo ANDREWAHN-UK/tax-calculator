@@ -207,5 +207,5 @@ The procedure for testing was as follows:
 
 Further testing was done with friends and family, and by submitting the code for peer review on slack, using fresh eyes to test the UX, most notably ease of navigation between pages, and visibility of text against coloured backgrounds.
 
-Results of this testing led to a ** *considerable* ** number of viewport adjustments, notably centring on adjusting the margin and padding of the navbar buttons, section 1 and section 3 logo spans (the white circles that have red text inside them) and font sizes for the modals and section 3. 
+Results of this testing led to a **considerable** number of viewport adjustments, notably centring on adjusting the margin and padding of the navbar buttons, section 1 and section 3 logo spans (the white circles that have red text inside them) and font sizes for the modals and section 3. 
 
