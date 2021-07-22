@@ -108,6 +108,7 @@ are resident in England, have a wage in England, but are receiving rental income
  The wireframes can be accessed from the "wireframes" folder, and also directly here:
 
  [Wireframes file](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/assets/wireframes/MS%202%20wireframes.bmpr)
+
  [Wireframes PDF](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/assets/wireframes/MS2%20wireframes.pdf)
 
  **7. Technology.**
@@ -131,3 +132,12 @@ Resources:
 **8. Testing.**
 - - - - 
 Please refer to the separate [TESTING.md](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/TESTING.md) file.
+
+**9. Deployment.**
+The website has been deployed on:
+* [Github](https://andrewahn-uk.github.io/tax-calculator/) 
+* [Netlify](Tax calculator (jolly-fermi-1d6055.netlify.app))
+
+*9.1 Github*
+To deploy the website using Github:
+
