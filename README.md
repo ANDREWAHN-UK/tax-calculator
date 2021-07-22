@@ -17,6 +17,7 @@ So I ended up working out her net wages using a pen and paper.
 
 And then I realised that programs like Javascript would make all this brainwork trivial, and so the idea of this website took root.
 
+- - - - 
 **2. User Goals/stories**
  - - - -
 
@@ -26,12 +27,14 @@ And then I realised that programs like Javascript would make all this brainwork 
 * As a **general user** living and earning in the UK, I want to be able to navigate through the page easily, and not get trapped at the bottom of any single page.
 * As a **general user** living and earning in the UK,  further to the above I wish to be able to ascertain my tax etc liability and determine my net wages, in a timely fashion, without an excess of clicks.
 
+ - - - - 
 **3. Stakeholder Goals**
  - - - -
 
 
 To lead the user to get their net wages and understand their liabilities for tax, national insurance and student loan, in an easy fashion, without information overload.
 
+ - - - - 
 **4. Typography and colour scheme:**
  - - - -
 
@@ -41,6 +44,7 @@ To lead the user to get their net wages and understand their liabilities for tax
 * Colours – The primary colours are black (header,footer) red and white (labels, buttons and font therein) with some grey. The colours used throughout are set in the root folder.
 * Images – I sourced the images from google images and unsplash. In CSS I used a filter on section 1 to darken the image, so any text displayed stands out better.
 
+ - - - - 
 **5. Features:**
  - - - -
 
@@ -102,7 +106,7 @@ a which combines net income x,y and z, runs it against tax etc thresholds and co
 
 Moving even further afield, the website can be broadened to account for multiple countries, and perhaps even for users with income streams from multiple countries, e.g. if you 
 are resident in England, have a wage in England, but are receiving rental income from a timeshare in Spain.
-
+ - - - - 
 **6. Wireframes:**
  - - - -
  The wireframes can be accessed from the "wireframes" folder, and also directly here:
@@ -111,6 +115,7 @@ are resident in England, have a wage in England, but are receiving rental income
 
  [Wireframes PDF](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/assets/wireframes/MS2%20wireframes.pdf)
 
+ - - - - 
  **7. Technology.**
  - - - -
  The website was created using Bootstrap, HTML5, CSS3, vanilla JavaScript and Swiper.js.  
@@ -129,11 +134,15 @@ Resources:
 * Bootstrap CDN - used to structure the navbar.
 * Swiper.js - used for the carousel in section 3.
 
+- - - - 
 **8. Testing.**
 - - - - 
 Please refer to the separate [TESTING.md](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/TESTING.md) file.
 
+ - - - - 
 **9. Deployment.**
+ - - - - 
+ 
 The website has been deployed on:
 * [Github](https://andrewahn-uk.github.io/tax-calculator/) 
 * [Netlify](https://jolly-fermi-1d6055.netlify.app/file)
