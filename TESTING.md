@@ -134,37 +134,35 @@ iPhone 8 scottish residents info car with overlay
 - - - -
 ![image](https://i.imgur.com/ZBgSthq.png)
 - - - -
-
-- - - -
-*8.3 Bugs and Bug Fixing:* 
+*8.3 Bugs and Bug *Fix*ing:* 
 - - - -
 As this was the first time using this much JavaScript, there were unsurprisingly some bugs found.
 1.	When entering amounts exactly the same as the tax or National insurance bands (e.g. entering exactly £50,270) the calculator didn’t apply tax or national insurance.
-  * Fix - use = operator in addition to the existing > and <, e.g. if (gross >= 50270) {natIns = ((gross - 50270) * 0.02) + (maxNormalNatIns);}
+    * **Fix** - use = operator in addition to the existing > and <, e.g. if (gross >= 50270) {natIns = ((gross - 50270) * 0.02) + (maxNormalNatIns);}
 
 2.	Results were occasionally displayed to very many decimal places, which was ugly aesthetically and also useless for the user.
-  * Fix - use .toFixed(2) appended to the last 6 lines of calculateIncome() which is more efficient than attaching it to each method inside calculateIncome()
+    * *Fix* - use .to*Fix*ed(2) appended to the last 6 lines of calculateIncome() which is more efficient than attaching it to each method inside calculateIncome()
 
 3.	The carousel provided by swiper.js would not load properly, and I had to use inspect tools to make it load.
-  * Fix- placed the swiper.js code inside the selectPage() function. I tried using on windows load, on DOM load etc, and this was the only solution that worked
+    * *Fix*- placed the swiper.js code inside the selectPage() function. I tried using on windows load, on DOM load etc, and this was the only solution that worked
 
 4.	Images in the carousel would vary in size.
-  * Fix - use VH and VW to set dimensions, use position: relative, set position left: calc(50% - ½ width of object.) I freely admit I am not 100% sure how this works, but it does work. 
+    * *Fix* - use VH and VW to set dimensions, use position: relative, set position left: calc(50% - ½ width of object.) I freely admit I am not 100% sure how this works, but it does work. 
 
 5.	In Javascript, I couldn’t get the span (i.e. the X at the top right of each modal) to work without defining each span element as a child of the close class, i.e. 
 let span1 = document.getElementByClassName(“close”)[0]
-  * Fix - use the selectModal() function without passing in any arguments, as an empty argument instructs the function to close all modals, which is the desired effect
+    * *Fix* - use the selectModal() function without passing in any arguments, as an empty argument instructs the function to close all modals, which is the desired effect
 
 6.	On smaller viewports, the positioning of the nav buttons (on the nav bar) would all shift to the right when section 3 loaded
-  * Fix - In CSS position: fixed.
+    * *Fix* - In CSS position: *Fix*ed.
 
 7.	It was possible for users to leave the gross income value blank, and setting the attribute: required had no effect.
-  * Fix - attribute:fixed would apply just to the element, and not to being able to proceed the modals. therefore, I created a function checkForm() (line 71 of script.js) that checks if the field is blank. If blank, it displays an alert. Note that the value can be any number.
+    * *Fix* - attribute:*Fix*ed would apply just to the element, and not to being able to proceed the modals. therefore, I created a function checkForm() (line 71 of script.js) that checks if the field is blank. If blank, it displays an alert. Note that the value can be any number.
 
 8.	If the variables inside calculateIncome() were made global, the function would not work
-  * Fix - therefore I made them all local variables, which did mean however having to create a local variable twice, namely
+    * *Fix* - therefore I made them all local variables, which did mean however having to create a local variable twice, namely
  let inputGross = document.getElementById("grossIncome").value;
 However, calculateIncome() was then put into a separate script file, so this would have had to be declared anyway I believe.
 
 9.	Using (height and width) or (height or width) parameters in @media queries caused many display issues
-  * Fix - removed height parameters entirely, except when trying to style the Kindle. 
+    * *Fix* - removed height parameters entirely, except when trying to style the Kindle. 
