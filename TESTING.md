@@ -42,12 +42,16 @@ It also informed me of several missing semicolons, which I rectified.
 * The user has one main option, as shown on the home page, with additional options on the navigation bar
 
 * use of inspection tools shows the JavaScript in action
-
+- - - -
   Full screen (1920*1080) homepage
+  - - - -
 ![image](https://i.imgur.com/CU120RI.png)
 
+- - - -
  Homepage with an iPhone 8:
+ - - - -
 ![image](https://i.imgur.com/br6RvRv.png)
+- - - -
 
     2. General user:
 *	Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
