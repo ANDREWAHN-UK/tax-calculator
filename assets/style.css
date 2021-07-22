@@ -777,6 +777,72 @@ modal-content select,
 }
 
 
+/* this is for Kindle Fire landscape orientation*/
+@media screen and (max-width: 1280px) {
+
+  /* section 1 */
+  .logo h1 span{
+    font-size: 5rem;
+  }
+
+  .beginButton input {
+    width: 40vw;
+    font-size: 4rem;
+    height: 6rem;
+    bottom: 10vw;
+  }
+
+  .navbar{
+    height: 8vh;
+  }
+
+  .header-quote, .heading-paragraph{
+    font-size: 3rem;
+  }
+
+  /* section 2 */
+  .modal-content label{
+    top: 20%;
+  }
+
+  #grossIncome{
+    top: 50%;
+  }
+
+  .modal-content select{
+    height: 7vh;
+  }
+
+  /* section 3 */
+
+  .section-3-logo{
+    top: 7vh;
+  }
+  .hmrc-button,
+  .home-button,
+  .info-name {
+    font-size: 2.5rem;
+  }
+  .info-summary p,
+  .info-summary li,.overlay-paragraph p, .overlay-paragraph li{
+    font-size: 2.5rem;
+  }
+
+  .swiper-slide{
+    padding: 1rem 5rem;
+    width: 35vw;
+    height: 65vh;
+  }
+
+  .home-button{
+    bottom: 7vh;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+  top: 88vh;
+  }
+}
+
 /* this is for Kindle Fire portrait orientation*/
 @media screen and (max-width: 800px) {
 
@@ -853,71 +919,6 @@ modal-content select,
   }
 }
 
-/* this is for Kindle Fire landscape orientation*/
-@media screen and (max-device-width: 1280px) and (max-device-height: 802px){
-  /* section 1 */
-
-  .logo h1 span{
-    font-size: 5rem;
-  }
-
-  .beginButton input {
-    width: 40vw;
-    font-size: 4rem;
-    height: 6rem;
-    bottom: 10vw;
-  }
-
-  .navbar{
-    height: 8vh;
-  }
-
-  .header-quote, .heading-paragraph{
-    font-size: 3rem;
-  }
-
-  /* section 2 */
-  .modal-content label{
-    top: 20%;
-  }
-
-  #grossIncome{
-    top: 50%;
-  }
-
-  .modal-content select{
-    height: 7vh;
-  }
-
-  /* section 3 */
-
-  .section-3-logo{
-    top: 7vh;
-  }
-  .hmrc-button,
-  .home-button,
-  .info-name {
-    font-size: 2.5rem;
-  }
-  .info-summary p,
-  .info-summary li,.overlay-paragraph p, .overlay-paragraph li{
-    font-size: 2.5rem;
-  }
-
-  .swiper-slide{
-    padding: 1rem 5rem;
-    width: 35vw;
-    height: 65vh;
-  }
-
-  .home-button{
-    bottom: 7vh;
-  }
-
-  .swiper-button-next, .swiper-button-prev {
-  top: 88vh;
-  }
-}
 
 /* this is for Ipad portrait*/
 @media screen and (max-width: 768px) {
