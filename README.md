@@ -227,7 +227,7 @@ All done by me, with ideas and inspiration for input fields and layout from the 
 * Code Institute slack community
 * Code Institute tutor support 
 * Code Institute mentor (Rohit Sharma)
-* [CodeCademy](https://www.codecademy.com/) - for their free javascript course
+* [CodeCademy](https://www.codecademy.com/) - for their free JavaScript course
 
 
 
