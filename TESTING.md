@@ -36,8 +36,14 @@ It also informed me of several missing semicolons, which I rectified.
     1. Potential Employer Goals:
 
     * Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
+
 	  * The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
+
 	  * The user has one main option, as shown on the home page, with additional options on the navigation bar
-	  * use of inspection tools shows the javascript in action
+
+	  * use of inspection tools shows the JavaScript in action
+
+  
+    ![Imgur](https://i.imgur.com/CU120RI.png)
 
 
