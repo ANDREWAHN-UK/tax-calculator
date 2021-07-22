@@ -1,4 +1,4 @@
-This is the testing section of the readme, palced in a separate file:
+This is the testing section of the readme, placed in a separate file:
 - - - -
 **8. Testing:**
 - - - -
@@ -9,7 +9,7 @@ This is the testing section of the readme, palced in a separate file:
 1. I used https://validator.w3.org to validate the html. 
 
 The html validator returned the errors:
-  * <mark>No p element in scope but a p end tag seen</mark>,  even though both paragraph tags are there, I believe because there are unordered list tags between the paragraphs.
+  * "No p element in scope but a p end tag seen,"  even though both paragraph tags are there, I believe because there are unordered list tags between the paragraphs.
   * numerous errors regarding the labelling convention for divs in the modal, relating to them being hidden when the page starts.
   *	some errors regarding heading for the sections. However, adding labels to pass this part of the validator led to some strange behaviour regarding the rest of the website.
 
@@ -39,11 +39,11 @@ It also informed me of several missing semicolons, which I rectified.
 
 * Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
 
-* The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
+* The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button.”
 
-* The user has one main option, as shown on the home page, with additional options on the navigation bar
+* The user has one main option, as shown on the home page, with additional options on the navigation bar.
 
-* use of inspection tools shows the JavaScript in action
+* use of inspection tools shows the JavaScript in action.
 - - - -
   Full screen (1920*1080) homepage
   - - - -
@@ -58,79 +58,79 @@ It also informed me of several missing semicolons, which I rectified.
     2. General user:
 *	Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
 
-*	The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
+*	The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button.”
 
-*	The user has one main option, as shown on the home page, with additional options on the navigation bar
+*	The user has one main option, as shown on the home page, with additional options on the navigation bar.
 
 *	The modals on page 2 are easy to follow, and give obvious direction to the user as to what to do next.
 
-*	The user cannot proceed without entering a value in the gross input category
+*	The user cannot proceed without entering a value in the gross input category.
 
-*	The results of the user input are clearly shown, and the modals closed, and an option appears to restart the calculations
+*	The results of the user input are clearly shown, and the modals closed, and an option appears to restart the calculations.
 
-*	The system remembers the last inputs, so it is easy to the user to quickly change just one or two variables, instead of inputting everything (e.g. choosing a different student loan category)
+*	The system remembers the last inputs, so it is easy to the user to quickly change just one or two variables, instead of inputting everything (e.g. choosing a different student loan category.)
 
-* The user can navigate to ‘important information’ and ‘homepage’ sections quickly and easily
+* The user can navigate to ‘important information’ and ‘homepage’ sections quickly and easily.
 
-*	The user can navigate between the relevant information cards using the carousel
+*	The user can navigate between the relevant information cards using the carousel.
 - - - -
 Full screen pages 2
  - - - -
 ![image](https://i.imgur.com/DJzXRbn.png)
 
  - - - -
-user needs to enter a value
+user needs to enter a value.
 - - - -
 ![image](https://i.imgur.com/lf9OyII.png)
 
 - - - -
-proceed to next page
+proceed to next page.
 - - - -
 ![image](https://i.imgur.com/WJKZ8YW.png)
 
 - - - -
-proceed to last page
+proceed to last page, and get your results!
 - - - -
 
 ![image](https://i.imgur.com/tBzSaVE.png)
 
 - - - -
-From results page, user can go home 
+From results page, user can go home. 
 
 - - - -
 ![image](https://i.imgur.com/0dw5zof.png)
 
 - - - -
-From results page, restart the calculator
+From results page, restart the calculator.
 - - - -
 ![image](https://i.imgur.com/9dhm9Wz.png)
 
 - - - -
 
-Full screen page 3, example national insurance card
+Full screen page 3, example National Insurance card.
 - - - -
 ![image](https://i.imgur.com/bw7PXQZ.png)
 
 - - - -
 
-Full screen page 3, example national insurance card with overlay
+Full screen page 3, example National Insurance card with overlay.
 - - - -
 ![image](https://i.imgur.com/AwcJ27y.png)
 
 - - - -
-iPhone 8 modals in action
+iPhone 8 modals in action.
 - - - -
 ![image](https://i.imgur.com/1UGHlek.png)
 - - - -
-iphone 8 results page
+iphone 8 results page.
 - - - -
 ![image](https://i.imgur.com/h726bvu.png)
 - - - -
-iPhone 8 scottish residents info card
+iPhone 8 scottish residents info card.
 - - - -
 ![image](https://i.imgur.com/4Oz7SMv.png)
 - - - -
-iPhone 8 scottish residents info car with overlay
+iPhone 8 scottish residents info car with overlay.
 - - - -
 ![image](https://i.imgur.com/ZBgSthq.png)
 - - - -
@@ -138,33 +138,33 @@ iPhone 8 scottish residents info car with overlay
 - - - -
 As this was the first time using this much JavaScript, there were unsurprisingly some bugs found.
 1.	When entering amounts exactly the same as the tax or National insurance bands (e.g. entering exactly £50,270) the calculator didn’t apply tax or national insurance.
-    * **Fix:** use = operator in addition to the existing > and <, e.g. if (gross >= 50270) {natIns = ((gross - 50270) * 0.02) + (maxNormalNatIns);}
+    * **Fix:** use the = operator in addition to the existing > and <, e.g. if (gross >= 50270) {natIns = ((gross - 50270) * 0.02) + (maxNormalNatIns);}.
 
 2.	Results were occasionally displayed to very many decimal places, which was ugly aesthetically and also useless for the user.
-    * **Fix:** use .to*Fix*ed(2) appended to the last 6 lines of calculateIncome() which is more efficient than attaching it to each method inside calculateIncome()
+    * **Fix:** use .toFixed(2) appended to the last 6 lines of calculateIncome() which is more efficient than attaching it to each method inside calculateIncome().
 
 3.	The carousel provided by swiper.js would not load properly, and I had to use inspect tools to make it load.
-    * **Fix:** placed the swiper.js code inside the selectPage() function. I tried using on windows load, on DOM load etc, and this was the only solution that worked
+    * **Fix:** placed the swiper.js code inside the selectPage() function. I tried using on windows load, on DOM load etc, and this was the only solution that worked.
 
 4.	Images in the carousel would vary in size.
     * **Fix:** use VH and VW to set dimensions, use position: relative, set position left: calc(50% - ½ width of object.) I freely admit I am not 100% sure how this works, but it does work. 
 
 5.	In Javascript, I couldn’t get the span (i.e. the X at the top right of each modal) to work without defining each span element as a child of the close class, i.e. 
-let span1 = document.getElementByClassName(“close”)[0]
-    * **Fix:** use the selectModal() function without passing in any arguments, as an empty argument instructs the function to close all modals, which is the desired effect
+let span1 = document.getElementByClassName(“close”)[0].
+    * **Fix:** use the selectModal() function without passing in any arguments, as an empty argument instructs the function to close all modals, which is the desired effect.
 
-6.	On smaller viewports, the positioning of the nav buttons (on the nav bar) would all shift to the right when section 3 loaded
+6.	On smaller viewports, the positioning of the nav buttons (on the nav bar) would all shift to the right when section 3 loaded.
     * **Fix:** In CSS position: Fixed.
 
 7.	It was possible for users to leave the gross income value blank, and setting the attribute: required had no effect.
     * **Fix:** attribute:*Fix*ed would apply just to the element, and not to being able to proceed the modals. therefore, I created a function checkForm() (line 71 of script.js) that checks if the field is blank. If blank, it displays an alert. Note that the value can be any number.
 
-8.	If the variables inside calculateIncome() were made global, the function would not work
+8.	If the variables inside calculateIncome() were made global, the function would not work.
     * **Fix:** therefore I made them all local variables, which did mean however having to create a local variable twice, namely
  let inputGross = document.getElementById("grossIncome").value;
 However, calculateIncome() was then put into a separate script file, so this would have had to be declared anyway I believe.
 
-9.	Using (height and width) or (height or width) parameters in @media queries caused many display issues
+9.	Using (height and width) or (height or width) parameters in @media queries caused many display issues.
     * **Fix:** removed height parameters entirely, except when trying to style the Kindle. 
 
 - - - -
@@ -197,11 +197,11 @@ The procedure for testing was as follows:
 
 3.	style it for the desktop, using dev tools and style.css.
 
-4.	when happy with this, use dev tools for the next viewport, in descending order (i.e. starting with the iPad Pro)
+4.	when happy with this, use dev tools for the next viewport, in descending order (i.e. starting with the iPad Pro.)
 
 5.	Repeat for each element and page, e.g. styling the padding and size of the social media icons.
 
-6.	Save changes via GitHub commit and push
+6.	Save changes via GitHub commit and push.
 
 7.	Open up website on mobile device. I have an Oppo X2 Lite, my sister has an iPhone 8 and my partner a Galaxy A21.
 
