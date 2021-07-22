@@ -139,5 +139,20 @@ The website has been deployed on:
 * [Netlify](https://jolly-fermi-1d6055.netlify.app/file)
 
 *9.1 Github*
+
 To deploy the website using Github:
+  1. 	go to github.com and log in
+  2.	locate the list of repositories, top left of screen
+  3.	click on the required repository, in this case   https://github.com/ANDREWAHN-UK/tax-calculator 
+  4.	on the top, locate the setting button, click on this
+  5.	scroll down until you see the heading "GitHub pages," click on the link
+  6.	the URL in your browser should read:
+https://github.com/ANDREWAHN-UK/tax-calculator/settings/pages 
+  7.	under "source" there should be a message like this: “Source GitHub Pages is currently disabled. Select a source below to enable GitHub Pages for this repository.”
+  8.	select the appropriate source (choose branch: master) and click save.
+  9.	there will now be a message that reads:" Your site is ready to be published at" followed by a link, in this case: https://andrewahn-uk.github.io/tax-calculator/
+  10.	click on it to make sure it works.
+  
+NB, at step 7, if your page has been published before, the message will read: "Your site is published at  https://andrewahn-uk.github.io/tax-calculator/ ” 
+
 
