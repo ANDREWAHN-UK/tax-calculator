@@ -71,7 +71,7 @@ It also informed me of several missing semicolons, which I rectified.
 * The user can navigate to ‘important information’ and ‘homepage’ sections quickly and easily
 
 *	The user can navigate between the relevant information cards using the carousel
-
+- - - -
 Full screen pages 2
  - - - -
 ![image](https://i.imgur.com/DJzXRbn.png)
@@ -116,5 +116,19 @@ Full screen page 3, example national insurance card with overlay
 ![image](https://i.imgur.com/AwcJ27y.png)
 
 - - - -
-
-
+iPhone 8 modals in action
+- - - -
+![image](https://i.imgur.com/1UGHlek.png)
+- - - -
+iphone 8 results page
+- - - -
+![image](https://i.imgur.com/h726bvu.png)
+- - - -
+iPhone 8 scottish residents info card
+- - - -
+![image](https://i.imgur.com/4Oz7SMv.png)
+- - - -
+iPhone 8 scottish residents info car with overlay
+- - - -
+![image](https://i.imgur.com/ZBgSthq.png)
+- -  -
