@@ -152,7 +152,42 @@ https://github.com/ANDREWAHN-UK/tax-calculator/settings/pages
   8.	select the appropriate source (choose branch: master) and click save.
   9.	there will now be a message that reads:" Your site is ready to be published at" followed by a link, in this case: https://andrewahn-uk.github.io/tax-calculator/
   10.	click on it to make sure it works.
-  
+
 NB, at step 7, if your page has been published before, the message will read: "Your site is published at  https://andrewahn-uk.github.io/tax-calculator/ ” 
 
+GitHub is the preferred website for the Coding institute.
+
+To create a fork/backup:
+
+GitHub does not currently allow you to directly fork your own repo, but there is a workaround:
+
+  1.	make a note of the URL of your repo, e.g., "https://github.com/ANDREWAHN-UK/tax-calculator "
+  2.	at the very top right of the page, next to your login image and the bell icon, there is a + button, click this.
+  3.	click "import repository”.
+  4.	Where it says, "Your old repository’s clone URL," put in the URL of your repository, e.g., "https://github.com/ANDREWAHN-UK/tax-calculator "
+  5.	In the "repository name field" choose an appropriate name for your new repository
+  6.	Click "begin import"
+  7.	You now have a copy of your original repository, with all commit history and branches!
+
+However, be aware that this is not a real fork, and so you cannot do pull requests back and forth.
+
+Because this effectively clones the repo, I decided against using the actual clone feature, but information on that can be found here:
+https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+
+
+
+*9.2 Netlify*
+
+I chose Netlify because it connects very easily to GitHub and is thus a very suitable backup.
+
+For Netlify:
+
+  1.	got to https://app.netlify.com/
+  2.	log in using one of the available options (I used GitHub)
+  3.	Once logged in, click the button that says, "new site from git."
+  4.	Choose the appropriate git source, in this case GitHub.
+  5.	A selection of the relevant repositories will show up, click the desired one, in this case "ANDREWAHN-UK/tax-calculator.
+  6.	On the next page, when you are happy with the options, click "deploy site”.
+  7.	Once the website has been deployed, on the next page, near the top, your website name and URL will be available, in this case: https://jolly-fermi-1d6055.netlify.app/
+  8.	Click on it to make sure it works.
 
