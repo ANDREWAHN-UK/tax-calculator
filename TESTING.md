@@ -44,7 +44,7 @@ It also informed me of several missing semicolons, which I rectified.
 	  * use of inspection tools shows the JavaScript in action
 
   Full screen (1920*1080) homepage
-  ![image](assets/screenshots/desktop homepage.png)
+  ![image](https://imgur.com/CU120RI)
 
  
 
