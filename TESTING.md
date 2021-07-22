@@ -35,16 +35,54 @@ It also informed me of several missing semicolons, which I rectified.
 
     1. Potential Employer Goals:
 
-    * Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
+* Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
 
-	  * The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
+* The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
 
-	  * The user has one main option, as shown on the home page, with additional options on the navigation bar
+* The user has one main option, as shown on the home page, with additional options on the navigation bar
 
-	  * use of inspection tools shows the JavaScript in action
+* use of inspection tools shows the JavaScript in action
 
   Full screen (1920*1080) homepage
-  ![image](https://imgur.com/CU120RI)
+![image](https://i.imgur.com/CU120RI.png)
 
- 
+ Homepage with an iPhone 8:
+![image](https://i.imgur.com/br6RvRv.png)
+
+    2. General user:
+*	Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
+
+*	The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
+
+*	The user has one main option, as shown on the home page, with additional options on the navigation bar
+
+*	The modals on page 2 are easy to follow, and give obvious direction to the user as to what to do next.
+
+*	The user cannot proceed without entering a value in the gross input category
+
+*	The results of the user input are clearly shown, and the modals closed, and an option appears to restart the calculations
+
+*	The system remembers the last inputs, so it is easy to the user to quickly change just one or two variables, instead of inputting everything (e.g. choosing a different student loan category)
+
+* The user can navigate to ‘important information’ and ‘homepage’ sections quickly and easily
+
+*	The user can navigate between the relevant information cards using the carousel
+Full screen pages 2
+![image](https://i.imgur.com/DJzXRbn.png)
+user needs to enter a value
+![image](https://i.imgur.com/lf9OyII.png)
+proceed to next page
+![image](https://i.imgur.com/WJKZ8YW.png)
+proceed to last page
+![image](https://i.imgur.com/tBzSaVE.png)
+From results page, user can go home 
+![image](https://i.imgur.com/0dw5zof.png)
+From results page, restart the calculator
+![image](https://i.imgur.com/9dhm9Wz.png)
+
+Full screen page 3, example national insurance card
+![image](https://i.imgur.com/bw7PXQZ.png)
+Full screen page 3, example national insurance card with overlay
+![image](https://i.imgur.com/AwcJ27y.png)
+
 
