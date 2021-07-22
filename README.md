@@ -136,7 +136,7 @@ Please refer to the separate [TESTING.md](https://github.com/ANDREWAHN-UK/tax-ca
 **9. Deployment.**
 The website has been deployed on:
 * [Github](https://andrewahn-uk.github.io/tax-calculator/) 
-* [Netlify](https://jolly-fermi-1d6055.netlify.app/)
+* [Netlify](https://jolly-fermi-1d6055.netlify.app/file)
 
 *9.1 Github*
 To deploy the website using Github:
