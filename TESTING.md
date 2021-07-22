@@ -17,7 +17,7 @@ The html validator returned the errors:
 The CSS returned some errors:
   * to do with bootstrap.min.css and swiper-bundle.css.
   *	 It also showed that one some occasions I typed in 4 rem instead of 4rem (i.e. no space between the number and the unit,) and it did not like negative rem values. 
-  * It also showed that each value I put in the root directory (e.g. --grey-colour) is “an unknown vendor extension.”
+  * It also showed that each value I put in the root directory (e.g. --grey-colour) is >an unknown vendor extension.
 
 3. On the recommendation of my tutor, I used https://jshint.com/ to validate the JavaScript.
 
