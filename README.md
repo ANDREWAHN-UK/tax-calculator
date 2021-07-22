@@ -142,7 +142,7 @@ Please refer to the separate [TESTING.md](https://github.com/ANDREWAHN-UK/tax-ca
  - - - - 
 **9. Deployment.**
  - - - - 
- 
+
 The website has been deployed on:
 * [Github](https://andrewahn-uk.github.io/tax-calculator/) 
 * [Netlify](https://jolly-fermi-1d6055.netlify.app/file)
@@ -199,4 +199,31 @@ I chose Netlify because it connects very easily to GitHub and is thus a very sui
   6.	On the next page, when you are happy with the options, click "deploy site”.
   7.	Once the website has been deployed, on the next page, near the top, your website name and URL will be available, in this case: https://jolly-fermi-1d6055.netlify.app/
   8.	Click on it to make sure it works.
+
+ - - - - 
+  **10. Credits**
+ - - - - 
+
+**Code:** 
+Done by myself, with:
+ * some work done by Bootstrap, most notably the navigation bar.
+ * code from swiper.js https://swiperjs.com/get-started 
+**Content:**
+All done by me, with ideas and inspiration for input fields and layout from the following websites:
+ *	[Money Saving expert tax calculator](https://www.moneysavingexpert.com/tax-calculator/) 
+ *	[Listen to taxman salary calculator](https://listentotaxman.com/uk-tax-calculator/) 
+ *	[The Salary Calculator](https://www.thesalarycalculator.co.uk/)
+ *	[Chip Theory Games](https://chiptheorygames.com/landing)		- notably for their landing page modal
+
+**Media:**
+ *[Unsplash](https://unsplash.com/) for most of the images used.
+ *[Googl](https://www.google.com/)  for other images
+
+**Acknowledgements:**
+* Code Institute slack community
+* Code Institute tutor support 
+* Code Institute mentor (Rohit Sharma)
+* [CodeCademy](https://www.codecademy.com/) - for their free javascript course
+
+
 
