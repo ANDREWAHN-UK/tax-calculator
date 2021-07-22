@@ -1,4 +1,5 @@
 # MILESTONE PROJECT TWO
+![image](assets/screenshots/am I responsive screenshot.png)
  - - - -
 
 **1. Purpose of the project:**
