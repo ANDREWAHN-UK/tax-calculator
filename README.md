@@ -105,3 +105,29 @@ are resident in England, have a wage in England, but are receiving rental income
 
 **6. Wireframes:**
  - - - -
+ The wireframes can be accessed from the "wireframes" folder, and also directly here:
+
+ [Wireframes file](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/assets/wireframes/MS%202%20wireframes.bmpr)
+ [Wireframes PDF](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/assets/wireframes/MS2%20wireframes.pdf)
+
+ **7. Technology.**
+ - - - -
+ The website was created using Bootstrap, HTML5, CSS3, vanilla JavaScript and Swiper.js.  
+
+I chose Bootstrap to get a nice, functional header, as it worked for the last project. 
+
+In creating the website itself, I decided against using the inbuilt columns and rows, as the positioning of various elements doesn’t quite fit inside the bootstrap framework.
+
+However, this led to considerable effort with making it responsive, and if I were to rebuild the website, I would seriously consider just putting everything inside Bootstrap. 
+
+When I started the website, GitHub and Gitpod were updated to use Visual Studio code as the base, which I am more familiar and comfortable with.
+
+Resources:
+* GitHub - used to host the pages.
+* GitPod - usually accessed by using GitHub, used to edit the pages.
+* Bootstrap CDN - used to structure the navbar.
+* Swiper.js - used for the carousel in section 3.
+
+**8. Testing.**
+- - - - 
+Please refer to the separate [TESTING.md](https://github.com/ANDREWAHN-UK/tax-calculator/blob/master/TESTING.md) file.
