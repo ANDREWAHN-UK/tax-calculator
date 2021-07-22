@@ -44,6 +44,6 @@ It also informed me of several missing semicolons, which I rectified.
 	  * use of inspection tools shows the JavaScript in action
 
   
-    ![Imgur](https://i.imgur.com/CU120RI.png)
+    ![Image](https://i.imgur.com/CU120RI.png)
 
 
