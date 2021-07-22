@@ -208,7 +208,9 @@ I chose Netlify because it connects very easily to GitHub and is thus a very sui
 Done by myself, with:
  * some work done by Bootstrap, most notably the navigation bar.
  * code from swiper.js https://swiperjs.com/get-started 
+
 **Content:**
+
 All done by me, with ideas and inspiration for input fields and layout from the following websites:
  *	[Money Saving expert tax calculator](https://www.moneysavingexpert.com/tax-calculator/) 
  *	[Listen to taxman salary calculator](https://listentotaxman.com/uk-tax-calculator/) 
@@ -216,9 +218,10 @@ All done by me, with ideas and inspiration for input fields and layout from the 
  *	[Chip Theory Games](https://chiptheorygames.com/landing)		- notably for their landing page modal
 
 **Media:**
- *[Unsplash](https://unsplash.com/) for most of the images used.
 
- *[Google](https://www.google.com/)  for other images
+ * [Unsplash](https://unsplash.com/) for most of the images used.
+
+ * [Google](https://www.google.com/)  for other images
 
 **Acknowledgements:**
 * Code Institute slack community
