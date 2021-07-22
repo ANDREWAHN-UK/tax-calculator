@@ -217,7 +217,8 @@ All done by me, with ideas and inspiration for input fields and layout from the 
 
 **Media:**
  *[Unsplash](https://unsplash.com/) for most of the images used.
- *[Googl](https://www.google.com/)  for other images
+
+ *[Google](https://www.google.com/)  for other images
 
 **Acknowledgements:**
 * Code Institute slack community
