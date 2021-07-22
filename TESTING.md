@@ -44,6 +44,6 @@ It also informed me of several missing semicolons, which I rectified.
 	  * use of inspection tools shows the JavaScript in action
 
   
-    ![Image](https://i.imgur.com/CU120RI.png)
+    ![Image](/workspace/tax-calculator/assets/screenshots/desktop homepage.png)
 
 
