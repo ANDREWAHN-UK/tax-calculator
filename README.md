@@ -1,5 +1,5 @@
 # MILESTONE PROJECT TWO
-![image](assets/screenshots/am I responsive screenshot.png)
+![image](https://i.imgur.com/mtOHiAt.png)
  - - - -
 
 **1. Purpose of the project:**
