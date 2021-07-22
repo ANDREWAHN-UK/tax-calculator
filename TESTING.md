@@ -46,4 +46,6 @@ It also informed me of several missing semicolons, which I rectified.
   
     ![Image](/workspace/tax-calculator/assets/screenshots/desktop homepage.png)
 
+    ![image](https://i.imgur.com/oEOaC9b.jpg)  
+
 
