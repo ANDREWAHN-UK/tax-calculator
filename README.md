@@ -102,3 +102,6 @@ a which combines net income x,y and z, runs it against tax etc thresholds and co
 
 Moving even further afield, the website can be broadened to account for multiple countries, and perhaps even for users with income streams from multiple countries, e.g. if you 
 are resident in England, have a wage in England, but are receiving rental income from a timeshare in Spain.
+
+**6. Wireframes:**
+ - - - -
