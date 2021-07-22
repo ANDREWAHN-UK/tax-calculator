@@ -67,22 +67,50 @@ It also informed me of several missing semicolons, which I rectified.
 * The user can navigate to ‘important information’ and ‘homepage’ sections quickly and easily
 
 *	The user can navigate between the relevant information cards using the carousel
+
 Full screen pages 2
+ - - - -
 ![image](https://i.imgur.com/DJzXRbn.png)
+
+ - - - -
 user needs to enter a value
+- - - -
 ![image](https://i.imgur.com/lf9OyII.png)
+
+- - - -
 proceed to next page
+- - - -
 ![image](https://i.imgur.com/WJKZ8YW.png)
+
+- - - -
 proceed to last page
+- - - -
+
 ![image](https://i.imgur.com/tBzSaVE.png)
+
+- - - -
 From results page, user can go home 
+
+- - - -
 ![image](https://i.imgur.com/0dw5zof.png)
+
+- - - -
 From results page, restart the calculator
+- - - -
 ![image](https://i.imgur.com/9dhm9Wz.png)
 
+- - - -
+
 Full screen page 3, example national insurance card
+- - - -
 ![image](https://i.imgur.com/bw7PXQZ.png)
+
+- - - -
+
 Full screen page 3, example national insurance card with overlay
+- - - -
 ![image](https://i.imgur.com/AwcJ27y.png)
+
+- - - -
 
 
