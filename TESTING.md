@@ -4,6 +4,7 @@ This is the testing section of the readme, palced in a separate file:
 - - - -
 
 *8.1 Code Validation*
+- - - - 
 
 1. I used https://validator.w3.org to validate the html. 
 
@@ -17,7 +18,7 @@ The html validator returned the errors:
 The CSS returned some errors:
   * to do with bootstrap.min.css and swiper-bundle.css.
   *	 It also showed that one some occasions I typed in 4 rem instead of 4rem (i.e. no space between the number and the unit,) and it did not like negative rem values. 
-  * It also showed that each value I put in the root directory (e.g. --grey-colour) is >an unknown vendor extension.
+  * It also showed that each value I put in the root directory (e.g. --grey-colour) is "an unknown vendor extension."
 
 3. On the recommendation of my tutor, I used https://jshint.com/ to validate the JavaScript.
 
@@ -29,4 +30,14 @@ With jshint, it informed me of the following:
 which as far as I am aware, are not actually errors.
 
 It also informed me of several missing semicolons, which I rectified.
+
+*8.2 Test cases/ Testing the user goals/stories (section 2):* 
+
+    1. Potential Employer Goals:
+
+    * Upon entering the site, users are greeted with a visually attractive homepage, and a clearly visible and easy to navigate header and footer.
+	  * The homepage immediately establishes the purpose of the website, and directs users to click the “water my money tree button”
+	  * The user has one main option, as shown on the home page, with additional options on the navigation bar
+	  * use of inspection tools shows the javascript in action
+
 
