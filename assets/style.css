@@ -1262,24 +1262,33 @@ modal-content select,
   }
 
   .beginButton input {
-    font-size: 3rem;
+    font-size: 2.5rem;
     bottom: 10vh;
+    width: 50vw;
+    left: 25vw;
+    height: 8vh;
+  }
+
+  .header-quote, .heading-paragraph{
+    font-size: 2rem;
+  }
+
+  .header-text{
     width: 50vw;
     left: 25vw;
   }
 
-  .header-quote, .heading-paragraph{
-    font-size: 3rem;
-  }
-
   /* section 2 */
   .modal-content select {
-    top: 40vh;
+    top: 42vh;
     left: 15vw;
+    width: 50vw;
   }
 
   .modal-content label{
     top: 10%;
+    font-size: 3rem;
+    width: 50vw;
   }
 
   #grossIncome{
@@ -1287,7 +1296,9 @@ modal-content select,
     height: 6vh;
   }
 
-  .calculation-form div, .calculation-form label, #restartButton{
+  .calculation-form div, 
+  .calculation-form label,
+   #restartButton{
     font-size: 2rem;
   }
 
@@ -1299,39 +1310,63 @@ modal-content select,
     transform: translateY(0rem) ;
   }
 
+  .close{
+    line-height: 0;
+    font-size: 5rem;
+  }
+
+  #calcButton{
+    height: 10rem;
+    width: 14rem;
+    right: 20%;
+    font-size: 3rem;
+  }
+
   /* section3 */
   .section-3-logo h1 span {
-    font-size: 2.5rem;
-    margin: 0.5rem;
+    font-size: 2rem;
+    margin: 0rem;
   }
 
   .section-3-logo{
-    top: 5vw;
+    top: 4vw;
   }
 
-  .info-name{
-    font-size: 1.5rem;
+  .info-name, .hmrc-button{
+    font-size: 1.8rem;
     width: 30vw;
-    left: 20vw;
+    left: 15vw;
   }
 
   .home-button{
-    bottom: 6vh;
+    bottom: 7vh;
     height: 8vh;
+    width: 40vw;
   }
 
   .swiper-slide{
     height: 64vh;
     padding: 0rem;
-    width: 40vw;
+    width: 60vw;
+  }
+
+  .swiper-container{
+    width: 62vw;
   }
 
   .swiper-button-next, .swiper-button-prev{
     top: 87vh;
   }
 
+  .swiper-button-next{
+    right: 20%;
+  }
+
+  .swiper-button-prev{
+    left: 20%;
+  }
   .info-summary p, .info-summary li{
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .overlay-paragraph {
@@ -1341,6 +1376,8 @@ modal-content select,
   .overlay-heading{
     font-size: 2rem;
   }
+
+  
  
 
 
