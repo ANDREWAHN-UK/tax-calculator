@@ -1377,13 +1377,8 @@ modal-content select,
     font-size: 2rem;
   }
 
-  
- 
-
-
-
-
 }
+
 @media screen and (min-device-width: 540px) and (max-device-width: 720px) and (orientation: portrait){
 
   /* section1 */
@@ -1522,19 +1517,18 @@ modal-content select,
 }
 
 /* this is for the iPhone 6,7,8 Plus */
-@media screen and (max-width: 414px) {
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape){
 
   /* section1 */
-  .section-1 {
-    position: absolute;
-  }
-
   .footer p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
+  .footer{
+    height: 8vh;
+  }
   .navButtons {
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: .5rem;
     margin: 1rem;
   }
@@ -1545,12 +1539,17 @@ modal-content select,
   }
 
   .logo {
-    top: 5rem;
+    top: 3rem;
     left: 10vw;
   }
 
   .logo p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .header-text{
+    left: 15vw;
+    width: 60vw;
   }
 
   .heading-paragraph {
@@ -1558,25 +1557,34 @@ modal-content select,
   }
 
   .header-quote {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .beginButton input {
-    width: 80%;
-    height: 6vh;
-    left: 10%;
+    width: 44vw;;
+    height: 10vh;
+    left: 45vw;
+    bottom: 12vh;
   }
 
   /* section 2 */
   .modal-content label {
     font-size: 2.5rem;
+    width: 60vw;
+    top: 8vh;
   }
 
   .calculation-form {
-    font-size: 2rem;
-    padding: .5rem;
+    padding: 0rem;
   }
 
+  .calculation-form div, .calculation-form label, #restartButton{
+    font-size: 1.3rem;
+  }
+
+  .calculation-form:hover{
+    transform: translateY(0rem) ;
+  }
 
   #calcButton {
     height: 10rem;
@@ -1599,48 +1607,52 @@ modal-content select,
   }
 
   .modal-content select {
-    left: calc(50% - 30vw);
-    width: 60vw;
-    height: 6vh;
+    left: calc(50% - 20vw);
+    width: 40vw;
+    height: 10vh;
     font-size: 2rem;
-    ;
+    top: 42vh;
   }
 
   #grossIncome {
     width: 28vw;
     left: 12vw;
+    top: 32vh;
+    height: 8vh;
+    font-size: 3rem;
   }
 
   .close {
     line-height: 0;
+    font-size: 5rem;
   }
 
   /* section 3 */
   .section-3-logo h1 span {
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
-    margin: 0.2rem;
-    margin: .5rem;
+    font-size: 1.8rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 0rem;
   }
 
   .section-3-logo {
-    left: 15vw;
+    left: 18vw;
+    top: 6vh;
   }
 
   .swiper-container {
-    width: 80vw;
+    width: 70vw;
   }
 
   .swiper-slide {
     padding: .5rem;
-    height: 55vh;
+    height: 53vh;
     top: 5vh;
   }
 
   .info-summary p,
   .info-summary li {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .info-img {
@@ -1651,12 +1663,19 @@ modal-content select,
   .hmrc-button,
   .home-button {
     font-size: 1.4rem;
-    width: 40vw;
-    left: 25%;
+    width: 20vw;
+    left: 25vw;
+    height: 3rem;
+  }
+
+  .info-name{
+    margin-top: 0;
   }
 
   .home-button {
     left: 1vw;
+    width: 30vw;
+    bottom: 10vh;
   }
 
   .overlay-paragraph {
@@ -1671,7 +1690,193 @@ modal-content select,
     height: 3rem;
     width: 3rem;
   }
+
+  .swiper-button-prev{
+    left: 25%;
+  }
+
+  .swiper-button-next{
+    right: 25%;
+  }
 }
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait){
+
+  .footer p {
+    font-size: 2rem;
+  }
+
+  .navButtons {
+    font-size: 1.4rem;
+    padding: .5rem;
+    margin: 0rem;
+  }
+
+  .logo h1 span {
+    font-size: 1.8rem;
+    margin: .5rem;
+  }
+
+  .logo {
+    top: 5rem;
+    left: 10vw;
+  }
+
+  .logo p {
+    font-size: 2rem;
+  }
+
+  .header-text{
+    left: 15vw;
+    width: 60vw;
+  }
+
+  .heading-paragraph {
+    font-size: 2.2rem;
+  }
+
+  .header-quote {
+    font-size: 1.8rem;
+  }
+
+  .beginButton input {
+    width: 60vw;;
+    height: 8vh;
+    left: 30vw;
+    bottom: 12vh;
+    font-size: 2rem;
+  }
+  /* section 2 */
+  .modal-content label {
+    font-size: 2.5rem;
+    width: 80vw;
+    top: 8vh;
+    left: 5vw;
+  }
+
+  .calculation-form {
+    padding: 0rem;
+  }
+
+  .calculation-form div, .calculation-form label, #restartButton{
+    font-size: 2rem;
+  }
+
+  #calcButton {
+    height: 10rem;
+    width: 12rem;
+    right: 10%;
+    font-size: 2.5rem;
+  }
+
+  #modalOneButton,
+  #modalTwoButton {
+    right: 10%;
+  }
+
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
+    width: 12rem;
+    font-size: 2.8rem;
+    left: 10%;
+  }
+
+  .modal-content select {
+    left: calc(50% - 20vw);
+    width: 40vw;
+    height: 8vh;
+    font-size: 2rem;
+    top: 42vh;
+  }
+
+  #grossIncome {
+    width: 28vw;
+    left: 12vw;
+    top: 32vh;
+    height: 6vh;
+    font-size: 3rem;
+  }
+
+  .close {
+    line-height: 0;
+    font-size: 5rem;
+  }
+
+  /* section 3 */
+  .section-3-logo h1 span {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+  }
+
+  .section-3-logo {
+    left: 10vw;
+    top: 6vh;
+    width: 80vw;
+  }
+
+  .swiper-container {
+    width: 70vw;
+  }
+
+  .swiper-slide {
+    padding: .5rem;
+    height: 53vh;
+    top: 5vh;
+  }
+
+  .info-summary p,
+  .info-summary li {
+    font-size: 1.6rem;
+  }
+
+  .info-img {
+    display: none;
+  }
+
+  .info-name,
+  .hmrc-button,
+  .home-button {
+    font-size: 1.8rem;
+    width: 30vw;
+    left: 20vw;
+    height: 3rem;
+  }
+
+  .info-name{
+    margin-top: 0.5rem;
+  }
+
+  .home-button {
+    left: 1vw;
+    width: 40vw;
+    bottom: 9vh;
+    height: 6vh;
+    font-size: 1.6rem;
+  }
+
+  .overlay-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .overlay-heading {
+    font-size: 2rem;
+  }
+
+  .overlay-btn {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .swiper-button-prev{
+    left: 20%;
+  }
+
+  .swiper-button-next{
+    right: 20%;
+  }
+}
+
 
 /* this is for the Pixel2 XL */
 @media screen and (max-width: 411px) {
