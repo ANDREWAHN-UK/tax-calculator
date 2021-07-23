@@ -778,7 +778,7 @@ modal-content select,
 
 
 /* this is for Kindle Fire landscape orientation*/
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 800) and (max-width: 1280px) and (orientation: landscape) {
 
   /* section 1 */
   .logo h1 span{
@@ -844,7 +844,7 @@ modal-content select,
 }
 
 /* this is for Kindle Fire portrait orientation*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800) and (max-width: 1280px) and (orientation: portrait)  {
 
   /* section 1 adjustments */
   .beginButton input {
@@ -1137,7 +1137,113 @@ modal-content select,
 }
 
 /* this is for the surface duo */
-@media screen and (max-width: 540px) {
+@media screen and (min-device-width: 540px) and (max-device-width: 720px) and (orientation: landscape){
+
+  /* section 1 */
+  .logo {
+    top: 3rem;
+    left: 8vw;
+  }
+
+  .logo h1 span {
+    font-size: 2rem;
+  }
+
+  .footer{
+    height: 6vh;
+  }
+
+  .logo p{
+    font-size: 2rem;
+  }
+
+  .beginButton input {
+    font-size: 3rem;
+    bottom: 10vh;
+    width: 50vw;
+    left: 25vw;
+  }
+
+  .header-quote, .heading-paragraph{
+    font-size: 3rem;
+  }
+
+  /* section 2 */
+  .modal-content select {
+    top: 40vh;
+    left: 15vw;
+  }
+
+  .modal-content label{
+    top: 10%;
+  }
+
+  #grossIncome{
+    top: 30vh;
+    height: 6vh;
+  }
+
+  .calculation-form div, .calculation-form label, #restartButton{
+    font-size: 2rem;
+  }
+
+  .calculation-form{
+    padding: 0;
+  }
+
+  .calculation-form:hover {
+    transform: translateY(0rem) ;
+  }
+
+  /* section3 */
+  .section-3-logo h1 span {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+  }
+
+  .section-3-logo{
+    top: 5vw;
+  }
+
+  .info-name{
+    font-size: 1.5rem;
+    width: 30vw;
+    left: 20vw;
+  }
+
+  .home-button{
+    bottom: 6vh;
+    height: 8vh;
+  }
+
+  .swiper-slide{
+    height: 64vh;
+    padding: 0rem;
+    width: 40vw;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    top: 87vh;
+  }
+
+  .info-summary p, .info-summary li{
+    font-size: 2rem;
+  }
+
+  .overlay-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .overlay-heading{
+    font-size: 2rem;
+  }
+ 
+
+
+
+
+}
+@media screen and (min-device-width: 540px) and (max-device-width: 720px) and (orientation: portrait){
 
   /* section1 */
   .footer p {
