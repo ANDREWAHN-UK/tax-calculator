@@ -170,13 +170,13 @@ However, calculateIncome() was then put into a separate script file, so this wou
 10. After enacting the previous fix, certain devices higher up the CSS hierarchy (namely the tablets) would assume the values of those lower down, whihc caused some unwanted visual effects.
     * **Fix:** several fixes were tried, in order: 
 
-                * reverse the order of the CSS hierarchy, i.e. place the tablet devices last - didn't work well
+        * reverse the order of the CSS hierarchy, i.e. place the tablet devices last - didn't work well
 
-                * enacted bootstrap grids and rows etc - didn't work, as too much to refactor the website into this framework.
+        * enacted bootstrap grids and rows etc - didn't work, as too much to refactor the website into this framework.
 
-                * separated each media query ito it's own style sheet - laborious, and too much room for error, so abandoned, in favour of final solution:
+        * separated each media query ito it's own style sheet - laborious, and too much room for error, so abandoned, in favour of final solution:
 
-                * put the 3 tablet queries into their own stylesheet
+        * put the 3 tablet queries into their own stylesheet
 
 - - - -
 *8.4 Supported screens and browsers:* 
