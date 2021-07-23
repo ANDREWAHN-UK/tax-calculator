@@ -79,7 +79,7 @@ In the container there is a button to restart the modals, should the user so wis
  
 The summary takes 2 forms, an initial, very condensed summary on a tile, with a button in the top right to click that brings up an expanded summary.
  
-On each tile I have  placed a “HRMC info” which takes the user directly to the HMRC website concerning that subject, e.g. the national insurance HMRC info button takes the user to https://www.gov.uk/national-insurance. 
+On each tile I have  placed a “HRMC info” button, which takes the user directly to the HMRC website concerning that subject, e.g. the national insurance HMRC info button takes the user to https://www.gov.uk/national-insurance. 
  
 I initially had all the tiles in a simple line, like so:
 
@@ -106,7 +106,7 @@ So a user could enter “wage 1” with a net income of x, then “wage 2” wit
 a which combines net income x,y and z, runs it against tax etc thresholds and comes up with what is hopefully a nice, accurate and easy to understand summation of multiple streams of income.
 
 Moving even further afield, the website can be broadened to account for multiple countries, and perhaps even for users with income streams from multiple countries, e.g. if you 
-are resident in England, have a wage in England, but are receiving rental income from a timeshare in Spain.
+are resident in England, have a wage in England, but are receiving rental income from a holiday home abroad.
  - - - - 
 **6. Wireframes:**
  - - - -
