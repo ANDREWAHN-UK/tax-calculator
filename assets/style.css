@@ -623,8 +623,10 @@ modal-content select,
 }
 
 
+/* Media queries */
+
 /* this is for Ipad Pro */
-@media screen and (max-width: 1366px) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
 
   /* section 1 adjustments */
   .logo {
@@ -775,14 +777,125 @@ modal-content select,
     height: 5rem;
   }
 }
-
-
-/* this is for Kindle Fire landscape orientation*/
-@media screen and (min-width: 800) and (max-width: 1280px) and (orientation: landscape) {
-
+@media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait){
   /* section 1 */
+  .logo {
+    left: 10rem;
+    top: 12rem;
+  }
+
+  .logo p {
+    font-size: 3.5rem;
+  }
+
+  .logo h1 span {
+    font-size: 6.5rem;
+  }
+
+  .header-text {
+    left: 20vw;
+    width: 50vw;
+  }
+
+  .heading-paragraph {
+    font-size: 4rem;
+  }
+
+  .header-quote {
+    font-size: 4rem;
+  }
+
+  .beginButton input {
+    width: 45vw;
+    bottom: 20vw;
+    font-size: 4.5rem;
+  }
+
+  .navButtons {
+    font-size: 3rem;
+  }
+  /* section 3 adjustments */
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 82.8vh;
+  }
+
+  .swiper-button-next {
+    right: 32%;
+  }
+
+  .swiper-button-prev {
+    left: 32%;
+  }
+
+  .hmrc-button,
+  .info-name {
+    width: 20vw;
+    left: calc(50% - 10vw);
+    bottom: 15%;
+    font-size: 3rem;
+    ;
+  }
+
+  .swiper-slide {
+    padding: 1rem 3rem;
+  }
+
+  .swiper-container {
+    width: 60vw;
+  }
+
+  .home-button {
+    bottom: 12vh;
+    width: 30vw;
+    height: 5vh;
+    font-size: 3rem;
+  }
+
+  .section-3-logo {
+    width: 90vw;
+    top: 8vw;
+    left: 5vw;
+  }
+
+  .section-3-logo h1 span {
+    height: 5rem;
+    width: 5rem;
+    font-size: 4rem;
+  }
+
+  .overlay-heading {
+    font-size: 4rem;
+  }
+
+  .overlay-paragraph {
+    font-size: 3rem;
+  }
+
+  .info-summary p,
+  .info-summary li {
+    font-size: 2.8rem;
+  }
+
+  .info-img {
+    width: 30vw;
+    height: 20vh;
+    left: 12vw;
+  }
+
+  .overlay-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+}
+
+/* this is for Kindle Fire orientation*/
+@media screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: landscape) {
+
+  /* section 1 */  
   .logo h1 span{
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .beginButton input {
@@ -806,7 +919,8 @@ modal-content select,
   }
 
   #grossIncome{
-    top: 50%;
+    top: 45%;
+    height: 6vh;
   }
 
   .modal-content select{
@@ -843,27 +957,38 @@ modal-content select,
   }
 }
 
-/* this is for Kindle Fire portrait orientation*/
-@media screen and (min-width: 800) and (max-width: 1280px) and (orientation: portrait)  {
+@media screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
+/* section 1 */  
+.logo h1 span{
+  font-size: 4rem;
+}
 
-  /* section 1 adjustments */
-  .beginButton input {
-    width: 55vw;
-    font-size: 4rem;
-  }
+.beginButton input {
+  width: 55vw;
+  font-size: 4rem;
+  height: 6rem;
+  bottom: 25vw;
+}
+.navButtons{
+  font-size: 2.5rem;
+}
 
-  .logo {
-    left: 8vw;
-  }
+.logo{
+  left: 8vw;
+}
 
-  .logo h1 span {
-    font-size: 5.5rem;
-  }
+.logo p{
+  font-size: 3rem;
+}
 
-  /* for .navButtons, adjust the margin to bring the buttons closer together, adjust the padding to increase/decrease space inside the button */
-  .navButtons {
-    font-size: 2.5rem;
-  }
+.header-text{
+  width: 40vw;
+  left: 25vw;
+}
+
+.header-quote, .heading-paragraph{
+  font-size: 4rem;
+}
 
   /* section 2 adjustments */
   .modal-content select {
@@ -891,8 +1016,11 @@ modal-content select,
   /* section 3 adjustments */
   .swiper-slide {
     height: 60vh;
+    padding: .5rem;
+  }
+
+  .swiper-container{
     width: 70vw;
-    padding: 1rem 3rem;
   }
 
   .section-3-logo {
@@ -901,9 +1029,18 @@ modal-content select,
     left: 8vw;
   }
 
-  .hmrc-button,
-  .home-button {
+  .info-name, .hmrc-button, .home-button{
+    width: 30vw;
     font-size: 2.5rem;
+  }
+
+  .hmrc-button,
+  .info-name {
+    left: 18vw;
+  }
+
+  .home-button{
+    bottom: 15vw;
   }
 
   .swiper-button-prev {
@@ -989,152 +1126,6 @@ modal-content select,
 
 
 
-/* this is for the Galaxy A21*/
-@media screen and (max-width: 720px) {
-
-  /* section 1 */
-  .navButtons {
-    font-size: 2.5rem;
-    margin: .5rem;
-    padding: .5rem;
-  }
-
-  .logo {
-    left: 10rem;
-    top: 20rem;
-  }
-
-  .logo h1 span {
-    font-size: 4rem;
-    width: 4rem;
-    height: 4rem;
-    margin: .5rem;
-  }
-
-  .logo p {
-    font-size: 4rem;
-  }
-
-  .heading-paragraph,
-  .header-quote {
-    font-size: 4rem;
-    width: 50vw;
-  }
-
-  .header-text {
-    left: 10vw;
-  }
-
-  .beginButton input {
-    font-size: 4rem;
-    left: 20vw;
-    width: 60vw;
-    bottom: 30vw;
-  }
-
-  /* section 2 */
-  .modal-content select {
-    width: 50vw;
-    left: 20vw;
-    height: 8vw;
-  }
-
-  .modal-content label {
-    font-size: 4rem;
-    width: 80vw;
-  }
-
-  #modalTwoPrevButton,
-  #modalThreePrevButton {
-    left: 15%;
-    font-size: 4rem;
-  }
-
-  #modalOneButton,
-  #modalTwoButton,
-  #calcButton {
-    right: 15%;
-    font-size: 4rem;
-  }
-
-  /* section 3 */
-  .section-3-logo {
-    width: 80vw;
-    left: 10vw;
-    text-align: center;
-    top: 16vw;
-  }
-
-  .section-3-logo h1 span {
-    font-size: 4rem;
-    width: 4rem;
-    height: 4rem;
-    margin: 1rem;
-  }
-
-  .swiper-slide {
-    height: 64vh;
-  }
-
-  .swiper-container {
-    width: 80vw;
-  }
-
-  .overlay-btn {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .info-img {
-    width: 40vw;
-    border-radius: .5rem;
-    height: 20vh;
-    position: relative;
-    left: calc(50% - 20vw);
-  }
-
-  .info-name {
-    font-size: 3rem;
-  }
-
-  .hmrc-button {
-    font-size: 2.5rem;
-    width: 30vw;
-    text-align: center;
-    left: calc(50% - 15vw);
-  }
-
-  .home-button {
-    font-size: 3rem;
-    left: 2%;
-    width: 50vw;
-    bottom: 19vw;
-  }
-
-  .overlay-heading {
-    font-size: 3.4rem;
-  }
-
-  .overlay-paragraph {
-    font-size: 3rem;
-  }
-
-  .info-summary p,
-  .info-summary li {
-    font-size: 3rem;
-  }
-
-  .swiper-button-next {
-    right: 10%;
-    top: 85.5vh;
-  }
-
-  .swiper-button-prev {
-    left: 10%;
-    top: 85.5vh;
-  }
-
-}
 
 /* this is for the surface duo */
 @media screen and (min-device-width: 540px) and (max-device-width: 720px) and (orientation: landscape){
