@@ -79,17 +79,17 @@ Full screen pages 2
 ![image](https://i.imgur.com/DJzXRbn.png)
 
  - - - -
-user needs to enter a value.
+User needs to enter a value.
 - - - -
 ![image](https://i.imgur.com/lf9OyII.png)
 
 - - - -
-proceed to next page.
+Proceed to next page.
 - - - -
 ![image](https://i.imgur.com/WJKZ8YW.png)
 
 - - - -
-proceed to last page, and get your results!
+Proceed to last page, and get your results!
 - - - -
 
 ![image](https://i.imgur.com/tBzSaVE.png)
@@ -130,7 +130,7 @@ iPhone 8 scottish residents info card.
 - - - -
 ![image](https://i.imgur.com/4Oz7SMv.png)
 - - - -
-iPhone 8 scottish residents info car with overlay.
+iPhone 8 scottish residents info card with overlay.
 - - - -
 ![image](https://i.imgur.com/ZBgSthq.png)
 - - - -
@@ -170,13 +170,13 @@ However, calculateIncome() was then put into a separate script file, so this wou
 10. After enacting the previous fix, certain devices higher up the CSS hierarchy (namely the tablets) would assume the values of those lower down, whihc caused some unwanted visual effects.
     * **Fix:** several fixes were tried, in order: 
 
-        * reverse the order of the CSS hierarchy, i.e. place the tablet devices last - didn't work well
+        * reverse the order of the CSS hierarchy, i.e. place the tablet devices last - didn't work well.
 
         * enacted bootstrap grids and rows etc - didn't work, as too much to refactor the website into this framework.
 
         * separated each media query ito it's own style sheet - laborious, and too much room for error, so abandoned, in favour of final solution:
 
-        * put the 3 tablet queries into their own stylesheet
+        * put the 3 tablet queries into their own stylesheet.
 
 - - - -
 *8.4 Supported screens and browsers:* 
@@ -186,9 +186,9 @@ There are screenshots, available in the screenshots folder, that show the websit
 
 As there are a total of 17 screenshots, rather than link them individually, I have linked the containing folder:
 
-[screenshots](https://github.com/ANDREWAHN-UK/tax-calculator/tree/master/assets/screenshots)
+[Screenshots](https://github.com/ANDREWAHN-UK/tax-calculator/tree/master/assets/screenshots)
 
-Additional testing on the view ports was done using [Screenfly](https://bluetree.ai/screenfly/)
+Additional testing on the view ports was done using [Screenfly](https://bluetree.ai/screenfly/).
 
 I used Opera, Edge, Firefox and Chrome, and tested these, along with general usability, using the dev tools there.
 
