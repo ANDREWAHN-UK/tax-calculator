@@ -1438,7 +1438,7 @@ modal-content select,
 
 /* media queries */
 /* small mobile devices */
-@media only screen and (min-device-width: 280px) and (max-device-width: 360px){
+@media only screen and (min-device-width: 280px) and (max-device-width: 359px){
 /* section 1  */
 .navButtons {
   font-size: 1.5rem;
@@ -1647,9 +1647,7 @@ modal-content select,
 }
 }
 /* medium mobile devices */
-@media only screen and (min-device-width: 361px) and (max-device-width: 480px){
-  /* this is for the moto G4 and Galaxy S5 landscape  */
-@media screen and (min-device-width: 375px)and (max-device-width: 640px ) and (orientation: landscape) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px){
 
   /* section 1 */
   .navButtons {
