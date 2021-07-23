@@ -151,7 +151,7 @@
     }
       
     }
-    
+    /* Galaxy Fold portrait */
     @media screen and (min-device-width:280px) and (max-device-width: 653px) and (orientation: portrait) {
       /* section 1 */
       /* as the view port is so narrow, this makes the nav bar buttons stack ontop of each other */
