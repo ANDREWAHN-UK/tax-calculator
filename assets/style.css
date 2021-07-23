@@ -89,7 +89,7 @@ html {
   align-items: center;
   justify-content: space-evenly;
   top: 1rem;
-  position: fixed;
+  position: absolute;
 }
 
 .header {
