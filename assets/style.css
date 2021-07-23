@@ -1436,9 +1436,219 @@ modal-content select,
   }
 }
 
+/* media queries */
+/* small mobile devices */
+@media only screen and (min-device-width: 280px) and (max-device-width: 360px){
+/* section 1  */
+.navButtons {
+  font-size: 1.5rem;
+  margin: .2rem;
+  padding: .2rem;
+  display: flex;
+  width: 20rem;
+}
 
+/* this makes the navbar a bit wider,to accomodate the navbar buttons */
+.navbar {
+  height: 10rem;
+}
 
-/* this is for the moto G4 and Galaxy S5 landscape  */
+.logo {
+  left: 2rem;
+  top: 8rem;
+}
+
+.logo h1 span {
+  font-size: 1.6rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0rem;
+}
+
+.heading-paragraph,
+.header-quote {
+  font-size: 1.8rem;
+  width: 50vw;
+}
+
+.header-text {
+  left: 12vw;
+  top: 3rem;
+}
+
+.beginButton input {
+  font-size: 2rem;
+  left: 10vw;
+  width: 80vw;
+  height: 8vh;
+  bottom: 15vh;
+}
+
+.footer p{
+  font-size: 1.5rem;
+}
+
+/* section 2 */
+.modal-content {
+  height: 70vh;
+  top: 15vh;
+}
+
+.close{
+  line-height: 0;
+}
+
+.modal-content label {
+  font-size: 1.8rem;
+  width: 100vw;
+  left: 5vw;
+}
+
+#grossIncome{
+  top: 30vh;
+  height: 6vh;
+  font-size: 2rem;
+}
+
+.modal-content select {
+  width: 60vw;
+  left: 10%;
+  top: 38vh;
+}
+
+#modalOneButton,
+#modalTwoButton,
+#modalTwoPrevButton,
+#modalThreePrevButton,
+#calcButton {
+  left: 12vw;
+  top: 58vh;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+#modalOneButton,
+#modalTwoButton{
+  left: 20vw;
+}
+
+#modalTwoPrevButton,
+#modalThreePrevButton {
+  top: 50vh;
+}
+
+#calcButton {
+  left: 10vw;
+  font-size: 2rem;
+  height: 6rem;
+}
+
+.calculation-form:hover {
+  transform: translateY(4rem);
+}
+
+.calculation-form label,
+.calculation-form,
+.calculation-form div {
+  padding: 0;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+#restartButton{
+  font-size: 2rem;
+}
+
+/* section 3 */
+.section-3-logo {
+  left: 0vw;
+  top: 10vh;
+  width: 100vw;
+}
+
+.section-3-logo h1 span {
+  font-size: 1.5rem;
+  margin: .5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.swiper-slide {
+  height: 55vh;
+  padding: 0rem;
+  top: 10vh;
+}
+
+.swiper-container {
+  width: 80vw;
+}
+
+.info-name,
+.hmrc-button,
+.home-button {
+  font-size: 1.6rem;
+  width: 40vw;
+  left: 30%;
+  height: 6vh;
+  margin: 0;
+  padding: 0;
+}
+
+.info-img {
+  display: none;
+}
+
+#student-loan-overlay{
+  display: none;
+}
+
+.home-button {
+  bottom: 5vh;
+  left: 1vw;
+  font-size: 1.5rem;
+  width: 45vw;
+  height: 8vh;
+}
+
+.swiper-button-prev {
+  left: 15%;
+  top: 88vh;
+}
+
+.swiper-button-next {
+  right: 15%;
+  top: 88vh;
+}
+
+.overlay-heading {
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+
+.overlay-wrapper{
+  padding: 1rem 0rem;
+}
+
+.overlay-paragraph,
+.overlay-paragraph p,
+.overlay-paragraph li {
+  font-size: 1.2rem;
+}
+
+.info-summary p,
+.info-summary li {
+  font-size: 1.55rem;
+  margin-left: 0rem;
+}
+
+.overlay-btn {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+}
+/* medium mobile devices */
+@media only screen and (min-device-width: 361px) and (max-device-width: 480px){
+  /* this is for the moto G4 and Galaxy S5 landscape  */
 @media screen and (min-device-width: 375px)and (max-device-width: 640px ) and (orientation: landscape) {
 
   /* section 1 */
@@ -1729,4 +1939,24 @@ modal-content select,
 }
 
 
+}
 
+/* ipads, tablets*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px){
+
+}
+
+/* small screens, laptops*/
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px){
+
+}
+
+/* smaller desktops*/
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px){
+
+}
+
+/* larger desktops*/
+@media only screen and (min-device-width: 1201px) {
+
+}
