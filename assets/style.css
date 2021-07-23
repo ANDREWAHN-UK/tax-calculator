@@ -2628,19 +2628,140 @@ modal-content select,
 }
 
 
-/* this is for the moto G4 and Galaxy S5  */
-@media screen and (max-width: 375px) {
+/* this is for the moto G4 and Galaxy S5 landscape  */
+@media screen and (min-device-width: 375px)and (max-device-width: 640px ) and (orientation: landscape) {
 
   /* section 1 */
   .navButtons {
-    margin: 0.2rem;
+    margin: 2rem;
     padding: 0.4rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
-  .logo h1 span,
+  .logo h1 span{
+    font-size: 2.3rem;
+  }
   .logo p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .heading-paragraph,
+  .header-quote {
+    font-size: 2rem;
+  }
+  .beginButton input{
+    height: 10vh;
+    width: 40vw;
+  }
+
+  /* section 2 */
+
+  .modal-content{
+    top: 5vh;
+  }
+  .modal-content select {
+    width: 50vw;
+    height: 4rem;
+    left: 18%;
+    top: 35vh;
+  }
+
+  #grossIncome {
+    width: 40vw;
+    left: 5%;
+    font-size: 2rem;
+    top: 25vh;
+  }
+
+  #calcButton {
+    height: 8rem;
+    width: 14rem;
+    right: 8rem;
+  }
+
+  #modalOneButton, #modalTwoButton, #calcButton, #modalTwoPrevButton, #modalThreePrevButton{
+    top: 55vh;
+  }
+
+  .modal-content label {
+    font-size: 2rem;
+    top: 5vh;
+  }
+
+  .calculation-form div,
+  .calculation-form label {
+    font-size: 1.5rem;
+  }
+
+  .calculation-form {
+    padding: 0rem;
+  }
+
+  /* this makes the box move downwards instead of staying still or moving upwards as previously */
+  .calculation-form:hover{
+    transform: translateY(1rem);
+  }
+
+  /* section 3 */
+
+  .section-3-logo{
+    left: 5vw;
+    width: 80vw;
+  }
+  .overlay-heading {
+    font-size: 1.5rem;
+    margin: 0rem;
+  }
+
+  .overlay-paragraph, .overlay-paragraph p, .overlay-paragraph li{
+    font-size: 1.1rem;
+  }
+
+  .swiper-slide {
+    height: 60vh;
+    top: 2vh;
+  }
+
+  .info-summary p, .info-summary li{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .swiper-container{
+    width: 70vw;
+  }
+
+  .home-button{
+    bottom: 6vh;
+  }
+}
+/* this is for the moto G4 and Galaxy S5 portrait  */
+@media screen and (min-device-width:360px) and (max-device-width:640px) and (orientation: portrait) {
+
+  /* section 1 */
+  .footer p {
+    font-size: 2rem;
+  }
+
+  .navButtons {
+    font-size: 1.2rem;
+    margin: 0rem;
+    padding: 0.5rem;
+  }
+
+  .logo h1 span {
+    font-size: 2rem;
+    margin: .2rem;
+  }
+
+  .logo {
+    top: 4rem;
+    left: 4rem;
+  }
+
+  .header-text {
+    width: 65vw;
+    left: 15vw;
   }
 
   .heading-paragraph,
@@ -2648,52 +2769,155 @@ modal-content select,
     font-size: 2rem;
   }
 
+  .beginButton input {
+    width: 65vw;
+    height: 6vh;
+    left: 30vw;
+    font-size: 2.2rem;
+    bottom: 12vh;
+  }
+
   /* section 2 */
   .modal-content select {
     width: 50vw;
+    left: 15vw;
+    top: 40vh;
     height: 4rem;
-    left: 18%;
+    font-size: 1.8rem;
   }
 
   #grossIncome {
-    width: 40vw;
-    left: 5%;
-    font-size: 2rem;
-  }
-
-  #calcButton {
-    height: 8rem;
-    width: 14rem;
-    left: 8rem;
+    top: 30vh;
+    width: 20vw;
+    left: 15vw;
+    font-size: 2.5rem;
   }
 
   .modal-content label {
     font-size: 2rem;
+    left: 3.5%;
+    width: 100vw;
+    top: 15vh;
   }
 
-  .calculation-form div,
-  .calculation-form label {
-    font-size: 1.8rem;
+  #modalOneButton,
+  #modalTwoButton,
+  #calcButton,
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
+    right: 3rem;
+    top: 58vh;
+    height: 6rem;
+    width: 11rem;
+    font-size: 2.5rem;
   }
 
-  .calculation-form {
-    padding: .5rem;
+  #modalTwoPrevButton,
+  #modalThreePrevButton {
+    left: 3rem;
+  }
+
+  #calcButton {
+    height: 8rem;
+    width: 11.5rem;
+  }
+
+  .calculation-form:hover {
+    transform: translateY(0rem);
+  }
+
+  .calculation-form label,
+  .calculation-form div {
+    padding: 0;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  #restartButton{
+    font-size: 2rem;
   }
 
   /* section 3 */
-  .overlay-heading {
-    font-size: 1.5rem;
+  .section-3-logo {
+    left: 15vw;
+    top: 3vh;
+    width: 80vw;
   }
 
-  .overlay-paragraph {
-    font-size: 1.2rem;
+  .section-3-logo h1 span {
+    font-size: 1.6rem;
+    margin: .2rem;
+    height: 4rem;
+    width: 4rem;
   }
 
   .swiper-slide {
-    height: 60vh;
+    height: 65vh;
+    padding: 0rem;
+    top: 3vh;
+  }
+
+  .swiper-container {
+    width: 80vw;
+  }
+
+  .info-name,
+  .hmrc-button,
+  .home-button {
+    font-size: 1.8rem;
+    width: 30vw;
+    left: 30%;
+    height: 6vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-img {
+    display: none;
+  }
+
+  .home-button {
+    bottom: 6vh;
+    left: 1vw;
+    font-size: 1.5rem;
+    width: 35vw;
+  }
+
+  .swiper-button-prev {
+    left: 15%;
+    top: 88vh;
+  }
+
+  .swiper-button-next {
+    right: 15%;
+    top: 88vh;
+  }
+
+  .overlay-heading {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+
+  .overlay-wrapper{
+    padding: 1rem 0rem;
+  }
+
+  .overlay-paragraph,
+  .overlay-paragraph p,
+  .overlay-paragraph li {
+    font-size: 1.4rem;
+  }
+
+  .info-summary p,
+  .info-summary li {
+    font-size: 1.7rem;
+  }
+
+  .overlay-btn {
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
-
 /* this is for iPhone5/ SE */
 @media screen and (max-width: 320px) {
 
