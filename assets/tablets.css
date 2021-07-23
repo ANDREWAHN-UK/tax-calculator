@@ -1,4 +1,274 @@
-/* this is for Ipad landscape*/
+
+
+  /* this is for Ipad Pro  landscape*/
+  @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+
+    /* section 1 adjustments */
+    .logo {
+      left: 15rem;
+      top: 12rem;
+    }
+  
+    .logo p {
+      font-size: 3.5rem;
+    }
+  
+    .logo h1 span {
+      font-size: 6.5rem;
+    }
+  
+    .header-text {
+      left: 20vw;
+      width: 50vw;
+    }
+  
+    .heading-paragraph {
+      font-size: 4rem;
+    }
+  
+    .header-quote {
+      font-size: 4rem;
+    }
+  
+    .beginButton input {
+      width: 45vw;
+      bottom: 20vw;
+      font-size: 4.5rem;
+    }
+  
+    .navButtons {
+      font-size: 3rem;
+    }
+  
+    /* section 2 adjustments */
+    .modal-content {
+      width: 80vw;
+      height: 80vh;
+      top: 8%;
+    }
+  
+    .modal-content label {
+      width: 100vw;
+      font-size: 5rem;
+      left: 20%;
+    }
+  
+    .modal-content select {
+      top: 45vh;
+      width: 30vw;
+      left: 25vw;
+      height: 6vh;
+      font-size: 3.5rem;
+    }
+  
+    .close {
+      line-height: 0;
+    }
+  
+    #modalTwoPrevButton,
+    #modalThreePrevButton {
+      width: 20rem;
+    }
+  
+    #grossIncome {
+      top: 50%;
+    }
+  
+    .close {
+      font-size: 5rem;
+    }
+  
+    /* section 3 adjustments */
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 82.8vh;
+    }
+  
+    .swiper-button-next {
+      right: 32%;
+    }
+  
+    .swiper-button-prev {
+      left: 32%;
+    }
+  
+    .hmrc-button,
+    .info-name {
+      width: 20vw;
+      left: calc(50% - 10vw);
+      bottom: 15%;
+      font-size: 3rem;
+      ;
+    }
+  
+    .swiper-slide {
+      padding: 1rem 3rem;
+    }
+  
+    .swiper-container {
+      width: 60vw;
+    }
+  
+    .home-button {
+      bottom: 12vh;
+      width: 30vw;
+      height: 5vh;
+      font-size: 3rem;
+    }
+  
+    .section-3-logo {
+      width: 90vw;
+      top: 8vw;
+      left: 5vw;
+    }
+  
+    .section-3-logo h1 span {
+      height: 5rem;
+      width: 5rem;
+      font-size: 4rem;
+    }
+  
+    .overlay-heading {
+      font-size: 4rem;
+    }
+  
+    .overlay-paragraph {
+      font-size: 3rem;
+    }
+  
+    .info-summary p,
+    .info-summary li {
+      font-size: 2.8rem;
+    }
+  
+    .info-img {
+      width: 30vw;
+      height: 20vh;
+      left: 12vw;
+    }
+  
+    .overlay-btn {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  /* iPadPro portrait */
+  @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  
+    /* section 1 */
+    .logo {
+      left: 10rem;
+      top: 12rem;
+    }
+  
+    .logo p {
+      font-size: 3.5rem;
+    }
+  
+    .logo h1 span {
+      font-size: 6.5rem;
+    }
+  
+    .header-text {
+      left: 20vw;
+      width: 50vw;
+    }
+  
+    .heading-paragraph {
+      font-size: 4rem;
+    }
+  
+    .header-quote {
+      font-size: 4rem;
+    }
+  
+    .beginButton input {
+      width: 45vw;
+      bottom: 20vw;
+      font-size: 4.5rem;
+    }
+  
+    .navButtons {
+      font-size: 3rem;
+    }
+  
+    /* section 3 adjustments */
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 82.8vh;
+    }
+  
+    .swiper-button-next {
+      right: 32%;
+    }
+  
+    .swiper-button-prev {
+      left: 32%;
+    }
+  
+    .hmrc-button,
+    .info-name {
+      width: 20vw;
+      left: calc(50% - 10vw);
+      bottom: 15%;
+      font-size: 3rem;
+      ;
+    }
+  
+    .swiper-slide {
+      padding: 1rem 3rem;
+    }
+  
+    .swiper-container {
+      width: 60vw;
+    }
+  
+    .home-button {
+      bottom: 12vh;
+      width: 30vw;
+      height: 5vh;
+      font-size: 3rem;
+    }
+  
+    .section-3-logo {
+      width: 90vw;
+      top: 8vw;
+      left: 5vw;
+    }
+  
+    .section-3-logo h1 span {
+      height: 5rem;
+      width: 5rem;
+      font-size: 4rem;
+    }
+  
+    .overlay-heading {
+      font-size: 4rem;
+    }
+  
+    .overlay-paragraph {
+      font-size: 3rem;
+    }
+  
+    .info-summary p,
+    .info-summary li {
+      font-size: 2.8rem;
+    }
+  
+    .info-img {
+      width: 30vw;
+      height: 20vh;
+      left: 12vw;
+    }
+  
+    .overlay-btn {
+      width: 5rem;
+      height: 5rem;
+    }
+  
+  }
+  
+  /* this is for Ipad landscape*/
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
     /* section 1 */
@@ -362,276 +632,6 @@
     .overlay-paragraph {
       font-size: 2rem;
     }
-  }
-  
-  
-
-  /* this is for Ipad Pro  landscape*/
-  @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
-
-    /* section 1 adjustments */
-    .logo {
-      left: 15rem;
-      top: 12rem;
-    }
-  
-    .logo p {
-      font-size: 3.5rem;
-    }
-  
-    .logo h1 span {
-      font-size: 6.5rem;
-    }
-  
-    .header-text {
-      left: 20vw;
-      width: 50vw;
-    }
-  
-    .heading-paragraph {
-      font-size: 4rem;
-    }
-  
-    .header-quote {
-      font-size: 4rem;
-    }
-  
-    .beginButton input {
-      width: 45vw;
-      bottom: 20vw;
-      font-size: 4.5rem;
-    }
-  
-    .navButtons {
-      font-size: 3rem;
-    }
-  
-    /* section 2 adjustments */
-    .modal-content {
-      width: 80vw;
-      height: 80vh;
-      top: 8%;
-    }
-  
-    .modal-content label {
-      width: 100vw;
-      font-size: 5rem;
-      left: 20%;
-    }
-  
-    .modal-content select {
-      top: 45vh;
-      width: 30vw;
-      left: 25vw;
-      height: 6vh;
-      font-size: 3.5rem;
-    }
-  
-    .close {
-      line-height: 0;
-    }
-  
-    #modalTwoPrevButton,
-    #modalThreePrevButton {
-      width: 20rem;
-    }
-  
-    #grossIncome {
-      top: 50%;
-    }
-  
-    .close {
-      font-size: 5rem;
-    }
-  
-    /* section 3 adjustments */
-    .swiper-button-next,
-    .swiper-button-prev {
-      top: 82.8vh;
-    }
-  
-    .swiper-button-next {
-      right: 32%;
-    }
-  
-    .swiper-button-prev {
-      left: 32%;
-    }
-  
-    .hmrc-button,
-    .info-name {
-      width: 20vw;
-      left: calc(50% - 10vw);
-      bottom: 15%;
-      font-size: 3rem;
-      ;
-    }
-  
-    .swiper-slide {
-      padding: 1rem 3rem;
-    }
-  
-    .swiper-container {
-      width: 60vw;
-    }
-  
-    .home-button {
-      bottom: 12vh;
-      width: 30vw;
-      height: 5vh;
-      font-size: 3rem;
-    }
-  
-    .section-3-logo {
-      width: 90vw;
-      top: 8vw;
-      left: 5vw;
-    }
-  
-    .section-3-logo h1 span {
-      height: 5rem;
-      width: 5rem;
-      font-size: 4rem;
-    }
-  
-    .overlay-heading {
-      font-size: 4rem;
-    }
-  
-    .overlay-paragraph {
-      font-size: 3rem;
-    }
-  
-    .info-summary p,
-    .info-summary li {
-      font-size: 2.8rem;
-    }
-  
-    .info-img {
-      width: 30vw;
-      height: 20vh;
-      left: 12vw;
-    }
-  
-    .overlay-btn {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
-  /* iPadPro portrait */
-  @media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-  
-    /* section 1 */
-    .logo {
-      left: 10rem;
-      top: 12rem;
-    }
-  
-    .logo p {
-      font-size: 3.5rem;
-    }
-  
-    .logo h1 span {
-      font-size: 6.5rem;
-    }
-  
-    .header-text {
-      left: 20vw;
-      width: 50vw;
-    }
-  
-    .heading-paragraph {
-      font-size: 4rem;
-    }
-  
-    .header-quote {
-      font-size: 4rem;
-    }
-  
-    .beginButton input {
-      width: 45vw;
-      bottom: 20vw;
-      font-size: 4.5rem;
-    }
-  
-    .navButtons {
-      font-size: 3rem;
-    }
-  
-    /* section 3 adjustments */
-    .swiper-button-next,
-    .swiper-button-prev {
-      top: 82.8vh;
-    }
-  
-    .swiper-button-next {
-      right: 32%;
-    }
-  
-    .swiper-button-prev {
-      left: 32%;
-    }
-  
-    .hmrc-button,
-    .info-name {
-      width: 20vw;
-      left: calc(50% - 10vw);
-      bottom: 15%;
-      font-size: 3rem;
-      ;
-    }
-  
-    .swiper-slide {
-      padding: 1rem 3rem;
-    }
-  
-    .swiper-container {
-      width: 60vw;
-    }
-  
-    .home-button {
-      bottom: 12vh;
-      width: 30vw;
-      height: 5vh;
-      font-size: 3rem;
-    }
-  
-    .section-3-logo {
-      width: 90vw;
-      top: 8vw;
-      left: 5vw;
-    }
-  
-    .section-3-logo h1 span {
-      height: 5rem;
-      width: 5rem;
-      font-size: 4rem;
-    }
-  
-    .overlay-heading {
-      font-size: 4rem;
-    }
-  
-    .overlay-paragraph {
-      font-size: 3rem;
-    }
-  
-    .info-summary p,
-    .info-summary li {
-      font-size: 2.8rem;
-    }
-  
-    .info-img {
-      width: 30vw;
-      height: 20vh;
-      left: 12vw;
-    }
-  
-    .overlay-btn {
-      width: 5rem;
-      height: 5rem;
-    }
-  
   }
   
 
