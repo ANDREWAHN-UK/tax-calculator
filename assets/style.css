@@ -990,7 +990,7 @@ modal-content select,
   font-size: 4rem;
 }
 
-  /* section 2 adjustments */
+/* section 2 adjustments */
   .modal-content select {
     top: 45vh;
     width: 50vw;
@@ -1057,13 +1057,13 @@ modal-content select,
 }
 
 
-/* this is for Ipad portrait*/
-@media screen and (max-width: 768px) {
+/* this is for Ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
   /* section 1 */
   .navButtons {
-    margin: .5rem;
-    padding: .5rem;
+    margin: 3rem;
+    padding: 0.5rem;
     font-size: 2.5rem;
   }
 
@@ -1113,14 +1113,127 @@ modal-content select,
   }
 
   .overlay-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-  .overlay-paragraph,
+  .overlay-paragraph, 
+  .overlay-paragraph p, 
+  .overlay-paragraph li,
   .info-summary p,
   .info-summary li {
     font-size: 2rem;
   }
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+/* section 1 */  
+.logo h1 span{
+  font-size: 4rem;
+}
+
+.beginButton input {
+  width: 55vw;
+  font-size: 4rem;
+  height: 6rem;
+  bottom: 20vw;
+}
+.navButtons{
+  font-size: 2rem;
+}
+
+.logo{
+  left: 8vw;
+}
+
+.logo p{
+  font-size: 3rem;
+}
+
+.header-text{
+  width: 40vw;
+  left: 25vw;
+}
+
+.header-quote, .heading-paragraph{
+  font-size: 4rem;
+}
+
+/* section 2 adjustments */
+
+.modal-content{
+  top: 5vh;
+}
+.modal-content select {
+  top: 45vh;
+  width: 46vw;
+  font-size: 3rem;
+  left: 15vw;
+}
+
+.modal-content label {
+  width: 80vw;
+  left: 10vw;
+}
+
+#grossIncome {
+  top: 40vh;
+}
+
+.calculation-form div,
+.calculation-form label,
+#restartButton {
+  font-size: 3rem;
+}
+
+.close{
+  font-size: 6rem;
+  line-height: 0;
+}
+/* section 3 adjustments */
+.swiper-slide {
+  height: 65vh;
+  padding: .5rem;
+}
+
+.swiper-container{
+  width: 70vw;
+}
+
+.section-3-logo {
+  width: 90vw;
+  top: 12vw;
+  left: 8vw;
+}
+
+.info-name, .hmrc-button, .home-button{
+  width: 30vw;
+  font-size: 2.5rem;
+}
+
+.hmrc-button,
+.info-name {
+  left: 18vw;
+}
+
+.home-button{
+  bottom: 7vw;
+}
+
+.swiper-button-prev {
+  left: 25%;
+}
+
+.swiper-button-next {
+  right: 25%;
+}
+.swiper-button-prev, .swiper-button-next{
+  top: 89vh;
+}
+.overlay-paragraph{
+  font-size: 2rem;
+}
+
 }
 
 
