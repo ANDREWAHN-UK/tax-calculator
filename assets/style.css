@@ -1195,7 +1195,7 @@ modal-content select,
   }
 
   .logo {
-    top: 4rem;
+    top: 2rem;
     left: 4rem;
   }
 
@@ -1211,10 +1211,10 @@ modal-content select,
 
   .beginButton input {
     width: 65vw;
-    height: 6vh;
+    height: 8vh;
     left: 30vw;
     font-size: 2.2rem;
-    bottom: 12vh;
+    bottom: 10vh;
   }
 
   /* section 2 */
