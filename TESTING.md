@@ -167,17 +167,6 @@ However, calculateIncome() was then put into a separate script file, so this wou
 9.	Using (height and width) or (height or width) parameters in @media queries caused many display issues, and landscape mode was not attractive on most devices.
     * **Fix:** removed height parameters entirely, in favout of (min-device-width) and max-device-width) and (orientation: landscape/portrait".)
 
-10. After enacting the previous fix, certain devices higher up the CSS hierarchy (namely the tablets) would assume the values of those lower down, which caused some unwanted visual effects.
-    * **Fix:** several fixes were tried, in order: 
-
-        * reverse the order of the CSS hierarchy, i.e. place the tablet devices last - didn't work well.
-
-        * enacted bootstrap grids and rows etc - didn't work, as too much to refactor the website into this framework.
-
-        * separated each media query ito it's own style sheet - laborious, and too much room for error, so abandoned, in favour of final solution:
-
-        * used a mix of specific media queries, and then general ones, which rendered every device working in portrait and landscape mode. This is somewhat messy though!
-
 - - - -
 *8.4 Supported screens and browsers:* 
 - - - -
