@@ -817,7 +817,7 @@ modal-content select,
 
   .logo {
     left: 2rem;
-    top: 8rem;
+    top: 6rem;
   }
 
   .logo h1 span {
@@ -843,7 +843,7 @@ modal-content select,
     left: 10vw;
     width: 80vw;
     height: 8vh;
-    bottom: 15vh;
+    bottom: 10vh;
   }
 
   .footer p {
