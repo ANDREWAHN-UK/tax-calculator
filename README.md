@@ -134,8 +134,6 @@ Resources:
 * GitPod - usually accessed by using GitHub, used to edit the pages.
 * Bootstrap CDN - used to structure the navbar.
 * Swiper.js - used for the carousel in section 3.
-* Screenfly - used to assess responsiveness on various devices
-
 - - - - 
 **8. Testing.**
 - - - - 
