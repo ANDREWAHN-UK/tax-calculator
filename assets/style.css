@@ -2294,7 +2294,7 @@ modal-content select,
 
 }
 
-@media screen and (min-device-width:600px) and (max-device-width: 760px) and (orientation: portrait) {
+@media screen and (min-device-width:601px) and (max-device-width: 760px) and (orientation: portrait) {
 
   /* section 1 */
   /* as the view port is so narrow, this makes the nav bar buttons stack ontop of each other */
@@ -2503,7 +2503,7 @@ modal-content select,
 
 }
 
-@media screen and (min-device-width:600px) and (max-device-width: 760px) and (orientation: landscape) {
+@media screen and (min-device-width:601px) and (max-device-width: 760px) and (orientation: landscape) {
 
   /* section 1 */
   .navButtons {
@@ -3158,7 +3158,7 @@ modal-content select,
 
 }
 
-@media screen and (min-device-width:1281px) and (max-device-width: 2400px) and (orientation: portrait) {
+@media screen and (min-device-width:1281px) and (max-device-width: 1600px) and (orientation: portrait) {
 
   /* section 1 */
   .logo {
@@ -3273,7 +3273,7 @@ modal-content select,
 
 }
 
-@media screen and (min-device-width:1281px) and (max-device-width: 2400px) and (orientation: landscape) {
+@media screen and (min-device-width:1281px) and (max-device-width: 1600px) and (orientation: landscape) {
 
   /* section 1 adjustments */
   .logo {
